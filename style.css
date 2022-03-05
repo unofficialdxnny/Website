@@ -13,11 +13,11 @@ body{
 }
 ::selection {
  color: #fff;
- background-color: #ff4242;
+ background-color: #42d9ff;
 }
 ::-moz-selection {
  color: #fff;
- background-color: #ff4242;
+ background-color: #42d9ff;
 }
 .start-header {
  opacity: 1;
@@ -104,7 +104,7 @@ body{
     transition: all 200ms linear;
 }
 .nav-item:hover .nav-link{
- color: #ff4242 !important;
+ color: #42d9ff !important;
 }
 .nav-item.active .nav-link{
  color: #777 !important;
@@ -121,7 +121,7 @@ body{
  width: 100%;
  height: 2px;
  content: '';
- background-color: #ff4242;
+ background-color: #42fff6;
  opacity: 0;
     transition: all 200ms linear;
 }
@@ -192,9 +192,9 @@ body.hero-anime p{
 #switch {
  width: 60px;
  height: 8px;
- border: 2px solid #ff4242;
+ border: 2px solid #42d9ff;
  border-radius: 27px;
- background: #ff4242;
+ background: #42d9ff;
  position: relative;
  display: block;
  margin: 0 auto;
