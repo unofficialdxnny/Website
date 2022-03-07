@@ -7,9 +7,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="icon" type="image/png" href="./img/favicon.png"/>
   <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Oregano' rel='stylesheet' type='text/css'>
 </head>
 <body>
  
+
 
   
 <body class="hero-anime"> 
@@ -93,9 +96,6 @@
  <div class="my-5 py-5">
  </div>
 </div>
-<br>
-<br>
-<br>
 <div class="social-menu">
   <ul>
       <li><a href="https://github.com/unofficialdxnny" target="blank"><i class="fab fa-github"></i></i></a></li>
@@ -139,6 +139,27 @@
 <p>Page has been viewed</p>
 <h1 id="count">0</h1>
 <p>Times</p>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.min.js"></script>
+  <script language="javascript">
+      $(function() {
+          toastr.options = {
+             "closeButton": true,
+             "debug": false,
+             "positionClass": "toast-bottom-right",
+             "showDuration": "300000",
+             "hideDuration": "1000",
+             "timeOut": "0",
+             "extendedTimeOut": "1000",
+             "showEasing": "swing",
+             "hideEasing": "linear",
+             "showMethod": "fadeIn",
+             "hideMethod": "fadeOut"
+          }
+    toastr.info("<p'>Siite made by unofficialdxnny. Site is still under development. You may view the source <a href='https://github.com/unofficialdxnny/unofficialdxnny-website' target='_new'>HERE</a></p>");
+      });
+  </script>
 
 </body>
  
