@@ -63,7 +63,7 @@ panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
 
 
-
+// count api recording visitors on site (total)
 const countEl = document.getElementById('count');
 
 updateVisitCount();
