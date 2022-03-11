@@ -130,5 +130,3 @@ img.ondragstart = () => {
 };
 
 
-//typing effect
-
