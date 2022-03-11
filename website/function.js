@@ -121,3 +121,14 @@ window.scroll({
   document.querySelector('.hello').scrollIntoView({ 
 	behavior: 'smooth' 
   });
+
+
+  // disable the image drag
+  const img = document.querySelector('img')
+img.ondragstart = () => {
+  return false;
+};
+
+
+//typing effect
+
