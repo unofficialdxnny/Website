@@ -2,6 +2,7 @@
 
 ### ChangeLog
 
+fixed pageload timing 13/03/2022 @19:37 <br>
 fixed the alertbox to fit in with the timing 13/03/2022 @16:02 <br>
 added a `window.alert("")` function to guide the user incase of loop 13/03/2022 @15:50 <br>
 added `href` to the `index.html` 13/03/2022 @15:35 <br>
