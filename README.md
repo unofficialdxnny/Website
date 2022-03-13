@@ -2,6 +2,7 @@
 
 ### ChangeLog
 
+added server crash message 13/03/22 @13:05 <br>
 disabled image highlight 11/03/2022 @19:58 <br>
 disabled image drag 11/03/2022 @19:58 <br>
 added a crosshair 11/03/2022 @19:58 <br>
