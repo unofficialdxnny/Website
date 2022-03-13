@@ -19,4 +19,4 @@ added auto deploys to netlify 07/03/2022 @13:30
 
 ### ToAdd
 
-- Auto Post clip from discord to site
+
