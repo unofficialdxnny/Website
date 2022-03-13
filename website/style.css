@@ -582,5 +582,8 @@ img {
     -ms-user-select: none;
  }
 
+/* Typewriter effect */
 
- 
+.namechange             { width:-5em }
+.namechange:after       { content:'unofficialdxnny'; }
+.namechange:hover:after { content:'Danial Ahmed'; }
