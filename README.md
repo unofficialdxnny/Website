@@ -2,6 +2,7 @@
 
 ### ChangeLog
 
+added `href` to the `index.html`
 added a `what i know` preloader 13/03/2022 @15:10
 added name change feature on `<h1>` 13/03/2022 @15:00 <br>
 added server crash message 13/03/2022 @13:05 <br>
