@@ -1,100 +1,39 @@
 <title>Loading</title>
 <link rel="icon" type="image/png" href="./img/favicon.png"/>
-<style>
-  body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #343F4F;
-}
-</style>
+<meta http-equiv="refresh" content="5; url='main.html'" />
+
+<link rel="icon" type="image/png" href="./img/favicon.png"/>
+
+
+<div id="greeting"></div>
+
 <script>
-  window.alert("If this page is stuck in a loop than please refresh the page")
+  const greeting = document.getElementById("greeting");
+const hour = new Date().getHours();
+const welcomeTypes = ["Good morning", "Good afternoon", "Good evening"];
+let welcomeText = "";
+
+if (hour < 12) welcomeText = welcomeTypes[0];
+else if (hour < 18) welcomeText = welcomeTypes[1];
+else welcomeText = welcomeTypes[2];
+
+greeting.innerHTML = welcomeText;
 </script>
 
-<meta http-equiv="refresh" content="11; url='main.html'" />
-
-<div class="wrapper">
-    <div class="static-txt">I'm a</div>
-    <ul class="dynamic-txts">
-      <li><span><a href="https://www.youtube.com/channel/UCCP1p4ZG5KmLnnJhIm0KEXg" target="blank">YouTuber</a></span></li>
-      <li><span>Graphics Designer</span></li>
-      <li><span><a href="https://github.com/unofficialdxnny" target="blank">Programmer</a></span></li>
-      <li><span><a href="mailto:ahmeddanial324@gmail.com">and a Freelancer</a></span></li>
-    </ul>
-  </div>
+<style>
   
-  <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-a{
-  color: #FC6D6D;
-  text-decoration: none;
-  
-}
-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #343F4F;
-}
-.wrapper{
-  display: flex;
-}
-.wrapper .static-txt{
-  color: #fff;
-  font-size: 60px;
-  font-weight: 400;
-}
-.wrapper .dynamic-txts{
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
-  overflow: hidden;
-}
-.dynamic-txts li{
-  list-style: none;
-  color: #FC6D6D;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
-}
-@keyframes slide {
-  100%{
-    top: -360px;
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #ffe6ab;
   }
-}
-.dynamic-txts li span{
-  position: relative;
-  margin: 5px 0;
-  line-height: 90px;
-}
-.dynamic-txts li span::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #343F4F;
-  border-left: 2px solid #FC6D6D;
-  animation: typing 3s steps(10) infinite;
-}
-@keyframes typing {
-  40%, 60%{
-    left: calc(100% + 30px);
+  div {
+    padding: 2rem;
+    background: #06d6a0;
+    border-radius: 10px;
+    font-size: 3rem;
+    color: #fff;
   }
-  100%{
-    left: 0;
-  }
-}
-  </style>
-
+</style>
