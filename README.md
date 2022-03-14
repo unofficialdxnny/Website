@@ -2,6 +2,7 @@
 
 ### ChangeLog
 
+added a greetings `index.html` as preloader 14/03/2022 @20:40 <br>
 added a favicon to `index.html` 13/03/2022 @21:02 <br>
 fixed pageload timing 13/03/2022 @19:37 <br>
 fixed the alertbox to fit in with the timing 13/03/2022 @16:02 <br>
@@ -20,4 +21,4 @@ added auto deploys to netlify 07/03/2022 @13:30
 
 ### ToAdd
 
-
+Add the blogs programming projects and clips pages
