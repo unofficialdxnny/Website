@@ -2,6 +2,7 @@
 
 ### ChangeLog
 
+removed `window.Alert()` as no chance of getting stuck in loop 15/03/2022 @19:27 <br>
 removed `href` from navbar 15/03/2022 @18:55 <br>
 disabled scroll on `index.html` 15/03/2022 @18:53 <br>
 added a greetings `index.html` as preloader 14/03/2022 @20:40 <br>
