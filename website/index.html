@@ -1,9 +1,13 @@
 <title>Loading</title>
+
+
 <link rel="icon" type="image/png" href="./img/favicon.png"/>
 <meta http-equiv="refresh" content="5; url='main.html'" />
 
 <link rel="icon" type="image/png" href="./img/favicon.png"/>
 
+
+<body scroll="no" style="overflow: hidden">
 
 <div id="greeting"></div>
 
@@ -23,11 +27,14 @@ greeting.innerHTML = welcomeText;
 <style>
   
 body {
+  height: 100%;
+   overflow-y: hidden;
     display: grid;
     place-items: center;
     min-height: 100vh;
     font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
     background: #ffe6ab;
+    
   }
   div {
     padding: 2rem;
@@ -37,3 +44,5 @@ body {
     color: #fff;
   }
 </style>
+
+</body>
