@@ -2,6 +2,7 @@
 
 ### ChangeLog
 
+removed `href` from navbar 15/03/2022 @18:55 <br>
 disabled scroll on `index.html` 15/03/2022 @18:53 <br>
 added a greetings `index.html` as preloader 14/03/2022 @20:40 <br>
 added a favicon to `index.html` 13/03/2022 @21:02 <br>
