@@ -2,6 +2,7 @@
 
 ### ChangeLog
 
+disabled scroll on `index.html` 15/03/2022 @18:53 <br>
 added a greetings `index.html` as preloader 14/03/2022 @20:40 <br>
 added a favicon to `index.html` 13/03/2022 @21:02 <br>
 fixed pageload timing 13/03/2022 @19:37 <br>
