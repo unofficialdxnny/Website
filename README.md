@@ -2,6 +2,8 @@
 
 ### ChangeLog
 
+changed background of `div` on `index.html` 16/03/2022 @12:39 <br>
+changed background of `index.html` 16/03/2022 @12:39 <br>
 removed `window.Alert()` as no chance of getting stuck in loop 15/03/2022 @19:27 <br>
 removed `href` from navbar 15/03/2022 @18:55 <br>
 disabled scroll on `index.html` 15/03/2022 @18:53 <br>
