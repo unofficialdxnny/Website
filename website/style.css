@@ -588,3 +588,8 @@ img {
 .namechange:after       { content:'unofficialdxnny'; }
 .namechange:hover:after { content:'Danial Ahmed'; }
 
+
+.changename             { width:-5em }
+.changename:after       { content:'Projects'; }
+.changename:hover:after { content:'By unofficialdxnny'; }
+
