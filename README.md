@@ -2,6 +2,8 @@
 
 ### ChangeLog
 
+
+added projects page 20/03/2020 @17:46 <br> 
 changed background of `div` on `index.html` 16/03/2022 @12:39 <br>
 changed background of `index.html` 16/03/2022 @12:39 <br>
 removed `window.Alert()` as no chance of getting stuck in loop 15/03/2022 @19:27 <br>
