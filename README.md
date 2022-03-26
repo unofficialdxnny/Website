@@ -2,7 +2,7 @@
 
 ### ChangeLog
   
-  
+  added projects page 26/03/2022 @22:53 <br>
   added no-drag to spotistats 26/03/2022 @22:13 <br>
   fixed socialmenu and namechange 26/03/2022 @22:12 <br>
   cleaned up the directory 26/03/2022 @22:07 <br>
