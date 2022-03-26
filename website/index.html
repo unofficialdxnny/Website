@@ -1,0 +1,56 @@
+<title>Loading</title>
+
+
+<link rel="icon" type="image/png" href="./img/favicon.png"/>
+<meta http-equiv="refresh" content="5; url='main.html'" />
+
+<link rel="icon" type="image/png" href="./img/favicon.png"/>
+
+
+<body scroll="no" style="overflow: hidden">
+
+<div id="greeting"></div>
+
+<script>
+  const greeting = document.getElementById("greeting");
+const hour = new Date().getHours();
+const welcomeTypes = ["Good morning", "Good afternoon", "Good evening"];
+let welcomeText = "";
+
+if (hour < 12) welcomeText = welcomeTypes[0];
+else if (hour < 18) welcomeText = welcomeTypes[1];
+else welcomeText = welcomeTypes[2];
+
+greeting.innerHTML = welcomeText;
+</script>
+
+
+<style>
+  
+body {
+  height: 100%;
+   overflow-y: hidden;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-image: url('https://camo.githubusercontent.com/4e10e89a1987b88f8d4636a191e6d0e20ebfdd92e285a29e81188df1c89540f4/68747470733a2f2f63646e2e77616c6c70617065727361666172692e636f6d2f39362f38372f616b695738782e6a7067');
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  }
+  div {
+    padding: 2rem;
+    border-radius: 15px;
+    font-size: 3rem;
+    color: rgb(255, 0, 0);
+  }
+
+  body{
+	background:#000000;
+}
+
+
+</style>
+
+</body>
