@@ -2,8 +2,6 @@
 
 ### ChangeLog
 
-
-<a href="https://unofficialdxnny.netlify.app/index.html">
   changed bg colour of theme bar 26/03/2022 @21:37 </br>
   fixed cursor to be croshair constantly 26/03/2022 @21:30 <br>
   added projects page 20/03/2022 @17:46 <br> 
@@ -28,8 +26,6 @@
   added a popup 07/03/2022 @18:50 <br>
   added auto deploys to netlify 07/03/2022 @13:30
 
-
-</a>
 
 
 ### ToAdd
