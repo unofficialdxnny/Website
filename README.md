@@ -1,7 +1,9 @@
 # unofficialdxnny-website
 
 ### ChangeLog
-
+  
+  
+  fixed socialmenu and namechange 26/03/2022 @22:12 <br>
   cleaned up the directory 26/03/2022 @22:07 <br>
   removed bg from welcomer 26/03/2022 @21:55 <br>
   changed bg colour of theme bar 26/03/2022 @21:37 </br>
