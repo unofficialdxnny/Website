@@ -2,7 +2,7 @@
 
 ### ChangeLog
 
-
+changed bg colour of theme bar 26/03/2022 @21:37 </br>
 fixed cursor to be croshair constantly 26/03/2022 @21:30 <br>
 added projects page 20/03/2022 @17:46 <br> 
 changed background of `div` on `index.html` 16/03/2022 @12:39 <br>
