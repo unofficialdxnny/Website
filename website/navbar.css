@@ -408,16 +408,3 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
  }
 }
 
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
-
-:root {
-	/* Base font size */
-	font-size: 10px;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
