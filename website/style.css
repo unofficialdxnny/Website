@@ -209,6 +209,8 @@ body.hero-anime p{
  transition: all 300ms linear; 
 } 
 #switch {
+    cursor: crosshair;
+
  width: 60px;
  height: 8px;
  border: 2px solid #42d9ff;
@@ -224,11 +226,15 @@ body.hero-anime p{
     transition-delay: 1900ms;
 }
 body.hero-anime #switch{
+    cursor: crosshair;
+
  opacity: 0;
  transform: translateY(40px);
     transition-delay: 1900ms;
 }
 #circle {
+    cursor: crosshair;
+
  position: absolute;
  top: -11px;
  left: -13px;
@@ -238,10 +244,14 @@ body.hero-anime #switch{
  background: #000;
 }
 .switched {
+    cursor: crosshair;
+
  border-color: #000 !important;
  background: #ff4242 !important;
 }
 .switched #circle {
+    cursor: crosshair;
+
  left: 43px;
  box-shadow: 0 4px 4px rgba(26,53,71,0.25), 0 0 0 1px rgba(26,53,71,0.07);
  background: #fff;
