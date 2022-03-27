@@ -2,6 +2,7 @@
 
 ### ChangeLog
   
+  removed light mode 27/03/2022 @20:24 <br>
   added projects page 26/03/2022 @22:53 <br>
   added no-drag to spotistats 26/03/2022 @22:13 <br>
   fixed socialmenu and namechange 26/03/2022 @22:12 <br>
