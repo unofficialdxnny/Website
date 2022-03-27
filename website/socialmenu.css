@@ -35,7 +35,11 @@
     text-align: center;
     transition: .6s;
     box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    cursor: crosshair;
 }
+
+
+
 
 .social-menu ul li a:hover{
     transform: translate(0, -10%);
