@@ -2,6 +2,7 @@
 
 ### ChangeLog
   
+  fixed colour scheme 27/03/2022 @21:59 <br>
   capitalised `index.html`... 27/03/2022 @211:57 <br>
   fixed cursor for sociallinks 27/03/2022 @20:33 <br>
   removed light mode 27/03/2022 @20:24 <br>
