@@ -78,6 +78,7 @@ body{
  outline: none;
 }
 .navbar-light .navbar-toggler-icon {
+    background-color: #1f2029;
     cursor: crosshair;
 
  width: 24px;
@@ -89,6 +90,7 @@ body{
 }
 .navbar-light .navbar-toggler-icon:after, 
 .navbar-light .navbar-toggler-icon:before{
+    background-color: #1f2029;
     cursor: crosshair;
 
  width: 24px;
@@ -102,6 +104,7 @@ body{
     transition: all 300ms linear;
 }
 .navbar-light .navbar-toggler-icon:after{
+    background-color: #1f2029;
  top: 8px;
  cursor: crosshair;
 
@@ -300,56 +303,58 @@ body.hero-anime #switch{
  background-color: rgb(255,66,66,0.6);
 }
  
-body.dark{
+body{
  color: #fff;
  
  background-color: #1f2029;
 }
-body.dark h1{
+body h1{
  color: #fff;
 }
-body.dark h1 span{
+body h1 span{
     transition-delay: 0ms !important;
 }
-body.dark p{
+body p{
  color: #fff;
     transition-delay: 0ms !important;
 }
-body.dark .bg-light {
+body .bg-light {
  background-color: #14151a !important;
 }
-body.dark .start-header {
+body .start-header {
  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
-body.dark .start-header.scroll-on {
+body .start-header.scroll-on {
  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
-body.dark .nav-link{
+body .nav-link{
  color: #fff !important;
 }
-body.dark .nav-item.active .nav-link{
+body .nav-item.active .nav-link{
  color: #999 !important;
 }
-body.dark .dropdown-menu {
+body .dropdown-menu {
  color: #fff;
  background-color: #1f2029;
  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
 }
-body.dark .dropdown-item {
+body .dropdown-item {
  color: #fff;
 }
-body.dark .navbar-light .navbar-toggler-icon {
+body .navbar-light .navbar-toggler-icon {
+    background-color: #1f2029;
+    
  border-bottom: 1px solid #fff;
 }
-body.dark .navbar-light .navbar-toggler-icon:after, 
-body.dark .navbar-light .navbar-toggler-icon:before{
+body .navbar-light .navbar-toggler-icon:after, 
+body .navbar-light .navbar-toggler-icon:before{
  background-color: #fff;
 }
-body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+body .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
  border-color: transparent;
 }
- 
- 
+
+
 @media (max-width: 767px) { 
  h1{
  font-size: 38px;
@@ -396,13 +401,13 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
  margin-top: 10px !important;
  margin-bottom: 20px !important;
  }
- body.dark .nav-item::before {
+ body .nav-item::before {
  background-color: #fff;
  }
- body.dark .dropdown-toggle::after {
+ body .dropdown-toggle::after {
  background-color: #fff;
  }
- body.dark .dropdown-menu {
+ body .dropdown-menu {
  background-color: transparent;
  box-shadow: none;
  }
