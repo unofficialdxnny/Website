@@ -2,7 +2,8 @@
 
 ### ChangeLog
   
-  added blogs and clips .html 30/03/2022 @17:35
+  updated spotify now playing colour 31/03/2022 @20:51 <br>
+  added blogs and clips .html 30/03/2022 @17:35 <br>
   change bg color of index to match main 29/03/2022 @12:13
   fixed colour scheme 27/03/2022 @21:59 <br>
   capitalised `index.html`... 27/03/2022 @211:57 <br>
