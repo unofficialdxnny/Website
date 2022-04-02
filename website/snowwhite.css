@@ -26,7 +26,7 @@
 .ds4 .trigger {
     width: 99px;
     height: 100%;
-    background: url(ps4-assets/triggers.svgz);
+    background: url(https://imgur.com/fAhJN9o);
     opacity: 0;
 }
 
@@ -42,7 +42,7 @@
 .ds4 .bumper {
     width: 99px;
     height: 23px;
-    background: url(ps4-assets/bumper.svgz) no-repeat;
+    background: url(https://imgur.com/diCfCO3.png) no-repeat;
     opacity: 0;
 }
 
@@ -198,7 +198,7 @@ background-position: 0 -70px;
 
 .ds4 .stick {
     position: absolute;
-    background: url(ps4-assets/sticks.svgz);
+    background: url(https://imgur.com/mayJR2q.png);
     height: 94px;
     width: 94px;
 }
@@ -230,7 +230,7 @@ background-position: 0 -70px;
 }
 
 .ds4 .face {
-    background: url(ps4-assets/dpad.svgz);
+    background: url(https://imgur.com/VNY2Q2G.png);
     position: absolute;
 }
 
