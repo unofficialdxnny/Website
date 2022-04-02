@@ -2,7 +2,7 @@
 
 ### ChangeLog
   
-  added a fullsize preview 01/04/2022 @20:05 <br>
+  added a preview 01/04/2022 @20:05 <br>
   added site preview for link 31/03/2022 @23:02 <br>
   fixed titles 31/03/2022 @20:54 <br>
   updated spotify now playing colour 31/03/2022 @20:51 <br>
@@ -45,4 +45,3 @@
 
 ### ToAdd
 
-Add the blogs programming projects and clips pages
