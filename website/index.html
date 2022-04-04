@@ -50,58 +50,249 @@
 
 
 <link rel="icon" type="image/png" href="./img/favicon.png"/>
-<meta http-equiv="refresh" content="5; url='main.html'" />
+<meta http-equiv="refresh" content="100; url='main.html'" />
 
 <link rel="icon" type="image/png" href="./img/favicon.png"/>
 </head>
 
 <body scroll="no" style="overflow: hidden">
 
-
-<div id="greeting"></div>
-
-<script>
-  const greeting = document.getElementById("greeting");
-const hour = new Date().getHours();
-const welcomeTypes = ["Good Morning", "Good Afternoon", "Good Evening"];
-let welcomeText = "";
-
-if (hour < 12) welcomeText = welcomeTypes[0];
-else if (hour < 18) welcomeText = welcomeTypes[1];
-else welcomeText = welcomeTypes[2];
-
-greeting.innerHTML = welcomeText;
-
-
-</script>
-
-
+  <section class="showcase">
+    <div class="video-container">
+      <video src="indexgb.mp4" autoplay muted loop></video>
+    </div>
+    <div class="content">
+      <h1>Hey!<br /></h1>
+      <h3>Welcome To My Site!<br> Im Danial Ahmed AKA unofficialdxnny <br> I enjoy Programming, Movies (SKI-FI), Action books and Diaries
+      <br> Here on my site you will be able to Read my Blogs, Watch my game clips <br>Graphics Designs and View all of my projects</h3>
+      <br><br>
+      <a href="main.html"><button>Continue</button></a>
+    </div>
+  </section>
 <style>
-  
-body {
-  height: 100%;
-   overflow-y: hidden;
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-image: url('https://camo.githubusercontent.com/4e10e89a1987b88f8d4636a191e6d0e20ebfdd92e285a29e81188df1c89540f4/68747470733a2f2f63646e2e77616c6c70617065727361666172692e636f6d2f39362f38372f616b695738782e6a7067');
-    background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  }
-  div {
-    padding: 2rem;
-    border-radius: 15px;
-    font-size: 3rem;
-    color: rgb(255, 255, 255);
-  }
 
-  body{
-	background: #1f2029;
+/* If you like it the please show me some love💕 by clicking the ❤ button */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+:root {
+  --primary-color: #3a4052;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #9a98b5;
+  border-radius: 5px;
+}
+
+body::wid a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.showcase {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--primary-color) url("./cover.png") no-repeat center
+    center/cover;
+}
+
+.video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Overlay effect */
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  /* Keeps the video in the middle */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  z-index: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  /* background: var(--primary-color); */
+  color: #fff;
+  border: 1px #fff solid;
+  border-radius: 5px;
+  opacity: 0.8;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--primary-color);
+  opacity: 1;
+  transform: scale(0.95);
+}
+
+#about {
+  padding: 40px;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+#about h2 {
+  margin: 30px 0;
+  color: var(--primary-color);
+}
+
+.social a {
+  margin: 0 5px;
+  color: var(--primary-color);
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-instagram:hover {
+  color: #e1306c;
+}
+
+.fa-github:hover {
+  color: #6e5494;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+/* This is for animated button */
+
+/* From cssbuttons.io by @ShadowShahriar */
+button {
+ --border-radius: 15px;
+ --border-width: 4px;
+ appearance: none;
+ position: relative;
+ padding: 1em 2em;
+ border: 0;
+ background-color: transparent;
+ font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+ font-size: 18px;
+ font-weight: 500;
+ color: #fff;
+ z-index: 2;
+}
+
+button::after {
+ --m-i: linear-gradient(#000, #000);
+ --m-o: content-box, padding-box;
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ padding: var(--border-width);
+ border-radius: var(--border-radius);
+ background-image: conic-gradient(
+		#488cfb,
+		#29dbbc,
+		#ddf505,
+		#ff9f0e,
+		#e440bb,
+		#655adc,
+		#488cfb
+	);
+ -webkit-mask-image: var(--m-i), var(--m-i);
+ mask-image: var(--m-i), var(--m-i);
+ -webkit-mask-origin: var(--m-o);
+ mask-origin: var(--m-o);
+ -webkit-mask-clip: var(--m-o);
+ mask-composite: exclude;
+ -webkit-mask-composite: destination-out;
+ filter: hue-rotate(0);
+ animation: rotate-hue linear 500ms infinite;
+ animation-play-state: paused;
+}
+
+button:hover::after {
+ animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+ to {
+  filter: hue-rotate(1turn);
+ }
+}
+
+button,
+button::after {
+ box-sizing: border-box;
+}
+
+button:active {
+ --border-width: 5px;
+}
 </style>
+
 
 </body>
