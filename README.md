@@ -2,8 +2,8 @@
 
 ### ChangeLog
   
-  
-  added a preview for Whatsapp and Facebook 3/04/2022 @14:23 <br>
+  Changed index page which will contain some `about-me` 04/04/2022 @23:58 <br>
+  added a preview for Whatsapp and Facebook 0/04/2022 @14:23 <br>
   added a large image preview 02/04/2022 @22:44 <br>
   added a LARGE preview 02/04/2022 @17:17 <br>
   added a preview 01/04/2022 @20:05 <br>
