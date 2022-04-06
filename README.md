@@ -2,6 +2,7 @@
 
 ### ChangeLog
   
+  added a paypal socialmenu 06/04/2022 @15:19 <br>
   Added a about me to index page 05/04/2022 @00:08 <br>
   Changed index page which will contain some `about-me` 04/04/2022 @23:58 <br>
   added a preview for Whatsapp and Facebook 0/04/2022 @14:23 <br>
