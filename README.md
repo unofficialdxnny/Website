@@ -2,8 +2,8 @@
 
 ### ChangeLog
   
-  changed server invite link 12/05/2022 @23:54
-  fixed blogs.html 12/05/2022 @23:54
+  changed server invite link 12/05/2022 @23:54<br>
+  fixed blogs.html 12/05/2022 @23:54<br>
   changed timetable 04/05/2022 @16:52 <br>
   changed `main.html` to `index.html` 16/04/2022 @19:05 <br>
   added a paypal socialmenu 06/04/2022 @15:19 <br>
