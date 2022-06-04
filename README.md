@@ -2,6 +2,7 @@
 
 ### ChangeLog
   
+  edited embed banner 04/06/2022 @13:23<br>
   changed server invite link 12/05/2022 @23:54<br>
   fixed blogs.html 12/05/2022 @23:54<br>
   changed timetable 04/05/2022 @16:52 <br>
