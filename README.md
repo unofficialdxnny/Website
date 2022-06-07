@@ -2,6 +2,7 @@
 
 ### ChangeLog
   
+  redoing whole site from scratch 07/06/2022 @04:04 <br>
   edited embed banner 04/06/2022 @13:23<br>
   changed server invite link 12/05/2022 @23:54<br>
   fixed blogs.html 12/05/2022 @23:54<br>
