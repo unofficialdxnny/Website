@@ -1,57 +1,61 @@
-body{
-    width: auto;
-    height: auto;   
+/* NAVBAR */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
 }
 
-/* Light / Dark Mode*/
-/* The switch - the box around the slider */
-.switch {
-    font-size: 17px;
-    position: relative;
-    display: inline-block;
-    width: 3.5em;
-    height: 2em;
-  }
+li, a, button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
   
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
   
-  /* The slider */
-  .slider {
-    --background: #28096b;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--background);
-    transition: .5s;
-    border-radius: 30px;
-  }
+}
+
+.nav-links li a:hover {
+  color: white;
   
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 1.4em;
-    width: 1.4em;
-    border-radius: 50%;
-    left: 10%;
-    bottom: 15%;
-    box-shadow: inset 8px -4px 0px 0px #fff000;
-    background: var(--background);
-    transition: .5s;
-  }
-  
-  input:checked + .slider {
-    background-color: #522ba7;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(100%);
-    box-shadow: inset 15px -4px 0px 15px #fff000;
-  }
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #0088a9;
+  opacity: 1;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: url('https://avatars.githubusercontent.com/u/82535503?s=48&v=4');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  opacity: 0.8;
+}

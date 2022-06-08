@@ -1,3 +1,5 @@
+// Console.log()
+
 function colorate(message, color) {
 
   color = color || "black";
@@ -24,21 +26,11 @@ function colorate(message, color) {
 
 colorate('unofficialdxnny Website - Remaking since 07/06/2022 04:00', "info")
 // updates / changelog for my site :)
-fetch('https://raw.githubusercontent.com/unofficialdxnny/unofficialdxnny-website/main/website/assets/update.txt')
+fetch('./assets/update.txt')
   .then(response => response.text())
   .then(data => {
   	
   	colorate(data, "info")
   });
-
-
-function check(){
-   if(document.getElementById('checkbox').checked){
-        console.log('Redirecting...')
-       window.location='dark-index.html';
-       return false;
-   }
-   return true;
-   }
 
 
