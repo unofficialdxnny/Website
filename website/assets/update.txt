@@ -14,7 +14,8 @@
  \   \ .'  `--''     |  ,     .-./'---'        |   :    : \   \  /                      |   :    : 
   `---`               `--`---'                  \   \  /   `----'                        \   \  /  
                                                  `--`-'                                   `--`-'   
-                                                 
+
+site will show `changelog` according to last commit from raw url 08/06/2022 @07:11                      
 added color to the `console` window @08/06/2022 @06:21
 added `changelog` to console window 07/06/2022 @04:40
 redoing whole site from scratch 07/06/2022 @04:04

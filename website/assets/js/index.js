@@ -24,15 +24,21 @@ function colorate(message, color) {
 
 colorate('unofficialdxnny Website - Remaking since 07/06/2022 04:00', "info")
 // updates / changelog for my site :)
-fetch('/assets/update.txt')
+fetch('https://raw.githubusercontent.com/unofficialdxnny/unofficialdxnny-website/main/website/assets/update.txt')
   .then(response => response.text())
   .then(data => {
   	
   	colorate(data, "info")
   });
 
-const custom = {
-     command() {
-        console.log("This is my custom command.");
-    },
-}; 
+
+function check(){
+   if(document.getElementById('checkbox').checked){
+        console.log('Redirecting...')
+       window.location='dark-index.html';
+       return false;
+   }
+   return true;
+   }
+
+
