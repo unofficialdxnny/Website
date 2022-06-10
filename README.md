@@ -2,8 +2,9 @@
 
 ![image](https://user-images.githubusercontent.com/82535503/172290342-43143bd2-8969-4a9b-a4c9-89015eab771a.png)
 
-- added better navbar with button animation 08/06/2022 @19:13
-- site will show `changelog` according to last commit from raw url 08/06/2022 @07:11                      
+- updated index.html 10/06/2022 @01:10 <br>
+- added better navbar with button animation 08/06/2022 @19:13<br>
+- site will show `changelog` according to last commit from raw url 08/06/2022 @07:11  <br>                   
 - added color to the `console` window @08/06/2022 @06:21<br>
 - added `changelog` to console window 07/06/2022 @04:40<br>
 - redoing whole site from scratch 07/06/2022 @04:04<br>
