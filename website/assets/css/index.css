@@ -2,9 +2,19 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: lightgrey;
+}
+body{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+  cursor: crosshair;
 }
 
 li, a, button {
@@ -13,6 +23,7 @@ li, a, button {
   font-size: 16px;
   color: black;
   text-decoration: none;
+  cursor: crosshair;
 }
 
 header {
@@ -49,13 +60,51 @@ button {
   border: none;
   border-radius: 50px;
   transition: all 0.3s ease 0s;
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 button:hover {
   background-image: url('https://avatars.githubusercontent.com/u/82535503?s=400&u=36b79e1b227f3a5a57440485370c7b9113a7f360&v=4');
   background-repeat: no-repeat;
   background-position: center;
-  background-color: black;
+  background-color: transparent;
   opacity: 0.8;
+}
+
+/* namechange */
+.namechange             { width:-5em }
+.namechange:after       { content:'unofficialdxnny'; }
+.namechange:hover:after { content:'Danial Ahmed'; }
+
+/*Floating image*/
+
+
+.object {  
+  animation-name: object;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes object {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+img{
+  display: flex;
+  justify-content: center;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
 }

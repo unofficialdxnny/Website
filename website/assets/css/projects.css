@@ -1,0 +1,63 @@
+/* NAVBAR */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+  }
+  
+  li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav-links li a {
+    transition: all 0.3s ease 0s;
+    
+  }
+  
+  .nav-links li a:hover {
+    color: white;
+    
+  }
+  
+  button {
+    padding: 9px 25px;
+    background-color: #0088a9;
+    opacity: 1;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-image: url('https://avatars.githubusercontent.com/u/82535503?s=400&u=36b79e1b227f3a5a57440485370c7b9113a7f360&v=4');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    opacity: 0.8;
+  }
+  
+  
