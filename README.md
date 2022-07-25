@@ -4,7 +4,7 @@
 
 
 
-- I GIVEUP UPDATING THIS README LOL SORRY to myself in the future
+- **I GIVEUP UPDATING THIS README LOL SORRY to myself in the future**
 - added sound effects directory for sound pack to use in other apps 13/06/2022 @02:15 <br>
 - updated index.html 10/06/2022 @01:10 <br>
 - added better navbar with button animation 08/06/2022 @19:13<br>
