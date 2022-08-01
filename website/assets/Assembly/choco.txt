@@ -1,17 +1,25 @@
-googlechrome
-vlc
-git.install
-winrar
-gimp
-python3
-pip
-curl
-wget
-nodejs
-audacity
-rufus
-steam
-vscode
-geforce-experience
-jre8
-zoom
+choco install googlechrome -y --force
+choco install speccy -y --force
+choco install telegram.install -y --force
+choco install vlc -y --force
+choco install audacity -y --force
+choco install obs-studio -y --force
+choco install steam -y --force
+choco install epicgameslauncher -y --force
+choco install origin -y --force
+choco install ds4windows -y --force
+choco install msiafterburner -y --force
+choco install microsoft-windows-terminal -y --force
+choco install blender -y --force
+choco install rufus -y --force
+choco install git -y --force
+choco install python3 -y --force
+choco install winrar -y --force
+choco install teamviewer -y --force
+choco install vscode -y --force
+choco install nodejs -y --force 
+choco install geforce-experience -y --force
+choco install discord -y --force
+choco install taskbarx -y --force
+choco install translucenttb -y --force
+choco install zoom -y --force
