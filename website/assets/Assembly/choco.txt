@@ -1,0 +1,17 @@
+googlechrome
+vlc
+git.install
+winrar
+gimp
+python3
+pip
+curl
+wget
+nodejs
+audacity
+rufus
+steam
+vscode
+geforce-experience
+jre8
+zoom
