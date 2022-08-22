@@ -1,5 +1,4 @@
 # unofficialdxnny-website
-### No longer the updated src (for now) since i cant upload large files yet
 ![image](https://user-images.githubusercontent.com/82535503/172290342-43143bd2-8969-4a9b-a4c9-89015eab771a.png)
 
 
