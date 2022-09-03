@@ -1,0 +1,4 @@
+pyautogui
+random
+keyboard
+mouse
