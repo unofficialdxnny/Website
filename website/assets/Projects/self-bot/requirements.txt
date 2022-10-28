@@ -1,4 +1,0 @@
-pyautogui
-random
-keyboard
-mouse

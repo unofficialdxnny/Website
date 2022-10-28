@@ -1,9 +1,0 @@
-pathlib
-playsound
-glob
-rich
-colorama
-keyboard
-opencv-python
-pillow
-playsound

@@ -1,5 +1,0 @@
-keyboard
-pyautogui
-pypresence
-playsound
-
