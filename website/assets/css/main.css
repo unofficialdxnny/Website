@@ -43,7 +43,7 @@ a:hover {
 
 #post {
   margin-top: 65px;
-  
+  margin-bottom: -50px;
   display: flex;
   gap: 2%;
   background: var(--s-bg);
@@ -57,6 +57,7 @@ a:hover {
 
 #placeholder {
   align-self: center;
+  margin-left: 400px;
   color: gray;
 }
 
@@ -108,7 +109,7 @@ aside {
   box-shadow: 0 0 25px black;
   padding-inline: 1%;
   text-align: center;
-
+  border: 3px solid gray;
   border-radius: 10px;
   color: white;
   
@@ -118,6 +119,15 @@ h2 {
   color:  #FFD700;
 }
 
+#title {
+  color:  #FFD700;
+  
+  text-align: center;
+}
+
+#cc {
+  text-align: center;
+}
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -146,7 +156,7 @@ h2 {
 
 
 #ghstats{
-  margin-top: -50px;
+  margin-top: -20px;
   margin-left: -35px;
 }
 
@@ -162,3 +172,6 @@ h2 {
   height: 500px;
   margin-top: -100px;
 }
+
+
+
