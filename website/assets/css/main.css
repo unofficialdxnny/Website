@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+
+img {
+    
+    border-radius: 50%;
+    margin-top: 15%;
+    margin-left: 1%;
+
+  }
+
+::selection{
+  color: transparent;
+}
+
+main {
+  background-color: var(--bg);
+  height: 100%;
+  display: flex;
+  gap: 1%;
+}
+
+h2{
+  size: px;
+}
+
+
+aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 20%;
+  max-width: 25%;
+  margin-left: 20%;
+  margin-top: 20%;
+  box-shadow: 0 0 25px black;
+  padding-inline: 1%;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  
+}
+
+
