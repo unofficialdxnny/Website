@@ -10,3 +10,7 @@
     font-family: "Montserrat", sans-serif;
     background-image: "./assets/images/Background.jpg";
   }
+
+  a {
+    color: white;
+  }

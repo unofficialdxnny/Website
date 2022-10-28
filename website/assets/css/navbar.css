@@ -13,7 +13,7 @@ body {
 
 .navMenu {
   position: absolute;
-  top: 5%;
+  top: 7%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
