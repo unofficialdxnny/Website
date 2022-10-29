@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 *, *::before, *::after {
@@ -119,6 +119,10 @@ h2 {
   color:  #FFD700;
 }
 
+h3 {
+  color: #F2AA4CFF;
+}
+
 #title {
   color:  #FFD700;
   
@@ -156,14 +160,14 @@ h2 {
 
 
 #ghstats{
-  margin-top: -20px;
+  margin-top: 20px;
   margin-left: -35px;
 }
 
 
 #ghstreak{
   margin-left: 365px;
-  margin-top: -400px;
+  margin-top: -1000rem;
   
 }
 
