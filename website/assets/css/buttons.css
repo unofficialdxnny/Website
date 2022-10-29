@@ -1,68 +1,73 @@
-/* From uiverse.io by @ShadowShahriar */
+/* From uiverse.io by @mrhyddenn */
 button {
-    --border-radius: 15px;
-    --border-width: 4px;
-    appearance: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
     position: relative;
-    padding: 1em 2em;
-    border: 0;
-    background-color: #272727;
-    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 17px;
+    background: #333;
+    border: none;
     color: #fff;
-    z-index: 2;
-   }
-   
-   button::after {
-    --m-i: linear-gradient(#000, #000);
-    --m-o: content-box, padding-box;
-    content: "";
+  }
+  
+  button:hover {
+    letter-spacing: 0.25em;
+    background: #FFD700;
+    color: #FFD700;
+    box-shadow: 0 0 45px #FFD700;
+  }
+  
+  button::before {
+    content: '';
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: var(--border-width);
-    border-radius: var(--border-radius);
-    background-image: conic-gradient(
-           #488cfb,
-           #29dbbc,
-           #ddf505,
-           #ff9f0e,
-           #e440bb,
-           #655adc,
-           #488cfb
-       );
-    -webkit-mask-image: var(--m-i), var(--m-i);
-    mask-image: var(--m-i), var(--m-i);
-    -webkit-mask-origin: var(--m-o);
-    mask-origin: var(--m-o);
-    -webkit-mask-clip: var(--m-o);
-    mask-composite: exclude;
-    -webkit-mask-composite: destination-out;
-    filter: hue-rotate(0);
-    animation: rotate-hue linear 500ms infinite;
-    animation-play-state: paused;
-   }
-   
-   button:hover::after {
-    animation-play-state: running;
-   }
-   
-   @keyframes rotate-hue {
-    to {
-     filter: hue-rotate(1turn);
-    }
-   }
-   
-   button,
-   button::after {
-    box-sizing: border-box;
-   }
-   
-   button:active {
-    --border-width: 5px;
-   }
-
-
+    inset: 2px;
+    background: #222222;
+  }
+  
+  button span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  button i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #FFD700;
+    width: 7px;
+    height: 4px;
+    top: -3.5px;
+    left: 80%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  button:hover i::before {
+    width: 20px;
+    left: 20%;
+  }
+  
+  button i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #FFD700;
+    width: 7px;
+    height: 4px;
+    bottom: -3.5px;
+    left: 20%;
+    background: #222222;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+  
+  button:hover i::after {
+    width: 20px;
+    left: 80%;
+  }
