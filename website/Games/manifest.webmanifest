@@ -1,0 +1,12 @@
+{
+  "name": "Game Project",
+  "short_name": "Game Project",
+  "id": "com.example.gamename",
+  "description": "Head on into the Adventure, Collect coins, bypass obstacles, fight beasts and repeat.",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
