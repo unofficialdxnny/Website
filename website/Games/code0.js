@@ -36,7 +36,7 @@ gdjs.Loading_32SceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnOb
 }if ( gdjs.Loading_32SceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Loading_32SceneCode.conditionTrue_1 = gdjs.Loading_32SceneCode.condition1IsTrue_0;
-gdjs.Loading_32SceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8116764);
+gdjs.Loading_32SceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8204804);
 }
 }}
 if (gdjs.Loading_32SceneCode.condition1IsTrue_0.val) {

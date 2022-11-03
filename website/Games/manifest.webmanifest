@@ -1,6 +1,6 @@
 {
-  "name": "Game Project",
-  "short_name": "Game Project",
+  "name": "Back2Adventure",
+  "short_name": "Back2Adventure",
   "id": "com.example.gamename",
   "description": "Head on into the Adventure, Collect coins, bypass obstacles, fight beasts and repeat.",
   "orientation": "landscape",
