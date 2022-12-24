@@ -3,7 +3,7 @@ const isMobileDeviceCheck = () => {
     const mobileOsRegExp = "(Android|webOS|iPhone|iPod)";
     if(screen.width < 500 || navigator.userAgent.match('/'+mobileOsRegExp+'/i')) {
         ___isMobileDevice = true;
-        window.prompt('Currently The Site Is Not Mobile Friendly');
+        window.alert('Currently The Site Is Not Mobile Friendly');
     }
     if (___isMobileDevice) {
         if (typeof window.orientation === "undefined") {
