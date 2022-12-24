@@ -6,6 +6,11 @@ const isMobileDeviceCheck = () => {
         window.alert('Currently The Site Is Not Mobile Friendly');
         const myImg = document.getElementById("Spotify-now-playing");
 
+
+
+        document.getElementById("heading").style.padding = "0px 0px 0px 0px";
+
+
         myImg.style.width = "200px";
         document.getElementById("Spotify-now-playing").style.padding = "0px 350px 0px 0px";
 
