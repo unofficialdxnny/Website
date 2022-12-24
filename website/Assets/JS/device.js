@@ -8,7 +8,7 @@ const isMobileDeviceCheck = () => {
 
 
 
-        document.getElementById("heading").style.padding = "500px 0px 0px 0px";
+        document.getElementById("heading").style.padding = "500px 50px 0px 0px";
 
 
         Spotify.style.width = "350px";
