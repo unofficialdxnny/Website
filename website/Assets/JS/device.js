@@ -4,15 +4,15 @@ const isMobileDeviceCheck = () => {
     if(screen.width < 500 || navigator.userAgent.match('/'+mobileOsRegExp+'/i')) {
         ___isMobileDevice = true;
         window.alert('Currently The Site Is Not Mobile Friendly');
-        const myImg = document.getElementById("Spotify-now-playing");
+        const Spotify = document.getElementById("Spotify-now-playing");
 
 
 
         document.getElementById("heading").style.padding = "0px 0px 0px 0px";
 
 
-        myImg.style.width = "300px";
-        document.getElementById("Spotify-now-playing").style.padding = "0px 350px 0px 0px";
+        Spotify.style.width = "350px";
+        document.getElementById("Spotify-now-playing").style.padding = "500px 325px 0px 0px";
 
 
     }
