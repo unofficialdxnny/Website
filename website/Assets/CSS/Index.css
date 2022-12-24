@@ -1,0 +1,37 @@
+body {
+    background-color: #202020;
+}
+
+
+#heading {
+    color: #f2aa4c;
+    text-align: center;
+    padding-top: 275px;
+    user-select: none;
+
+}
+
+
+#Spotify-now-playing {
+    padding-left: 550px;
+    -webkit-user-select: none;
+}
+
+
+#socials-instagram {
+    width: 30px;
+    padding-left: 660px;
+    -webkit-user-select: none;
+}
+
+#socials-discord {
+    width: 30px;
+    padding-left: 10px;
+    -webkit-user-select: none;
+}
+
+#socials-twitter {
+    width: 30px;
+    padding-left: 10px;
+    -webkit-user-select: none;
+}
