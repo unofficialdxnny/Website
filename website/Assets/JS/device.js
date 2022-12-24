@@ -6,7 +6,7 @@ const isMobileDeviceCheck = () => {
         window.alert('Currently The Site Is Not Mobile Friendly');
         const myImg = document.getElementById("Spotify-now-playing");
 
-        myImg.style.width = "500px";
+        myImg.style.width = "200px";
 
     }
     if (___isMobileDevice) {
