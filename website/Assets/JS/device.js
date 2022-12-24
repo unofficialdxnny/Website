@@ -4,6 +4,10 @@ const isMobileDeviceCheck = () => {
     if(screen.width < 500 || navigator.userAgent.match('/'+mobileOsRegExp+'/i')) {
         ___isMobileDevice = true;
         window.alert('Currently The Site Is Not Mobile Friendly');
+        const myImg = document.getElementById("Spotify-now-playing");
+
+        myImg.style.width = "500px";
+
     }
     if (___isMobileDevice) {
         if (typeof window.orientation === "undefined") {
