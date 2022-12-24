@@ -7,9 +7,16 @@ const isMobileDeviceCheck = () => {
         const myImg = document.getElementById("Spotify-now-playing");
 
         myImg.style.width = "200px";
-        myImg.style.padding-right = "500px"
+        document.getElementById("Spotify-now-playing").style.padding = "0px 550px 0px 0px";
+
 
     }
+
+
+
+
+
+
     if (___isMobileDevice) {
         if (typeof window.orientation === "undefined") {
             ___isMobileDevice = false; 
