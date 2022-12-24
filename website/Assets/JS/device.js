@@ -11,7 +11,7 @@ const isMobileDeviceCheck = () => {
         document.getElementById("heading").style.padding = "0px 0px 0px 0px";
 
 
-        myImg.style.width = "200px";
+        myImg.style.width = "300px";
         document.getElementById("Spotify-now-playing").style.padding = "0px 350px 0px 0px";
 
 
