@@ -18,20 +18,44 @@ body {
 }
 
 
-#socials-instagram {
+.socials-instagram {
     width: 30px;
     padding-left: 660px;
     -webkit-user-select: none;
 }
 
-#socials-discord {
+.socials-discord {
     width: 30px;
     padding-left: 10px;
     -webkit-user-select: none;
 }
 
-#socials-twitter {
+.socials-twitter {
     width: 30px;
     padding-left: 10px;
     -webkit-user-select: none;
+    background-image: url('https://unofficialdxnny.netlify.app/Assets/Images/twitter.png');
+
+}
+
+
+
+
+.socials-instagram:hover {
+    width: 30px;
+    padding-left: 660px;
+    -webkit-user-select: none;
+}
+
+.socials-discord:hover {
+    width: 30px;
+    padding-left: 10px;
+    -webkit-user-select: none;
+}
+
+.socials-twitter:hover {
+    width: 30px;
+    padding-left: 10px;
+    -webkit-user-select: none;
+    background-image: ('./Assets/Images/twitter-h.png');
 }
