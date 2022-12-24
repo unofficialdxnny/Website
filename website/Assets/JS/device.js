@@ -12,7 +12,7 @@ const isMobileDeviceCheck = () => {
 
 
         Spotify.style.width = "350px";
-        document.getElementById("Spotify-now-playing").style.padding = "0px 325px 0px 0px";
+        document.getElementById("Spotify-now-playing").style.padding = "0px 325px 0px 220px";
 
 
     }
