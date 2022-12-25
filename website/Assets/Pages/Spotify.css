@@ -1,0 +1,19 @@
+body {
+    background-color: #202020;
+    filter: blur(0px);
+    margin-left: auto;
+    margin-right: auto;
+    scroll-behavior: smooth;
+
+}
+
+#Spotify-now-playing {
+    padding-left: 0px;
+    padding-top: 200px;
+    -webkit-user-select: none;
+    
+    height: 100%;
+    width: 100%;
+
+  
+}
