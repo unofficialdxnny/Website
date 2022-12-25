@@ -11,7 +11,6 @@
 <body>
 
 
-
     <h1 id="heading">unofficialdxnny</h1>
     <p5>I'm a self-taught passionate FrontEnd and CLI Application developer from The United Kingdom.</p5>
 
@@ -22,7 +21,35 @@
 <a href="https://twitter.com/dxnny2005"><img class="socials-twitter" src="./Assets/Images/twitter.png" alt="" srcset=""></a>
 
 </div>
+<script src="https://cdn.jsdelivr.net/gh/xaronnn/js-lanyard/lanyard.js"></script>
+<script type="text/javascript">
+    // websocket with single user example
+    lanyard({
+        userId: "898937224895270972",
+        socket: true,
+        onPresenceUpdate: console.log // presenceData
+    }) // returns a websocket
 
+    // websocket with multiple users example
+    lanyard({
+        userId: ["898937224895270972", "331846231514939392"],
+        socket: true,
+        onPresenceUpdate: console.log // presenceData[]
+    }) // returns a websocket
+
+    // rest with single user example
+    lanyard({
+        userId: "898937224895270972",
+    }).then(console.log) // presenceData
+
+    // rest with multiple  users example
+    lanyard({
+        userId: ["898937224895270972", "331846231514939392"],
+    }).then(console.log) // presenceData[]
+
+
+
+</script>
 
 
 
@@ -34,6 +61,8 @@
     <script src="./Assets/JS/dragless.js"></script>
     <script src="./Assets/JS/device.js"></script>
     <script src="./Assets/JS/status.js"></script>
+    <script src="./Assets/JS/lanyard.js"></script>
+
 
 </body>
 </html>

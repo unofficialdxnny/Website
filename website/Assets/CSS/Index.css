@@ -18,6 +18,10 @@ body {
     text-align: center;
     padding-top: 275px;
     user-select: none;
+    text-shadow: #f3a500;
+    box-shadow: #f3a500;
+    text-decoration: underline;
+    text-decoration-color: #f3a500;
 
 }
 
@@ -81,3 +85,6 @@ p5 {
     -ms-overflow-style: none;  
     scrollbar-width: none;  
   }
+
+
+
