@@ -2,58 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>unofficialdxnny | Home</title>
+
     <link rel="stylesheet" href="./Assets/CSS/Index.css">
     <link rel="shortcut icon" href="https://github.com/unofficialdxnny/unofficialdxnny-website/blob/main/img/favicon.png?raw=true" type="image/x-icon">
 </head>
 <body>
 
-
+<div class="introduction">
     <h1 id="heading">unofficialdxnny</h1>
     <p5>I'm a self-taught passionate FrontEnd and CLI Application developer from The United Kingdom.</p5>
 
-<img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view.svg?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&bar_color=f2aa4c&bar_color_cover=false?rand=">
+<a target="_blank" target="_blank" href="https://open.spotify.com/user/ahmeddanial"><img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view.svg?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&bar_color=f2aa4c&bar_color_cover=false?rand="></a>
 
-<a href="https://instagram.com/unofficialdxnny"><img class="socials-instagram" src="./Assets/Images/instagram.png" alt="" srcset=""></a>
-<a href="https://discord.gg/8WyFZF3kqn"><img class="socials-discord" src="./Assets/Images/discord.png" alt="" srcset=""></a>
-<a href="https://twitter.com/dxnny2005"><img class="socials-twitter" src="./Assets/Images/twitter.png" alt="" srcset=""></a>
+<a target="_blank" href="https://instagram.com/unofficialdxnny"><img class="socials-instagram" src="./Assets/Images/instagram.png" alt="" srcset=""></a>
+<a target="_blank" href="https://discord.gg/8WyFZF3kqn"><img class="socials-discord" src="./Assets/Images/discord.png" alt="" srcset=""></a>
+<a target="_blank" href="https://twitter.com/dxnny2005"><img class="socials-twitter" src="./Assets/Images/twitter.png" alt="" srcset=""></a>
 
 </div>
-<script src="https://cdn.jsdelivr.net/gh/xaronnn/js-lanyard/lanyard.js"></script>
-<script type="text/javascript">
-    // websocket with single user example
-    lanyard({
-        userId: "898937224895270972",
-        socket: true,
-        onPresenceUpdate: console.log // presenceData
-    }) // returns a websocket
-
-    // websocket with multiple users example
-    lanyard({
-        userId: ["898937224895270972", "331846231514939392"],
-        socket: true,
-        onPresenceUpdate: console.log // presenceData[]
-    }) // returns a websocket
-
-    // rest with single user example
-    lanyard({
-        userId: "898937224895270972",
-    }).then(console.log) // presenceData
-
-    // rest with multiple  users example
-    lanyard({
-        userId: ["898937224895270972", "331846231514939392"],
-    }).then(console.log) // presenceData[]
 
 
+<div class="repositories">
+    <h1 id="heading">Top Repositories</h1>
 
-</script>
+<div class="copyright">
+<a href="">unofficialdxnny • 2022</a>
+    
+</div>
+
+
+<style>
+    .dark-mode {
+  background-color: #202020;
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.theme {
+    position: absolute;
+    padding-left: 1250px;
+    padding-top: 290px;
+    
+}
 
 
 
+</style>
+<div class="theme">
+    <img onclick="dark_mode()" src="./Assets/Images/theme_moon.png" alt="theme" width="15">
+    <a target="_blank" href="https://github.com/unofficialdxnny/Website"> • View Source</a>
 
+
+</div>
+
+<script>
+    function dark_mode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+
+    </script>
 
 
     <script src="./Assets/JS/Index.js"></script>

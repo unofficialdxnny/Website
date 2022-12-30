@@ -1,28 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Rubik+Bubbles&display=swap');
+
 html, body { margin: 0; width: 100%; height: 100%; }
 
 
 body {
-    background-color: #202020;
+    background-color: ;
     filter: blur(0px);
     margin-left: auto;
     margin-right: auto;
     scroll-behavior: smooth;
+    user-select: none;
+    animation: fadeOut 5s;
 
+}
+
+@keyframes fadeOut {
+  100% { opacity: 1; }
+  0% { opacity: 0; }
 }
 
 
 
-
 #heading {
+    font-family: 'Caveat', cursive;
     color: #f2aa4c;
     text-align: center;
-    padding-top: 275px;
+    padding-top: px;
     user-select: none;
     text-shadow: #f3a500;
     box-shadow: #f3a500;
-    text-decoration: underline;
+    text-decoration: ;
     text-decoration-color: #f3a500;
 
+   
 }
 
 
@@ -78,6 +89,7 @@ p5 {
     text-align: center;
     padding-left: 435px;
     color: #f2aa4c;
+    
 }
 
 ::-webkit-scrollbar {
@@ -87,4 +99,28 @@ p5 {
   }
 
 
+
+.introduction {
+    background-color: #181a1b;
+    padding-top: 150px;
+    
+
+
+}
+
+
+.copyright {
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    bottom: 0px;
+    right: 1250px;
+    size: 1000px;
+}
+
+a {
+    color: #f2aa4c;
+    cursor: default;
+    text-decoration: none;
+    
+}
 
