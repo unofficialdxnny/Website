@@ -11,14 +11,10 @@ body {
     margin-right: auto;
     scroll-behavior: smooth;
     user-select: none;
-    animation: fadeOut 5s;
 
 }
 
-@keyframes fadeOut {
-  100% { opacity: 1; }
-  0% { opacity: 0; }
-}
+
 
 
 
@@ -117,6 +113,8 @@ p5 {
     size: 1000px;
 }
 
+
+
 a {
     color: #f2aa4c;
     cursor: default;
@@ -124,3 +122,10 @@ a {
     
 }
 
+
+.src {
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    bottom: 0px;
+    padding-left: 10px;
+}
