@@ -105,13 +105,6 @@ p5 {
 }
 
 
-.copyright {
-    font-family: 'Caveat', cursive;
-    position: absolute;
-    bottom: 0px;
-    right: 1250px;
-    size: 1000px;
-}
 
 
 
@@ -122,10 +115,23 @@ a {
     
 }
 
+.copyright {
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    bottom: 0px;
+    right: 1250px;
+    size: 1000px;
+}
 
 .src {
     font-family: 'Caveat', cursive;
     position: absolute;
     bottom: 0px;
     padding-left: 10px;
+}
+
+.theme {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
 }
