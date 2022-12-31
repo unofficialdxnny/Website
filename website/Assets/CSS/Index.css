@@ -127,14 +127,7 @@ a {
 
 
 
-.copyright {
-    font-family: 'Caveat', cursive;
-    position: absolute;
-    bottom: 0px;
-    
-    right: 1250px;
-    size: 1000px;
-}
+
 
 .src {
     font-family: 'Caveat', cursive;
@@ -162,3 +155,23 @@ a {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
+
+
+  /* For Hover Effect */
+
+
+  .src {
+	
+	text-decoration: none;
+}
+
+
+
+.copyright {
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    bottom: 0px;
+    
+    right: 1250px;
+    size: 1000px;
+}
