@@ -22,7 +22,7 @@ body {
     font-family: 'Caveat', cursive;
     color: #f2aa4c;
     text-align: center;
-    padding-top: px;
+
     user-select: none;
     text-shadow: #f3a500;
     box-shadow: #f3a500;
@@ -82,11 +82,17 @@ body {
 }
 
 p5 {
+    font-family: 'Caveat', cursive;
+
     text-align: center;
-    padding-left: 435px;
+    padding-left: 535px;
     color: #f2aa4c;
     
 }
+
+
+
+
 
 ::-webkit-scrollbar {
     display: none;
@@ -98,7 +104,7 @@ p5 {
 
 .introduction {
     background-color: #181a1b;
-    padding-top: 150px;
+    padding-top: 1px;
     
 
 
@@ -112,8 +118,11 @@ a {
     color: #f2aa4c;
     cursor: default;
     text-decoration: none;
+
     
 }
+
+
 
 .copyright {
     font-family: 'Caveat', cursive;
@@ -135,3 +144,5 @@ a {
     bottom: 0px;
     right: 100px;
 }
+
+
