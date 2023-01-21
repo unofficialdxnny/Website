@@ -1,8 +1,16 @@
 
 
-if ("username" in localStorage) {
+const username_input = document.getElementById("submit");
+
+const input_fiels = document.getElementById("usernameTxt");
+
+
+
+if ("username" in sessionStorage) {
+
+   
     
-     document.getElementById("result").innerHTML = localStorage.getItem("username");
+     document.getElementById("result").innerHTML = sessionStorage.getItem("username");
     
 
  } else {
@@ -11,10 +19,12 @@ if ("username" in localStorage) {
   function submitForm() {
     const username = document.getElementById("usernameTxt").value;
 
-      localStorage.setItem("username", username);
+      sessionStorage.setItem("username", username);
 
-   document.getElementById("result").innerHTML = localStorage.getItem("username");
+   document.getElementById("result").innerHTML = sessionStorage.getItem("username");
 
+   username_input.remove()
+   input_fields.remove()
   }
 
  }
