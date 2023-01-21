@@ -1,17 +1,23 @@
 
 
+if ("username" in localStorage) {
+    
+     document.getElementById("result").innerHTML = localStorage.getItem("username");
+    
 
+ } else {
 
+  alert('Username not found. Type your username in the input field...')
+  function submitForm() {
+    const username = document.getElementById("usernameTxt").value;
 
-// Check browser support
-if (typeof(Storage) !== "undefined") {
-    // Write
-    let username = prompt("Whats your Snapchat username?", "");
+      localStorage.setItem("username", username);
 
-    // Store
-    localStorage.setItem("username", username);
-    // Retrieve
-    document.getElementById("result").innerHTML = localStorage.getItem("username");
-  } else {
-    document.getElementById("result").innerHTML = "";  
+   document.getElementById("result").innerHTML = localStorage.getItem("username");
+
   }
+
+ }
+
+
+
