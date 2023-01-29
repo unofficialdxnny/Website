@@ -1,10 +1,6 @@
 
-
-
-
-
-if (document.body.style.backgroundColor = "Alto") {
-   localStorage.setItem("theme", "light")
+if (localStorage.setItem("theme", "light")) {
+   
    document.body.style.backgroundColor = "Alto";
 
 } 
