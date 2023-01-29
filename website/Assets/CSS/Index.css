@@ -12,13 +12,33 @@ body {
     scroll-behavior: smooth;
     user-select: none;
     cursor: crosshair;
+	animation: fadeInAnimation ease 3s
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
 }
+
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 
 
 a {
     cursor: crosshair;
     color: #f2aa4c;
+}
+
+
+a:hover {
+	color: #ff9100;
 }
 
 #Spotify-now-playing {
