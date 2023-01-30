@@ -31,6 +31,14 @@ body {
 
 
 
+.aboutme {
+	color: goldenrod;
+	width: 1000px;
+	position: absolute;
+	left: 150px;
+	bottom: 700px;
+}
+
 a {
     cursor: crosshair;
     color: #f2aa4c;
@@ -42,8 +50,9 @@ a:hover {
 }
 
 #Spotify-now-playing {
+	position: fixed;
     width: auto;
-    position: absolute;
+    
     bottom: 0px;
 
     
@@ -81,62 +90,26 @@ a:hover {
 
 /* Navbar */
 
-.two {
-	display: flex;
-	height:10%;
-	padding-bottom: -1500px;
-	align-items: center;
-	justify-content: flex-end;
-	padding: 20px 10% 200px;
-}
 
-
-a,
-li,
-button {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	font-size: 16px;
-	color: #f2aa4c;
-	text-decoration: none;
-	
-}
-
-i {
-	color: #f2aa4c;
-
-}
-
-.two i {
-	margin-right:auto;
-    
-}
-.fa {
-	font-size: 4em !important; /*size whatever you like*/
-
-	color: rgba(0, 136, 169, 1);
-}
-.nav_links li {
-	display: inline-block;
-	padding: 0px 20px; /*0 top 20 left right*/
-}
-.nav_links li a {
-	transition: all 0.3s ease 0s;
-}
-.nav_links li a:hover {
-	color: #ff9100; 
-}
-button {
-	padding: 9px 25px;
-	background-color: rgba(0, 136, 169, 1);
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-}
+/* Heading */
 
 
 
-/* About Me Card */
+
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+
 
 
