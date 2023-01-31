@@ -68,13 +68,13 @@ if (localStorage.getItem("theme") == null) {
  if (document.addEventListener("keyup", e => {
    if (e.key.toLowerCase() == 't') {
       
-      if (localStorage.getItem("theme") == "light") {
+      if (document.body.style.backgroundColor = "Mine Shaft") {
          localStorage.clear()
          localStorage.setItem("theme", "dark")
          var element = document.body;
          element.classList.toggle("dark-mode");
 
-      } else if (localStorage.getItem("theme") == "dark") {
+      } else if (document.body.style.backgroundColor = "Alto") {
          localStorage.clear()
          localStorage.setItem("theme", "light")
          var element = document.body;
