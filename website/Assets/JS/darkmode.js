@@ -6,6 +6,8 @@ if (localStorage.getItem("theme") == null) {
    document.body.style.backgroundColor = "Mine Shaft"
 
  } else if (localStorage.getItem("theme") == "dark") {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
 
    document.body.style.backgroundColor = = "RGB(209, 209, 209)"
  } else if (localStorage.getItem("theme") == "light") {
