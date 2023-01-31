@@ -12,6 +12,7 @@ if (localStorage.getItem("theme") == null) {
 
    document.body.style.backgroundColor = = "RGB(44, 44, 44)"
 
+   
  }
  
  
