@@ -7,10 +7,10 @@ if (localStorage.getItem("theme") == null) {
 
  } else if (localStorage.getItem("theme") == "dark") {
 
-   document.body.style.backgroundColor = "Alto"
+   document.body.style.backgroundColor = = "RGB(209, 209, 209)"
  } else if (localStorage.getItem("theme") == "light") {
 
-   document.body.style.backgroundColor = "Mine Shaft"
+   document.body.style.backgroundColor = = "RGB(44, 44, 44)"
 
  }
  
