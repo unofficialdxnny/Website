@@ -4,7 +4,7 @@ const isMobileDeviceCheck = () => {
     if(screen.width < 500 || navigator.userAgent.match('/'+mobileOsRegExp+'/i')) {
         ___isMobileDevice = true;
         window.alert('Currently The Site Is Not Mobile Friendly');
-        // const Spotify = document.getElementById("Spotify-now-playing");
+        const Spotify = document.getElementById("Spotify-now-playing");
 
 
 
