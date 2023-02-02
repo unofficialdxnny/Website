@@ -52,7 +52,6 @@ a:hover {
 #Spotify-now-playing {
 	position: fixed;
     width: auto;
-    
     bottom: 0px;
 
     
@@ -115,11 +114,7 @@ a:hover {
 
 /* Navbar */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+
   
   header {
     display: flex;
