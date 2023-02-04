@@ -38,6 +38,8 @@ const isMobileDeviceCheck = () => {
     }
 }
 window.onresize = () => {
+
     isMobileDeviceCheck();
+    
 }
 isMobileDeviceCheck();
