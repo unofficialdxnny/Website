@@ -27,6 +27,7 @@ body {
 
 .header {
   width: auto;
-  height: 100%;
+  position: absolute;
+  left: 0%;
   background-color: #202020;
 }
