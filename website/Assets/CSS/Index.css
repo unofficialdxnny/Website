@@ -1,6 +1,6 @@
 body {
   position: absolute;
-  background-color: #f4d47c;
+  background-color: #232323;
   width: 100%; 
   overflow: hidden;
 
@@ -23,4 +23,10 @@ body {
   display: flex;
   justify-content: center;
 
+}
+
+.header {
+  width: auto;
+  height: 100%;
+  background-color: #202020;
 }
