@@ -1,0 +1,18 @@
+body {
+  position: absolute;
+  background-color: #3F3F3F;
+  width: 100%; 
+
+}
+
+
+.avatar{
+  display: flex;
+  justify-content: center;
+}
+
+
+.pfp {
+  border-radius: 50%;
+}
+
