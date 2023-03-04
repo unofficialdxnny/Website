@@ -1,7 +1,8 @@
 body {
   position: absolute;
-  background-color: #3F3F3F;
+  background-color: #f4d47c;
   width: 100%; 
+  overflow: hidden;
 
 }
 
@@ -16,3 +17,10 @@ body {
   border-radius: 50%;
 }
 
+
+.spotify_now_playing {
+  
+  display: flex;
+  justify-content: center;
+
+}
