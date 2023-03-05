@@ -35,3 +35,15 @@ body {
   user-select: none; /* Standard syntax */
 }
 
+
+h1 {
+  color: white;
+}
+
+p {
+  color: rgb(175, 175, 175);
+}
+
+.projects {
+  text-align: center;
+}
