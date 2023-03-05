@@ -1,4 +1,4 @@
 setInterval(function() {
     var myImageElement = document.getElementById('Spotify-now-playing');
-    myImageElement.src = 'https://spotify-github-profile.vercel.app/api/view.svg?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&bar_color=f2aa4c&bar_color_cover=false?rand=' + Math.random();
+    myImageElement.src = 'https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=false&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=c3cbd4&bar_color_cover=fals' + Math.random();
   }, 3000);
