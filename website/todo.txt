@@ -1,1 +1,0 @@
-Store Preference Data in LocalStorage and load site with that data
