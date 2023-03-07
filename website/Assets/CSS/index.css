@@ -36,6 +36,13 @@ p1 {
     
 }
 
+#Spotify-now-playing {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+}
+
 
 .social-buttons {
     border-radius: 5px;
@@ -120,7 +127,7 @@ p1 {
   .social-button--instagram {
     color: #e4405f;
   }
-  
+
   .social-button--instagram::after {
     background: #e4405f;
   }
