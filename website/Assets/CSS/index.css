@@ -48,27 +48,55 @@ nav a:hover {
     color: #fff;
 }
 
-.container {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .card {
-    background-color: #eee;
-    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
     margin: 10px;
-    flex: 1;
-    min-width: 300px;
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-    
+    max-width: 300px;
+  }
+  
+  .card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .card-content h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
     .card {
-        min-width: 100%;
+      max-width: 100%;
     }
-}
+  }
+
+  
+  
