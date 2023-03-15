@@ -1,4 +1,4 @@
-const links = document.querySelectorAll('nav ul li a');
+const links = document.querySelectorAll('nav a');
 
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener('click', (event) => {
