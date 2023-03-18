@@ -119,3 +119,192 @@
     }
   }
   
+
+  /* Social icons */
+
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+
+  .fa-instagram {
+    background: linear-gradient(to top right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    color: white;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3rem 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    width: 30%;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-col h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+  }
+  
+  .footer-links a:hover {
+    color: #ccc;
+  }
+  
+  .footer-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-social li {
+    margin-right: 1rem;
+  }
+  
+  .footer-social a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-social a:hover {
+    color: #ccc;
+  }
+  
+  .footer-bottom-text {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer-row {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-col {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+  
+
+
+/* About me */
+
+.about-me {
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+}
+
+.about-me-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-me-img {
+  width: 40%;
+  max-width: 400px;
+  margin-right: 2rem;
+}
+
+.about-me-img img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.about-me-text {
+  width: 55%;
+}
+
+.about-me-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-me-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-me-img {
+    margin-bottom: 2rem;
+  }
+  
+  .about-me-text {
+    width: 100%;
+  }
+}
+
+
+
+/* Make spotify np responsive */
+
