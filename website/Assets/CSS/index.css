@@ -4,142 +4,7 @@
     user-select: none; /* Standard syntax */
   }
 
-  
-  .navbar {
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  .navbar-logo {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .navbar-menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-item {
-    margin-left: 1.5rem;
-  }
-  
-  .navbar-item a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .navbar-toggle {
-    display: none;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  
-  .navbar-toggle-icon {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-    position: relative;
-    transition: transform 0.2s ease-out;
-  }
-  
-  .navbar-toggle-icon:before,
-  .navbar-toggle-icon:after {
-    content: '';
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-    position: absolute;
-    transition: transform 0.2s ease-out;
-  }
-  
-  .navbar-toggle-icon:before {
-    top: -6px;
-  }
-  
-  .navbar-toggle-icon:after {
-    top: 6px;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .navbar-container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    
-    .navbar-menu {
-      display: none;
-      position: absolute;
-      top: 4rem;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    
-    .navbar-item {
-      margin: 0;
-    }
-    
-    .navbar-toggle {
-      display: block;
-    }
-    
-    .navbar-toggle-icon {
-      transform: rotate(0deg);
-    }
-    
-    .navbar-toggle-icon:before {
-      transform: translateY(-6px) rotate(0deg);
-    }
-    
-    .navbar-toggle-icon:after {
-      transform: translateY(6px) rotate(0deg);
-    }
-    
-    .navbar-menu.show {
-      display: block;
-    }
-  }
-  
 
-  /* Social icons */
-
-
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-
-  .fa-instagram {
-    background: linear-gradient(to top right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-    color: white;
-  }
 
 
   /* Footer */
@@ -304,7 +169,94 @@
   }
 }
 
+.about-me-img img {
+  /* existing styles */
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
 /* Make spotify np responsive */
 
+#SNP {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Projects */
+
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-details h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.project-details p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+      /* Center align the heading */
+      .center {
+        text-align: center;
+      }
+      
+      /* Make the heading responsive */
+      .heading {
+        font-size: 3rem;
+        max-width: 100%;
+        word-wrap: break-word;
+      }
+
+      /* Optional: Add some margin to the top and bottom of the heading */
+      .heading-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+a {
+  color: black;
+  text-decoration: none;
+}
