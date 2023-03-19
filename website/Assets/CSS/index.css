@@ -312,5 +312,16 @@ a {
 }
 
 
-/* Diagonal images */
+/* Theme Toggle */
 
+/* Light theme styles */
+body.light {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Dark theme styles */
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
