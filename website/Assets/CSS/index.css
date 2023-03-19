@@ -339,3 +339,13 @@ body.dark p {
 body.dark h2 {
   color: white;
 }
+
+.theme-toggle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  max-width: 100%;
+  height: auto;
+
+}
