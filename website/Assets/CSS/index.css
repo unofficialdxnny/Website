@@ -325,3 +325,17 @@ body.dark {
   background-color: #333;
   color: #fff;
 }
+
+
+body.dark .about-me {
+  background-color: #626262;
+}
+
+
+body.dark p {
+  color: white;
+}
+
+body.dark h2 {
+  color: white;
+}
