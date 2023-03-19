@@ -262,3 +262,53 @@ a {
 }
 
 
+/* Social Media Icons */
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+
+  .social-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
