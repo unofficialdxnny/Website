@@ -34,138 +34,76 @@ content="https://unofficialdxnny.netlify.app/">
     <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1080170759005155371/1085338489446481991/favicon.png">	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="icon" href="assets/images/PUT YOUR ICON HERE" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet">
+  
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/card.css">
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
   </head>
 <body class="prevent-select">
 
- 
-<img id="theme-toggle" src="./Assets/Images/1x.png">
+
+  <audio src="./Assets/Sound/Lofi.mp3" autoplay="autoplay" loop="loop"></audio>
 
 
+  <div id="loading">
+    <div></div>
+  </div>
+  <div id="wrapper">
+    <div id="card">
+      <div id="banner" style="background-image: url(https://wallpaperaccess.com/full/2471283.gif);"></div> 
+      <div id="user-info">
+        <div id="avatar">
+          <img
+            src=""
+            alt="Danial Ahmed">
+          <div id="status"></div>
+        </div>
 
-  <section class="about-me">
-    <div class="about-me-container">
-      <div class="about-me-img">
-        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20980%20980%22%20fill%3D%22none%22%20shape-rendering%3D%22auto%22%3E%3Cdesc%3E%22Lorelei%22%20by%20%22Lisa%20Wischofsky%22%2C%20licensed%20under%20%22CC0%201.0%22.%20%2F%20Remix%20of%20the%20original.%20-%20Created%20with%20dicebear.com%3C%2Fdesc%3E%3Cmetadata%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%3E%3Crdf%3ARDF%3E%3Ccc%3AWork%3E%3Cdc%3Atitle%3ELorelei%3C%2Fdc%3Atitle%3E%3Cdc%3Acreator%3E%3Ccc%3AAgent%20rdf%3Aabout%3D%22https%3A%2F%2Fwww.instagram.com%2Flischi_art%2F%22%3E%3Cdc%3Atitle%3ELisa%20Wischofsky%3C%2Fdc%3Atitle%3E%3C%2Fcc%3AAgent%3E%3C%2Fdc%3Acreator%3E%3Cdc%3Asource%3Ehttps%3A%2F%2Fwww.figma.com%2Fcommunity%2Ffile%2F1198749693280469639%3C%2Fdc%3Asource%3E%3Ccc%3Alicense%20rdf%3Aresource%3D%22https%3A%2F%2Fcreativecommons.org%2Flicenses%2Fzero%2F1.0%2F%22%20%2F%3E%3C%2Fcc%3AWork%3E%3C%2Frdf%3ARDF%3E%3C%2Fmetadata%3E%3Cmask%20id%3D%22viewboxMask%22%3E%3Crect%20width%3D%22980%22%20height%3D%22980%22%20rx%3D%220%22%20ry%3D%220%22%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23fff%22%20%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url(%23viewboxMask)%22%3E%3Cg%20transform%3D%22translate(10%20-60)%22%3E%3Cpath%20d%3D%22m723%20184%208%209c10%2013%2017%2029%2021%2045%205%2023%206%2046-3%2069-6%2015-16%2028-29%2038%202%209%203%2019%203%2028%200%2020-6%2038-14%2056l-8%2011c-3%203-8%203-10-1-7-8-10-18-13-28l-8-38c-24%208-50%209-75%206l-45-8c-30-6-61-12-92-14-30-3-61-1-91%205-3%200-4%202-6%203-10%206-19%2015-24%2026-4%207-4%2015-3%2023l2%2012-10%2015c-5%208-7%2018-8%2027l1%2036c1%2018-1%2037-8%2053l-2%205h-4l-9-8-19%207c-5%202-10%203-16%203-3%200-5-2-7-4-6-7-11-15-15-23a221%20221%200%200%201-19-91c0-33%205-66%2015-97%209-24%2024-46%2045-60%2010-6%2020-10%2031-12%201-6%202-12%205-17%206-13%2017-22%2029-30%2033-23%2074-34%20114-35%2022%200%2044%203%2066%208l53%2010c23%205%2046%2010%2070%2011%2012%200%2025%200%2037-5%209-3%2016-7%2020-15%204-5%204-12%207-17%202-3%207-5%2011-3Z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M495%20234c28%201%2056%206%2084%2015a201%20201%200%200%201%20100%2065c19%2025%2031%2055%2035%2086a361%20361%200%200%201%202%20101l-5%2034-4%2020c-1%202-1%202-3%202-2-4-2-8-2-12-1-15%201-29%202-44%201-24%203-48%201-72l-6-45c-7-28-20-54-40-75-18-18-40-33-63-43-22-9-44-15-67-19-18-3-36-4-54-4a277%20277%200%200%200-128%2029c-13%209-25%2020-35%2032a276%20276%200%200%200-55%20139c-1%2024%200%2047%208%2070l7%2015%2012%201%201%203c-3%202-7%202-11%203-10%202-20%206-29%2012-7%205-14%2011-18%2019-5%2010-3%2022-1%2033%205%2019%2017%2037%2033%2049%2011%209%2025%2014%2039%2016%2010%202%2020%200%2030-1%205%204%208%2012%2011%2017l18%2027a136%20136%200%200%200%2066%2050c22%209%2045%2014%2068%2019l41%208%2017%205v4h-12a535%20535%200%200%201-67-8%20255%20255%200%200%201-84-33c-11-7-21-16-29-27a214%20214%200%200%201-16%20123c-15%2027-40%2048-70%2057-3%201-7%202-10%201-2%200-2-1-2-3%201-3%204-5%206-6%2012-8%2026-14%2038-23%2013-11%2024-23%2031-38%206-15%2010-32%2012-49%202-13%203-26%202-40l-4-38-18-36-19%204a88%2088%200%200%201-75-38%2093%2093%200%200%201-20-58c0-9%203-18%208-25s12-13%2019-17c5-4%2012-6%2018-8l-9-24c-5-22-5-45-2-67a292%20292%200%200%201%2063-149c9-10%2018-19%2029-26%207-4%2014-5%2020-9%2043-19%2090-25%20137-22Z%22%20fill%3D%22%23000%22%2F%3E%3Cpath%20d%3D%22M475%20243a276%20276%200%200%201%20121%2023c23%2010%2045%2025%2063%2043%2020%2021%2033%2047%2040%2075l6%2045c2%2024%200%2048-1%2072-1%2015-3%2029-2%2044%200%204%200%208%202%2012l-1%2020c-2%205-2%2010-2%2016-2%2024-2%2049-6%2074-1%2012-3%2025-8%2036-3%209-8%2017-15%2024-12%2013-27%2024-43%2033-19%2011-39%2016-58%2024-5%202-10%204-13%208%208%201%2015%200%2023-2-5%2012-6%2024-6%2036%200%205-1%2011%201%2016%203%205%208%209%2013%2012l35%2013c22%208%2043%2018%2065%2027%202%204%205%207%206%2012%206%2011%207%2023%203%2035-5%2013-15%2024-27%2031-16%2011-36%2019-55%2024a494%20494%200%200%201-235-7c-20-7-40-14-58-24-14-8-29-18-40-31-6-8-11-19-12-29a122%20122%200%200%200%2086-107c4-24%204-49%200-73%208%2011%2018%2020%2029%2027l27%2014a331%20331%200%200%200%20124%2027h12v-4l-17-5-41-8c-23-5-46-10-68-19-13-6-27-13-39-21-10-9-19-18-27-29l-18-27c-3-5-6-13-11-17-10%201-20%203-30%201-14-2-28-7-39-16a94%2094%200%200%201-33-49c-2-11-4-23%201-33%204-8%2011-14%2018-19%209-6%2019-10%2029-12%204-1%208-1%2011-3l-1-3-12-1-7-15c-8-23-9-46-7-70a276%20276%200%200%201%2054-139c10-12%2022-23%2035-32a277%20277%200%200%201%20128-30Z%22%20fill%3D%22%23ffffff%22%2F%3E%3Cpath%20d%3D%22M260%20571c4%200%207%200%2011%202%205%201%2011%204%2014%208%202%203%202%207%200%2010-5%206-12%2010-16%2016%206%204%2014%206%2021%209%204%201%208%203%2011%206l1%203-8-2-24-7c-4-1-8-3-9-7-1-3%201-7%203-10l15-13c-4-7-15-8-19-15ZM703%20577l2%203%202%2016a483%20483%200%200%201-2%2089c-2%2011-5%2023-10%2033a198%20198%200%200%201-106%2071c-1%2014-3%2031-2%2047l5%205c8%206%2018%209%2027%2012a451%20451%200%200%201%2068%2028c7%204%2013%209%2018%2015-5%201-10-1-16-2-22-9-43-19-65-27l-35-13c-5-3-10-7-13-12-2-5-1-11-1-16%200-12%201-24%206-36-8%202-15%203-23%202%203-4%208-6%2013-8%2019-8%2039-13%2058-24%2016-9%2031-20%2043-33%207-7%2012-15%2015-24%205-11%207-24%208-36%204-25%204-50%206-74%200-6%200-11%202-16Z%22%20fill%3D%22%23000%22%2F%3E%3Cpath%20d%3D%22m693%20510-2%207c-3%205-6%209-11%2012s-11%204-17%205l-18%202c-5%200-8%203-10%206l-7%207c-2%201-5-1-4-3%201-8%207-14%2011-20%203-3%207-7%2012-7l30-5c5-1%2010-4%2016-4ZM388%20514c12-1%2021%203%2032%204%2015%202%2030%204%2045%204l24%202c8%201%2017%200%2024%204s12%2010%2016%2016c1%202%202%204%200%207-1%201-3%200-4-1-4-2-7-6-11-7l-12-1-28-1-22-1c-10-1-20-1-30-5-7-2-12-6-19-9l-12-9c-2-1-3-1-3-3Z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M494%20368c5%200%209%203%2011%207%208%208%2015%2018%2020%2028%202%205%204%2010%203%2015-1%202-2%204-4%203l-5-6c-4-8-10-15-16-22%200%204%201%2010-1%2013-1%204-4%206-8%206-5%200-10-4-14-7l-13-5c-2%201-4%203-6%202l-11-2-20-2-18%202c3-4%208-6%2013-8%2010-5%2021-5%2032-4%203%201%206-2%2010-1%2010%200%2017%204%2025%2010l-4-19c-1-4%201-9%206-10ZM637%20383c3%201%205%202%205%205%200%204-3%208-5%2013%204-2%207-5%2011-5%203%201%204%203%206%206%205-2%2012-4%2018-2%203%201%204%203%205%205-3%203-6%205-10%206-5%202-11%204-16%204-3%200-5-2-7-3l-10%206c-3%200-6-1-7-4l-1-8-8%2015-4%206c-2%200-3%200-4-2-2-3%201-8%202-11%203-8%208-16%2014-23%203-3%206-7%2011-8Z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M603%20613v1c-4%208-11%2015-20%2018-3%201-7%201-9-1v-4c7-5%2016-9%2024-12l5-2Z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M649%20656c8%200%2017%201%2025%203%203%201%207%202%208%206%201%203-2%206-5%206-6%200-11-2-17-3-11-2-24%200-35%201l-45%204h-26c-19%201-38%202-56%207l-10%204c-4%204-8%208-14%2011h-5c-2-1-3-4-2-6%202-6%206-11%2011-15%205-3%2010-4%2016-5l25-2c14-1%2027-3%2041-3l34-3c19-2%2036-5%2055-5Z%22%20fill%3D%22%23000000%22%2F%3E%3Cpath%20d%3D%22M720%20183c3%201%206%203%208%206a132%20132%200%200%201%2027%2065c3%2023-1%2047-14%2067-6%2011-15%2020-25%2028-15%2011-32%2020-50%2026-23%206-47%207-71%204l-43-8c-30-6-60-11-90-14-32-3-64-1-96%205-2%200-3%202-5%203-10%206-19%2015-24%2025-4%207-4%2016-3%2024l2%2012-11%2015c-6%2012-7%2025-7%2038l2%2031c0%2016-3%2032-9%2047l-2%205h-4l-13-11c-10-6-19-11-30-15-7-4-13-7-19-13-7-6-12-15-15-24-6-15-7-29-7-45v-25c1-19%203-39%208-57%204-15%208-30%2015-44%2010-17%2023-31%2040-41%208-5%2018-8%2027-10%201-6%202-12%205-17%206-13%2017-22%2029-30%2033-23%2074-34%20114-35%2022%200%2044%203%2065%207l56%2012c26%205%2053%2010%2079%2010%2012-1%2024-2%2035-8%205-4%2010-8%2013-14%202-5%202-10%205-14%201-3%205-5%208-5Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(10%20-60)%22%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Profile Picture">
-      </div>
-      <div class="about-me-text">
-        <h2>𝔸𝕓𝕠𝕦𝕥 𝕄𝕖</h2>
        
-          <img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false">
 
-        <p>My names Danial Ahmed, I enjoy listening to music (like all day long). Other than that i enjoy gaming, animating, photography, programming and sports (ALL OF THEM).</p>
-        <p>For programming I normally use Python to create cli tools or web based SMM scripts. Below you can see some of my favourite projects.</p>
-  
-        <div class="social-icons">
-          <a href="https://github.com/unofficialdxnny" class="icon-github"><img src="https://cdn-icons-png.flaticon.com/128/1051/1051326.png" alt="GitHub Icon"></a>
-          <a href="https://www.youtube.com/@unofficialdxnny5134" class="icon-youtube"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="YouTube Icon"></a>
-          <a href="https://www.instagram.com/unofficialdxnny/" class="icon-instagram"><img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="Instagram Icon"></a>
-          <a href="https://discord.gg/8WyFZF3kqn" class="icon-discord"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord Icon"></a>
-          <a href="https://codepen.io/unofficialdxnny" class="icon-codepen"><img src="https://cdn-icons-png.flaticon.com/128/1377/1377243.png" alt="Codepen Icon"></a>
-          <div id="theme-toggle"><a><img src="https://cdn-icons-png.flaticon.com/128/8338/8338708.png" alt="theme Icon"></a></div>
+        <div id="badges">
         </div>
-        
-        
+
+     
+
+        <div id="username"><span></span></div>
+       
+      </div>
+      <hr/>
+
+
+      <div id="about">
+        <h4>About me</h4>
+        <p>Im Dan (Lazy AF) I changed my whole website to this crap cuz i cba to <br>maintain and make it look fancy. To see the commit log <a href="https://github.com/unofficialdxnny/Website/commits/main">Click Here.</a></p>
+        <img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false">
+      </div>
+
+
+
+      <div id="social">
+  
+        </a>
+              
       </div>
     </div>
-  </section>
-  
-  <div class="heading-container">
-    <h1 class="heading center">▲ ℙ𝕣𝕠𝕛𝕖𝕔𝕥𝕤</h1>
   </div>
 
-  <div class="project-cards-container">
-    <div class="project-card">
-      <a href="https://github.com/unofficialdxnny/Snapify">
-      <img src="https://cdn.discordapp.com/attachments/1080170759005155371/1085328351612379256/image_6.png" alt="Snapify">
-      <div class="project-details">
-        <h2>Snapify</h2>
-        <p>Snapify is a Selenium based tool to boost your snapscore.</p>
-        <p><strong>Languages used:</strong> Python</p>
-        <div class="project-buttons">
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
 
-          
-        </div>
-      </div>
-      </a>
-    </div>
-  
-    <div class="project-card">
-      <a href="https://github.com/unofficialdxnny/Website">
-      <img src="https://cdn.discordapp.com/attachments/1080170759005155371/1085338489446481991/favicon.png"  alt="Snapify">
-      <div class="project-details">
-        <h2>Website</h2>
-        <p>This is the source to my website.</p>
-        <p><strong>Languages used:</strong> HTML, CSS, JS</p>
-        <div class="project-buttons">
-
-          
-        </div>
-      </div>
-      </a>
-    </div>
-
-    <div class="project-card">
-      <a href="https://github.com/unofficialdxnny/Tickets-discord-bot">
-      <img src="https://styles.redditmedia.com/t5_2c0s77/styles/mobileBannerImage_7dgzlo2ff4m61.png"  alt="Snapify">
-      <div class="project-details">
-        <h2>Website</h2>
-        <p>This is the source to my website.</p>
-        <p><strong>Languages used:</strong> Python</p>
-        <div class="project-buttons">
-
-          
-        </div>
-      </div>
-    </a>
-    </div>
-
-
-  </div>
-  
-
-  <div class="project-cards-container">
-    <div class="project-card">
-      <a href="https://github.com/unofficialdxnny/Hyper">
-      <img src="https://cdn.discordapp.com/attachments/1073929980343496815/1086806973393150003/image_7.png" alt="Snapify">
-      <div class="project-details">
-        <h2>Hyper</h2>
-        <p>Terminal written in Python to access and quickly interact different useful API's</p>
-        <p><strong>Languages used:</strong> Python</p>
-        <div class="project-buttons">
-
-          
-        </div>
-      </div>
-      </a>
-    </div>
-    </div>
-    
-
-
-
-
-
-  <br>
-  <br>
-
-
-  <div class="footer-col">
-    <ul class="footer-social">
-
-
-    </ul>
-    
-  </div>
-</div>
-<hr>
-
-<p class="footer-bottom-text">© <script>document.write(new Date().getFullYear())</script> Danial Ahmed, All rights reserved.</p>
-</div>
-
-    <script src="./Assets/JS/smoothScroll.js"></script>
+  <script src="assets/js/socket.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/index.js"></script>
     <script src="./Assets/JS/dragless.js"></script>
     <script src="./Assets/JS/spotify.js"></script>
-    <script src="./Assets/JS/theme.js"></script>
+    
 </body>
 </html>
