@@ -11,10 +11,7 @@ const BADGES = [
     name: "Server boosting Jun 29, 2022",
     image: "assets/badges/boost.svg",
   },
-  {
-    name: "That's an example! Change in config.js", // Message that appears when you hover over it
-    image: "assets/badges/bug_hunter_level2.svg", // Icon (in .svg) of the badge that is in the "assets/badges" you choose
-  },
+ 
 ];
 
 const USER_ID = "898937224895270972"; // Your Discord Id Here | You need to join Lanyard Discord for it to work! [https://discord.gg/z2xW3zxYdt]
