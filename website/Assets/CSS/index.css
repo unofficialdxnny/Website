@@ -104,3 +104,39 @@ a {
   color: white;
 }
 
+
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .social-media-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-media-icons i {
+    font-size: 40px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-media-icons i:hover {
+    color: #000;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .social-media-icons {
+      flex-wrap: wrap;
+    }
+    
+    .social-media-icons a {
+      margin: 10px;
+    }
+    
+    .social-media-icons i {
+      font-size: 30px;
+    }
+  }
