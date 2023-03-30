@@ -1,6 +1,6 @@
 
 const USER_ID = "898937224895270972";
-const BACKGROUND_IMAGE = "https://i.pinimg.com/originals/5a/80/29/5a8029d622d15914e020276a69578e51.gif";
+const BACKGROUND_IMAGE = "";
 const STATUS = {
   dnd: {
     name: "Do not disturb",
