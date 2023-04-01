@@ -30,6 +30,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: var(--text-normal)
+    
 }
 
 #loading {
@@ -139,3 +140,5 @@ a {
       font-size: 30px;
     }
   }
+
+  
