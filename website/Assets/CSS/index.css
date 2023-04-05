@@ -7,6 +7,7 @@
 
   body {
     background-color: #15202B;
+    overflow: hidden;
     
   }
 
@@ -42,5 +43,49 @@
     height: 100px;
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
+  }
+  
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-desc {
+    font-size: 1rem;
+    line-height: 1.5;
   }
   
