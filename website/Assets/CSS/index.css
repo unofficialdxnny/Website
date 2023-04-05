@@ -4,10 +4,14 @@
     user-select: none; /* Standard syntax */
   }
 
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 
   body {
     background-color: #15202B;
-    overflow: hidden;
+    
     
   }
 
@@ -26,7 +30,7 @@
   #clock-container {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -89,3 +93,7 @@
     line-height: 1.5;
   }
   
+  h1 {
+    text-align: center;
+    color: white;
+  }
