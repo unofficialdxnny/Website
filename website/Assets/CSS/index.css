@@ -9,3 +9,15 @@
     background-color: #15202B;
     
   }
+
+  .SPcontainer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
+  #Spotify-now-playing {
+    max-width: 100%;
+    height: auto;
+  }
+  
