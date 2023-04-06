@@ -120,9 +120,10 @@
 
 /* About Section */
 
+
 .about {
   height: 100vh;
-  background-image: url("https://rare-gallery.com/uploads/posts/10180-pc-wallpaper-hd-1080p-nature-wallpaper__pc-wallpaper-hd-1080p-nature-wallpaper.jpg");
+  background-image: url("https://images.unsplash.com/photo-1638184984605-af1f05249a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
