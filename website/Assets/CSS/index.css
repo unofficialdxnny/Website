@@ -11,7 +11,10 @@
 
   body {
     background-color: #15202B;
-    
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
     
   }
 
@@ -98,15 +101,8 @@
     color: white;
   }
 
-  /* Global Styles */
+  
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333333;
-}
 
 .container {
   width: 80%;
@@ -126,7 +122,7 @@ body {
 
 .about {
   height: 100vh;
-  background-image: url("https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-3840x2160-1432.jpg");
+  background-image: url("https://rare-gallery.com/uploads/posts/10180-pc-wallpaper-hd-1080p-nature-wallpaper__pc-wallpaper-hd-1080p-nature-wallpaper.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -154,3 +150,30 @@ body {
   color: #ffffff;
 }
 
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+.username {
+  position: fixed;
+  right: 10px;
+  bottom: -25px;
+
+}
