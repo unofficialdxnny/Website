@@ -2,7 +2,7 @@ var audio = document.getElementById("myAudio");
 		var timeout;
 
 		function startTimer() {
-		  timeout = setTimeout(playAudio, 10000); // set timer for 10 seconds
+		  timeout = setTimeout(playAudio, 1000); // set timer for 10 seconds
 		}
 
 		function resetTimer() {
