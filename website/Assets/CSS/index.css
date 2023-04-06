@@ -205,3 +205,9 @@ img {
   height: auto;
   margin-bottom: 10px;
 }
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
