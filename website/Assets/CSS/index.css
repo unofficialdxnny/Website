@@ -123,7 +123,7 @@
 
 .about {
   height: 100vh;
-  background-image: url("https://picsum.photos/1920/1080");
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/448/174/357/neon-4k-hd-best-for-desktop-wallpaper-preview.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -221,4 +221,30 @@ a {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 5px 10px;
   z-index: 9999;
+}
+
+
+section {
+  opacity: 0;
+  height: 100vh;
+}
+
+
+section:nth-of-type(1) {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+section:nth-of-type(2) {
+  animation: fadeIn 1s ease-in 0.5s forwards;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
