@@ -211,3 +211,14 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.last-published-date {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  z-index: 9999;
+}
