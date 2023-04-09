@@ -288,3 +288,9 @@ nav ul li a:hover {
   color: #ccc;
 }
 
+
+#last-updated {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
