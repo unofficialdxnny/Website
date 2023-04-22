@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .bg-img {
+    background-image: url('https://cdn.wallpapersafari.com/97/50/eRwDMy.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    filter: blur(0px);
+  }
+  
+  .about-me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    max-width: 800px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .about-me {
+      padding: 30px;
+      width: 90%;
+    }
+    
+    h1 {
+      font-size: 2em;
+    }
+    
+    p {
+      font-size: 1em;
+    }
+  }
+  
+  a {
+    text-decoration: underline;
+    color: black;
+  }
