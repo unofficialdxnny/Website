@@ -5,6 +5,7 @@
   body {
     margin: 0;
     background-color: #2C3E50;
+    background-image: url('https://cdn.discordapp.com/attachments/1073929980343496815/1102685650911760524/bg.jpg');
   }
 
   ::-webkit-scrollbar {
