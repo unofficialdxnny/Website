@@ -12,5 +12,3 @@ image.addEventListener('load', function() {
     document.querySelector('.content').classList.add('show');
   }, 2000); // Change the delay as needed
 });
-
-
