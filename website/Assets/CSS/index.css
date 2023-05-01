@@ -128,3 +128,18 @@
   margin: 10px 0 0;
   font-size: 1rem;
 }
+
+
+footer {
+  background-image: url('your-image-url.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
