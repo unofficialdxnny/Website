@@ -4,11 +4,3 @@ setInterval(function() {
   }, 3000);
 
 
-// Wait for the image to load and then show the content
-const image = document.querySelector('.splash img');
-image.addEventListener('load', function() {
-  setTimeout(() => {
-    document.querySelector('.splash').classList.add('hide');
-    document.querySelector('.content').classList.add('show');
-  }, 2000); // Change the delay as needed
-});

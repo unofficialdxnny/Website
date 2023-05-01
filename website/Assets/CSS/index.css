@@ -7,14 +7,17 @@
     src: url('./Assets/Fonts/DarlingtonDemo-z8xjG.ttf') format('truetype'); /* Change the path to the location where you saved the font file */
     font-weight: normal;
     font-style: normal;
+    
   }
   
   
   body {
     margin: 0;
     background-color: #2C3E50;
-    background-image: url('https://cdn.discordapp.com/attachments/1073929980343496815/1102685650911760524/bg.jpg');
+    background-image: url('https://wallpaperstock.net/black-abstract_wallpapers_54226_1920x1080.jpg');
     font-family: myfont, Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
   }
 
   ::-webkit-scrollbar {
@@ -124,6 +127,15 @@
   font-size: 1.5rem;
 }
 
+.projects {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  position: absolute;
+  top: 1150px;
+  left: 160px;
+}
+
 .card-content p {
   margin: 10px 0 0;
   font-size: 1rem;
@@ -142,4 +154,78 @@ footer {
 footer p {
   margin: 0;
   font-size: 14px;
+}
+
+
+.graphics-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://wallpapers.com/images/featured/m8kr2hfvrwlt8j5g.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.gfx-card {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.gfx-projects h3{
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+ 
+}
+
+.gfx-card:hover .card-image {
+  filter: blur(5px);
+}
+
+.gfx-card-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.3s ease-out;
+}
+
+.gfx-card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  transition: transform 0.3s ease-out;
+  transform: translateY(100%);
+}
+
+.gfx-card:hover .gfx-card-content {
+  transform: translateY(0);
+}
+
+.gfx-card-content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.gfx-projects {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  position: absolute;
+  top: 1150px;
+  left: 160px;
+}
+
+.gfx-card-content p {
+  margin: 10px 0 0;
+  font-size: 1rem;
 }
