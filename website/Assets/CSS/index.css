@@ -11,3 +11,57 @@
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
+
+/* Set the height of the splash screen to 100% of the viewport */
+.splash {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set the maximum width of the image to 100% of the viewport width */
+.splash img {
+  max-width: 100vw;
+  animation: zoom-out 2s ease-in-out forwards;
+}
+
+/* Define the animation that zooms out the image and fades out the splash screen */
+@keyframes zoom-out {
+  from {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Hide the content until the splash screen is gone */
+.content {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Show the content after the splash screen is gone */
+.content.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out;
+}
+
+
+/* For screens smaller than 768px (e.g. mobile devices) */
+@media (max-width: 767px) {
+  /* Adjust the size and spacing of the splash screen and content */
+  .splash {
+    padding: 1rem;
+  }
+  .splash img {
+    max-width: 100%;
+  }
+  .content {
+    padding: 1rem;
+  }
+}
