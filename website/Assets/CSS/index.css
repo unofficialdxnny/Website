@@ -51,3 +51,14 @@
   color: #00a0d2;
   text-decoration: none;
 }
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons a {
+  margin: 0 10px;
+}
