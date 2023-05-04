@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+
+  }
+
   @font-face {
     font-family: myfont;
     src: url('./Assets/Fonts/DarlingtonDemo-z8xjG.ttf') format('truetype'); /* Change the path to the location where you saved the font file */
