@@ -289,3 +289,21 @@ footer p {
   top: 2100px;
   left: 160px;
 }
+
+.fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+  z-index: 9999;
+}
+
+.fade-overlay.active {
+  opacity: 0.5;
+  pointer-events: all;
+}
