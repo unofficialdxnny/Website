@@ -146,7 +146,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 33vh;
+    height: 75px;
     background-color: var(--c-primary);
     text-decoration: none;
 }
