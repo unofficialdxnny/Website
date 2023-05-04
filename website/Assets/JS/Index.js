@@ -12,3 +12,7 @@ window.addEventListener('scroll', function() {
   var progress = (scrollPosition / (bodyHeight - windowHeight)) * 100;
   document.querySelector('.progress-bar').style.width = progress + '%';
 });
+
+document.addEventListener("dragstart", (event) => {
+  event.preventDefault();
+});
