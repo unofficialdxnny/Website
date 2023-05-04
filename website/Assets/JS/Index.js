@@ -4,3 +4,11 @@ setInterval(function() {
   }, 3000);
 
 
+/* Change the width of the progress bar based on the user's scroll position */
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  var windowHeight = window.innerHeight;
+  var bodyHeight = document.body.offsetHeight;
+  var progress = (scrollPosition / (bodyHeight - windowHeight)) * 100;
+  document.querySelector('.progress-bar').style.width = progress + '%';
+});
