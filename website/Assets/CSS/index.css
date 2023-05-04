@@ -175,8 +175,6 @@ footer p {
   background-image: url('');
   background-size: cover;
   background-position: center;
- 
-
 }
 
 
@@ -282,6 +280,6 @@ footer p {
   text-align: center;
   font-size: 36px;
   position: absolute;
-  top: 2000px;
+  top: 2100px;
   left: 160px;
 }
