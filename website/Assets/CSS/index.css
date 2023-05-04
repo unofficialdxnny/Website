@@ -166,17 +166,26 @@ footer p {
 }
 
 
-.graphics-container {
+.blog-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('https://wallpapers.com/images/featured/m8kr2hfvrwlt8j5g.jpg');
+  background-image: url('');
   background-size: cover;
   background-position: center;
+ 
+
 }
-.gfx-card {
+
+
+.card:hover {
+  cursor: not-allowed;
+}
+
+
+.blog-card {
   width: 300px;
   height: 400px;
   margin: 10px;
@@ -185,18 +194,18 @@ footer p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.gfx-projects h3{
+.blog-projects h3{
   color: #fff;
   text-align: center;
   font-size: 36px;
  
 }
 
-.gfx-card:hover .card-image {
+.blog-card:hover .card-image {
   filter: blur(5px);
 }
 
-.gfx-card-image {
+.blog-card-image {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -204,7 +213,7 @@ footer p {
   transition: filter 0.3s ease-out;
 }
 
-.gfx-card-content {
+.blog-card-content {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -216,16 +225,16 @@ footer p {
   transform: translateY(100%);
 }
 
-.gfx-card:hover .gfx-card-content {
+.blog-card:hover .blog-card-content {
   transform: translateY(0);
 }
 
-.gfx-card-content h2 {
+.blog-card-content h2 {
   margin: 0;
   font-size: 1.5rem;
 }
 
-.gfx-projects {
+.blog-projects {
   color: #fff;
   text-align: center;
   font-size: 36px;
@@ -234,7 +243,7 @@ footer p {
   left: 160px;
 }
 
-.gfx-card-content p {
+.blog-card-content p {
   margin: 10px 0 0;
   font-size: 1rem;
 }
@@ -265,4 +274,14 @@ footer p {
   background-color: #db3434;
   width: 0%;
   transition: width 0.5s ease-in-out;
+}
+
+
+.blogs {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  position: absolute;
+  top: 2000px;
+  left: 160px;
 }
