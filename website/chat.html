@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thread | unofficialdxnny</title>
+  <style>
+    #chat-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #chat-messages {
+      height: 300px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    #chat-input {
+      width: 100%;
+      padding: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Type your message here" />
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var chatMessages = document.getElementById('chat-messages');
+      var chatInput = document.getElementById('chat-input');
+
+      chatInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+          var message = chatInput.value;
+          chatInput.value = '';
+
+          var newMessage = document.createElement('div');
+          newMessage.textContent = message;
+          chatMessages.appendChild(newMessage);
+
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
