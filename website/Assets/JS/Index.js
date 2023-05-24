@@ -4,3 +4,9 @@ setInterval(function() {
   }, 3000);
 
 
+  // disable dragging
+  document.addEventListener('dragstart', (event) => {
+    event.preventDefault();
+  });
+  
+  
