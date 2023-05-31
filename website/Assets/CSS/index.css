@@ -42,7 +42,7 @@ p {
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: -20px;
 }
 
 .social-icons a {
@@ -50,6 +50,8 @@ p {
   font-size: 24px;
   margin: 0 10px;
 }
+
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
