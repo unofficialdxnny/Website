@@ -1,0 +1,72 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background image for the section */
+.about-me {
+  background-image: url('https://wallpaperset.com/w/full/7/7/a/38882.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Center the content vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+/* Style the heading */
+h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style the text */
+p {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+/* Style the social media icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust font sizes for smaller screens */
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+  }
+}
+
+#Spotify-now-playing {
+  position: fixed;
+}
