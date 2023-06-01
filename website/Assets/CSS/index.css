@@ -71,6 +71,8 @@ p {
 
 #Spotify-now-playing {
   position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 
