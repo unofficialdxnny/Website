@@ -72,3 +72,32 @@ p {
 #Spotify-now-playing {
   position: fixed;
 }
+
+
+.extra-section {
+  background-image: url('https://unofficialdxnny.netlify.app/Assets/Images/l&t.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+  }
+}
