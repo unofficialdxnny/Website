@@ -3,8 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
+body {
+  
+}
+
+
+::-webkit-scrollbar {
+  display: none; /* Hide the scroll bars */
+}
 /* Set background image for the section */
 .about-me {
   background-image: url('https://wallpaperset.com/w/full/7/7/a/38882.jpg');
