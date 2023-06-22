@@ -19,7 +19,7 @@ body {
 }
 /* Set background image for the section */
 .about-me {
-  background-image: url('https://unofficialdxnny.netlify.app/Assets/Images/bg.jpeg');
+  background-image: url('https://picsum.photos/1920/1080');
   background-size: cover;
   background-position: center;
 }
