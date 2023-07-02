@@ -36,6 +36,13 @@ body {
   right: 0;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 46%;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   /* Adjust font sizes for smaller screens */
@@ -64,6 +71,13 @@ body {
     height: 35vh;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30%;
   }
   
 }
