@@ -14,7 +14,10 @@ body {
 }
 .main {
   display: flex;
-  background-image: url("");
+  background-image: url("https://images.hdqwalls.com/download/swan-digital-art-4k-bg-2048x1152.jpg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
