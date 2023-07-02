@@ -12,6 +12,8 @@
 body {
   margin: 0;
 }
+
+
 .main {
   display: flex;
   background-image: url("https://images.hdqwalls.com/download/swan-digital-art-4k-bg-2048x1152.jpg");
@@ -55,6 +57,15 @@ body {
     left: 0;
     width: 150px;
   }
+
+  .main {
+    display: flex;
+    background-image: url("https://images.hdqwalls.com/download/swan-digital-art-4k-bg-2048x1152.jpg");
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
 }
 
 
