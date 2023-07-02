@@ -10,8 +10,14 @@
 }
 
 body {
-  
+  margin: 0;
 }
+.main {
+  display: flex;
+  background-image: url("");
+}
+
+
 
 
 ::-webkit-scrollbar {
@@ -44,7 +50,7 @@ body {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 250px;
+    width: 150px;
   }
 }
 
