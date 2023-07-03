@@ -52,7 +52,7 @@ function loadTheme() {
 }
 
 // Event listener to detect if the 't' key is pressed
-document.addEventListener('keyup', function(event) {
+document.addEventListener('keyup  ', function(event) {
   if (event.key === 't') {
     toggleTheme();
   }
