@@ -47,6 +47,16 @@ body {
 }
 
 
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #181818;
+  color: #ffffff;
+}
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
