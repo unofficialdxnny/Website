@@ -10,13 +10,13 @@
 }
 
 body {
-  margin: 0;
+
 }
 
 
 .main {
   display: flex;
-  background-image: url("https://images.hdqwalls.com/download/swan-digital-art-4k-bg-2048x1152.jpg");
+  background-image: url("https://cdn.wallpapersafari.com/10/67/aXhmCM.jpg");
   height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,8 +40,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 46%;
+  padding-left: 35%;
+  color: white;
+  font-size: 100px;
+
 }
+
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
@@ -67,23 +72,18 @@ body {
 
   .main {
     display: flex;
-    background-image: url("https://images.hdqwalls.com/download/swan-digital-art-4k-bg-2048x1152.jpg");
+    background-image: url("https://cdn.wallpapersafari.com/10/67/aXhmCM.jpg");
     height: 35vh;
     background-position: center;
     background-repeat: no-repeat;
   }
   
   .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 30%;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30%;
+  font-size: 25px;
 }
-
-
-
-.social-icons a:hover {
-  color: red;
+  
 }
