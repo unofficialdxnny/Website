@@ -99,6 +99,12 @@ body {
 }
 
 
+#moonContainer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   /* Adjust font sizes for smaller screens */
@@ -136,5 +142,14 @@ body {
   padding-left: 30%;
   font-size: 25px;
 }
+
+  #moonContainer {
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  
   
 }
