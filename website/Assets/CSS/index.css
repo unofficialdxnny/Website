@@ -58,6 +58,47 @@ body {
 }
 
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 0 0 300px; /* Each card has a fixed width of 300px */
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.card a {
+  display: inline-block;
+  color: white;
+}
+
+.card i {
+  font-size: 24px;
+}
+
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   /* Adjust font sizes for smaller screens */
