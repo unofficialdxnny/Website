@@ -9,3 +9,35 @@ setInterval(function() {
     event.preventDefault();
   });
   
+
+      // Check if the theme is stored in local storage
+      const theme = localStorage.getItem('theme');
+      if (theme) {
+        document.body.classList.add(theme); // Apply the stored theme
+      }
+  
+      // Function to toggle the theme
+      function toggleTheme() {
+        const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+  
+        // Toggle the theme class
+        document.body.classList.toggle('light');
+        document.body.classList.toggle('dark');
+  
+        // Update the moon icon
+        const moonIcon = document.getElementById('moonIcon');
+        if (currentTheme === 'dark') {
+          moonIcon.classList.remove('fa-sun');
+          moonIcon.classList.add('fa-moon');
+        } else {
+          moonIcon.classList.remove('fa-moon');
+          moonIcon.classList.add('fa-sun');
+        }
+  
+        // Store the theme in local storage
+        localStorage.setItem('theme', currentTheme);
+      }
+  
+      // Add click event listener to the moonContainer element
+      const moonContainer = document.getElementById('moonContainer');
+      moonContainer.addEventListener('click', toggleTheme);
