@@ -105,6 +105,37 @@ body {
   left: 20px;
 }
 
+
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Align icons horizontally in the center */
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #555555;
+}
+
+.social-icon i {
+  pointer-events: none;
+}
+
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
   /* Adjust font sizes for smaller screens */

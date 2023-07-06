@@ -61,3 +61,25 @@ setInterval(function() {
   
       // Add keyup event listener to the document
       document.addEventListener('keyup', handleKeyUp);
+
+
+
+      const instagramIcon = document.getElementById('instagramIcon');
+      const discordIcon = document.getElementById('discordIcon');
+      const snapchatIcon = document.getElementById('snapchatIcon');
+      
+      instagramIcon.addEventListener('click', () => {
+        // Handle Instagram icon click event
+        console.log('Instagram icon clicked!');
+      });
+      
+      discordIcon.addEventListener('click', () => {
+        // Handle Discord icon click event
+        console.log('Discord icon clicked!');
+      });
+      
+      snapchatIcon.addEventListener('click', () => {
+        // Handle Snapchat icon click event
+        console.log('Snapchat icon clicked!');
+      });
+      
