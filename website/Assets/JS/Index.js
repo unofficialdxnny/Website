@@ -41,3 +41,23 @@ setInterval(function() {
       // Add click event listener to the moonContainer element
       const moonContainer = document.getElementById('moonContainer');
       moonContainer.addEventListener('click', toggleTheme);
+
+
+      function handleKeyUp(event) {
+        const key = event.key.toUpperCase();
+        if (key === 'T') {
+          toggleTheme();
+          changeFavicon();
+        }
+      }
+  
+      // Function to change the favicon
+      function changeFavicon() {
+        const link = document.querySelector('link[rel="icon"]');
+        const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+        const faviconUrl = currentTheme === 'dark' ? 'dark-favicon.png' : 'light-favicon.png';
+        link.href = faviconUrl;
+      }
+  
+      // Add keyup event listener to the document
+      document.addEventListener('keyup', handleKeyUp);
