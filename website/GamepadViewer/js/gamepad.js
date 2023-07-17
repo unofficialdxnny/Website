@@ -11,6 +11,7 @@ class Gamepad {
         // cached DOM references
         this.$body = $("body");
         this.$instructions = $("#instructions");
+        this.$credits = $("#credits");
         this.$placeholder = $("#placeholder");
         this.$gamepad = $("#gamepad");
         this.$overlay = $("#overlay");
