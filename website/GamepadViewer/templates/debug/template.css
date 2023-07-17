@@ -1,0 +1,54 @@
+.container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 600px;
+}
+
+.box {
+    padding: 2px;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.box.small {
+    width: 12.5%;
+    min-width: 50px;
+}
+
+.box.medium {
+    width: 25%;
+    min-width: 100px;
+}
+
+.box.large {
+    width: 50%;
+    min-width: 200px;
+}
+
+.box.extra-large {
+    width: 100%;
+    min-width: 400px;
+}
+
+.box .content {
+    background: #333333;
+    padding: 5px;
+}
+
+.label {
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+.value {
+    text-align: right;
+    margin-top: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+}
