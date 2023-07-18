@@ -1,0 +1,18 @@
+body{
+    background-color: #141d26;   
+}
+
+
+#Spotify-now-playing {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+@media (max-width: 768px) {
+    #Spotify-now-playing {
+        width: 100px;
+    }
+}
