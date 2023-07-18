@@ -10,12 +10,17 @@ setInterval(function() {
   });
   
 
-  const button = document.getElementById("strangerthings");
+// Find the button element by its id
+const button = document.getElementById("strangerthings");
+
+// Initialize the click count
+let clickCount = 0;
 
 // Add a click event listener to the button
 button.addEventListener("click", function() {
   // Text to be copied to the clipboard
   const textToCopy = "https://gamepadviewer.com/?p=1&s=8&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fstrangerthings.css";
+
 
   // Create a temporary textarea element
   const textarea = document.createElement("textarea");
@@ -32,9 +37,12 @@ button.addEventListener("click", function() {
   // Remove the temporary textarea
   document.body.removeChild(textarea);
 
+  // Increment the click count
+  clickCount++;
+
+  // Display the click count
+  console.log("Button clicked " + clickCount + " times");
+
   // Optionally, provide visual feedback to the user
-  button.textContent = "Copied!";
-  setTimeout(function() {
-    button.textContent = "Click to Copy";
-  }, 2000);
+
 });
