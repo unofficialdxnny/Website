@@ -9,10 +9,32 @@ body{
     right: 0;
 }
 
-
-
-@media (max-width: 768px) {
+.container {
+    
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .item {
+    flex: 0 0 auto;
+    margin: 0 25px;
+  }
+  
+.caption {
+    color: white;
+}
+  
+  h1 {
+    color: white;
+  }
+  
+/* @media (max-width: 768px) {
     #Spotify-now-playing {
         width: 100px;
     }
-}
+} */
