@@ -57,7 +57,7 @@ let clickCount = 0;
 // Add a click event listener to the button
 ds4White.addEventListener("click", function() {
   // Text to be copied to the clipboard
-  const textToCopy = "https://gamepad.e7d.io/?color=white&triggers=opacity";
+  const textToCopy = "https://gamepadviewer.com/?p=1&s=5&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fds4white.css";
 
 
   // Create a temporary textarea element
