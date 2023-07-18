@@ -11,15 +11,53 @@ setInterval(function() {
   
 
 // Find the button element by its id
-const button = document.getElementById("strangerthings");
+const strangerThings = document.getElementById("strangerthings");
 
 // Initialize the click count
 let clickCount = 0;
 
 // Add a click event listener to the button
-button.addEventListener("click", function() {
+strangerThings.addEventListener("click", function() {
   // Text to be copied to the clipboard
   const textToCopy = "https://gamepadviewer.com/?p=1&s=8&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fstrangerthings.css";
+
+
+  // Create a temporary textarea element
+  const textarea = document.createElement("textarea");
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+
+  // Select the text within the textarea
+  textarea.select();
+  textarea.setSelectionRange(0, textarea.value.length);
+
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+
+  // Remove the temporary textarea
+  document.body.removeChild(textarea);
+
+  // Increment the click count
+  clickCount++;
+
+  // Display the click count
+  console.log("Button clicked " + clickCount + " times");
+
+  // Optionally, provide visual feedback to the user
+
+});
+
+
+// Find the button element by its id
+const ds4White = document.getElementById("ds4White");
+
+// Initialize the click count
+let clickCount = 0;
+
+// Add a click event listener to the button
+ds4White.addEventListener("click", function() {
+  // Text to be copied to the clipboard
+  const textToCopy = "https://gamepad.e7d.io/?color=white&triggers=opacity";
 
 
   // Create a temporary textarea element
