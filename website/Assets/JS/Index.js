@@ -10,77 +10,41 @@ setInterval(function() {
   });
   
 
-// Find the button element by its id
-const strangerThings = document.getElementById("strangerthings");
+// // Find the button element by its id
+// const strangerThings = document.getElementById("strangerthings");
 
-// Initialize the click count
-let clickCount = 0;
+// // Initialize the click count
+// let clickCount = 0;
 
-// Add a click event listener to the button
-strangerThings.addEventListener("click", function() {
-  // Text to be copied to the clipboard
-  const textToCopy = "https://gamepadviewer.com/?p=1&s=8&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fstrangerthings.css";
-
-
-  // Create a temporary textarea element
-  const textarea = document.createElement("textarea");
-  textarea.value = textToCopy;
-  document.body.appendChild(textarea);
-
-  // Select the text within the textarea
-  textarea.select();
-  textarea.setSelectionRange(0, textarea.value.length);
-
-  // Copy the selected text to the clipboard
-  document.execCommand("copy");
-
-  // Remove the temporary textarea
-  document.body.removeChild(textarea);
-
-  // Increment the click count
-  clickCount++;
-
-  // Display the click count
-  console.log("Button clicked " + clickCount + " times");
-
-  // Optionally, provide visual feedback to the user
-
-});
+// // Add a click event listener to the button
+// strangerThings.addEventListener("click", function() {
+//   // Text to be copied to the clipboard
+//   const textToCopy = "https://gamepadviewer.com/?p=1&s=8&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fstrangerthings.css";
 
 
-// Find the button element by its id
-const ds4White = document.getElementById("ds4White");
+//   // Create a temporary textarea element
+//   const textarea = document.createElement("textarea");
+//   textarea.value = textToCopy;
+//   document.body.appendChild(textarea);
 
-// Initialize the click count
-let clickCount = 0;
+//   // Select the text within the textarea
+//   textarea.select();
+//   textarea.setSelectionRange(0, textarea.value.length);
 
-// Add a click event listener to the button
-ds4White.addEventListener("click", function() {
-  // Text to be copied to the clipboard
-  const textToCopy = "https://gamepadviewer.com/?p=1&s=5&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fds4white.css";
+//   // Copy the selected text to the clipboard
+//   document.execCommand("copy");
+
+//   // Remove the temporary textarea
+//   document.body.removeChild(textarea);
+
+//   // Increment the click count
+//   clickCount++;
+
+//   // Display the click count
+//   console.log("Button clicked " + clickCount + " times");
+
+//   // Optionally, provide visual feedback to the user
+
+// });
 
 
-  // Create a temporary textarea element
-  const textarea = document.createElement("textarea");
-  textarea.value = textToCopy;
-  document.body.appendChild(textarea);
-
-  // Select the text within the textarea
-  textarea.select();
-  textarea.setSelectionRange(0, textarea.value.length);
-
-  // Copy the selected text to the clipboard
-  document.execCommand("copy");
-
-  // Remove the temporary textarea
-  document.body.removeChild(textarea);
-
-  // Increment the click count
-  clickCount++;
-
-  // Display the click count
-  console.log("Button clicked " + clickCount + " times");
-
-  // Optionally, provide visual feedback to the user
-
-});
