@@ -10,6 +10,17 @@ setInterval(function() {
   });
   
 
+
+  function openURL() {
+    const urlToOpen = 'https://gamepadviewer.com/?p=1&s=8&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fstrangerthings.css';
+    window.open(urlToOpen, '_blank');
+  }
+
+  // Add an event listener to the overlay element
+  const overlay = document.querySelector('.click-overlay');
+  overlay.addEventListener('click', openURL);
+
+
 // // Find the button element by its id
 // const strangerThings = document.getElementById("strangerthings");
 

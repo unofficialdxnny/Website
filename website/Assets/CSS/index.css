@@ -1,9 +1,10 @@
 body{
     background-color: #141d26;   
-    background-image: url(https://i.ytimg.com/vi/dHtO8YzrB1c/maxresdefault.jpg);
+    background-image: url(https://images.unsplash.com/photo-1524351543168-8e38787614e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhcGhpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 
 
@@ -41,8 +42,24 @@ body{
   
 
   #link {
-    color: greenyellow;
+    color: blue;
   }
+
+  /* Add this CSS to position the overlay on top of the iframe */
+.iframe-wrapper {
+  position: relative;
+}
+
+.click-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 809px;
+  height: 599px;
+  opacity: 0; /* Make the overlay transparent to be invisible to the user */
+  cursor: pointer;
+}
+
 
 
 
