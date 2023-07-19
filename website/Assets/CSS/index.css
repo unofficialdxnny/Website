@@ -1,5 +1,9 @@
 body{
     background-color: #141d26;   
+    background-image: url(https://i.ytimg.com/vi/dHtO8YzrB1c/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -36,7 +40,13 @@ body{
   }
   
 
-/* tooltip settings 👇 */
+  #link {
+    color: greenyellow;
+  }
+
+
+
+  /* tooltip settings 👇 */
 
 .copy {
     /* button */
@@ -170,7 +180,7 @@ body{
   figure{
     width: 720px;
     height: 90px;
-    /* background-image: url("https://e1.pxfuel.com/desktop-wallpaper/807/629/desktop-wallpaper-black-graphics-bg-textured-designs-for-mobile-1600x1033-for-your-mobile-tablet-black-graphics.jpg"); */
+    background-image: url("https://i.pinimg.com/originals/16/03/fb/1603fb7077abb9093f4af305b4e5ce79.gif");
     background-position: 50% 46%;
     background-size: 800px; 
   /*   border: 2px solid #000000; */
