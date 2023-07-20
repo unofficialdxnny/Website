@@ -15,25 +15,31 @@ setInterval(function() {
     // Create a temporary textarea element to hold the URL
     const textarea = document.createElement('textarea');
     textarea.value = urlToCopy;
-  
+
     // Make the textarea hidden
     textarea.style.position = 'absolute';
     textarea.style.left = '-9999px';
-  
+
     // Add the textarea to the DOM
     document.body.appendChild(textarea);
-  
+
     // Select and copy the URL from the textarea
     textarea.select();
     document.execCommand('copy');
-  
+
     // Remove the temporary textarea from the DOM
     document.body.removeChild(textarea);
-  
-    // You can optionally show a message to the user to indicate successful copying
-    alert('URL copied to clipboard!');
+
+    // Show the notification box
+    const notificationBox = document.getElementById('notification-box');
+    notificationBox.style.display = 'block';
+
+    // Hide the notification box after a delay (e.g., 3 seconds)
+    setTimeout(() => {
+      notificationBox.style.display = 'none';
+    }, 3000);
   }
-  
+
   // // Add an event listener to the overlay element
   // const st = document.querySelector('#strangerthings-link');
   // st.addEventListener('click', function() {
