@@ -11,15 +11,34 @@ setInterval(function() {
   
 
 
-  function openURL() {
-    const urlToOpen = 'https://gamepadviewer.com/?p=1&s=8&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fstrangerthings.css';
-    window.open(urlToOpen, '_blank');
+  function copyURLToClipboard() {
+    const urlToCopy = 'https://gamepadviewer.com/?p=1&s=8&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FCSS%2Fstrangerthings.css';
+
+    // Create a temporary textarea element to hold the URL
+    const textarea = document.createElement('textarea');
+    textarea.value = urlToCopy;
+
+    // Make the textarea hidden
+    textarea.style.position = 'absolute';
+    textarea.style.left = '-9999px';
+
+    // Add the textarea to the DOM
+    document.body.appendChild(textarea);
+
+    // Select and copy the URL from the textarea
+    textarea.select();
+    document.execCommand('copy');
+
+    // Remove the temporary textarea from the DOM
+    document.body.removeChild(textarea);
+
+    // You can optionally show a message to the user to indicate successful copying
+    alert('URL copied to clipboard!');
   }
 
   // Add an event listener to the overlay element
-  const overlay = document.querySelector('.click-overlay');
-  overlay.addEventListener('click', openURL);
-
+  const overlay = document.querySelector('#strangerthings-link');
+  overlay.addEventListener('click', copyURLToClipboard);
 
 // // Find the button element by its id
 // const strangerThings = document.getElementById("strangerthings");
