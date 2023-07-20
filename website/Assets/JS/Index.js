@@ -84,6 +84,22 @@ function clickOutsideHandler(event) {
 }
 
 
+function isDesktopOrLaptop() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return /(?:windows|macintosh|linux|x11)/.test(userAgent);
+}
+
+function showNotAvailableMessage() {
+  const notAvailableMessage = "This website is not available for use on this platform.";
+  alert(notAvailableMessage);
+}
+
+// Check if the device is not a desktop or laptop
+if (!isDesktopOrLaptop()) {
+  showNotAvailableMessage();
+}
+
+
 // // Find the button element by its id
 // const strangerThings = document.getElementById("strangerthings");
 
