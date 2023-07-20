@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-position: fixed;
     
 }
 
@@ -62,132 +63,69 @@ body{
 }
 
 
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+}
+
+.popup-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.close-button:hover {
+  background-color: #d32f2f;
+}
 
 
-  /* tooltip settings 👇 */
+kbd {
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  margin: 0.1em;
+  background-color: gray;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+  line-height: 1;
+  box-shadow: 0 1px 100px rgba(0, 0, 0, 0.1);
+}
 
-.copy {
-    /* button */
-    --button-bg: #353434;
-    --button-hover-bg: #464646;
-    --button-text-color: #CCCCCC;
-    --button-hover-text-color: #8bb9fe;
-    --button-border-radius: 10px;
-    --button-diameter: 36px;
-    --button-outline-width: 1px;
-    --button-outline-color: rgb(141, 141, 141);
-    /* tooltip */
-    --tooltip-bg: #f4f3f3;
-    --toolptip-border-radius: 4px;
-    --tooltip-font-family: Menlo, Roboto Mono, monospace;
-    /* 👆 this field should not be empty */
-    --tooltip-font-size: 12px;
-    /* 👆 this field should not be empty */
-    --tootip-text-color: rgb(50, 50, 50);
-    --tooltip-padding-x: 7px;
-    --tooltip-padding-y: 7px;
-    --tooltip-offset: 8px;
-    /* --tooltip-transition-duration: 0.3s; */
-    /* 👆 if you need a transition, 
-    just remove the comment,
-    but I didn't like the transition :| */
-  }
-  
-  .copy {
-    box-sizing: border-box;
-    width: var(--button-diameter);
-    height: var(--button-diameter);
-    border-radius: var(--button-border-radius);
-    background-color: var(--button-bg);
-    color: var(--button-text-color);
-    border: none;
-    cursor: pointer;
-    position: relative;
-    outline: none;
-  }
-  
-  .tooltip {
-    position: absolute;
-    opacity: 0;
-    visibility: 0;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    font: var(--tooltip-font-size) var(--tooltip-font-family);
-    color: var(--tootip-text-color);
-    background: var(--tooltip-bg);
-    padding: var(--tooltip-padding-y) var(--tooltip-padding-x);
-    border-radius: var(--toolptip-border-radius);
-    pointer-events: none;
-    transition: all var(--tooltip-transition-duration) cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .tooltip::before {
-    content: attr(data-text-initial);
-  }
-  
-  .tooltip::after {
-    content: "";
-    position: absolute;
-    bottom: calc(var(--tooltip-padding-y) / 2 * -1);
-    width: var(--tooltip-padding-y);
-    height: var(--tooltip-padding-y);
-    background: inherit;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    z-index: -999;
-    pointer-events: none;
-  }
-  
-  .copy svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .checkmark {
-    display: none;
-  }
-  
-  /* actions */
-  
-  .copy:hover .tooltip,
-  .copy:focus:not(:focus-visible) .tooltip {
-    opacity: 1;
-    visibility: visible;
-    top: calc((100% + var(--tooltip-offset)) * -1);
-  }
-  
-  .copy:focus:not(:focus-visible) .tooltip::before {
-    content: attr(data-text-end);
-  }
-  
-  .copy:focus:not(:focus-visible) .clipboard {
-    display: none;
-  }
-  
-  .copy:focus:not(:focus-visible) .checkmark {
-    display: block;
-  }
-  
-  .copy:hover,
-  .copy:focus {
-    background-color: var(--button-hover-bg);
-  }
-  
-  .copy:active {
-    outline: var(--button-outline-width) solid var(--button-outline-color);
-  }
-  
-  .copy:hover svg {
-    color: var(--button-hover-text-color);
-  }
+/* Optional: Adding a subtle shadow when the key is pressed */
+kbd:active {
+  box-shadow: inset 0 2px 100px rgba(0, 0, 0, 0.2);
+}
 
 
-
-
+#icon {
+  display: inline-block;
+  font-size: 24px;
+  color: #333; /* Change the color as needed */
+  margin: 5px;
+}
 
 
 
@@ -198,7 +136,7 @@ body{
   figure{
     width: 720px;
     height: 90px;
-    background-image: url("https://i.pinimg.com/originals/16/03/fb/1603fb7077abb9093f4af305b4e5ce79.gif");
+    /* background-image: url("https://i.pinimg.com/originals/16/03/fb/1603fb7077abb9093f4af305b4e5ce79.gif"); */
     background-position: 50% 46%;
     background-size: 800px; 
   /*   border: 2px solid #000000; */

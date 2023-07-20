@@ -40,6 +40,47 @@ setInterval(function() {
   const overlay = document.querySelector('#strangerthings-link');
   overlay.addEventListener('click', copyURLToClipboard);
 
+
+
+  // help
+
+  let isPopupOpen = false;
+
+document.addEventListener('keyup', function(event) {
+  if (event.key === 'h') {
+    togglePopup();
+  }
+});
+
+function togglePopup() {
+  const popup = document.getElementById('popupContainer');
+  if (isPopupOpen) {
+    closePopup(popup);
+  } else {
+    openPopup(popup);
+  }
+}
+
+function openPopup(popup) {
+  popup.style.display = 'block';
+  isPopupOpen = true;
+  document.addEventListener('click', clickOutsideHandler);
+}
+
+function closePopup(popup) {
+  popup.style.display = 'none';
+  isPopupOpen = false;
+  document.removeEventListener('click', clickOutsideHandler);
+}
+
+function clickOutsideHandler(event) {
+  const popup = document.getElementById('popupContainer');
+  if (!popup.contains(event.target)) {
+    closePopup(popup);
+  }
+}
+
+
 // // Find the button element by its id
 // const strangerThings = document.getElementById("strangerthings");
 
