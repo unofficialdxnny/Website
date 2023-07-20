@@ -40,6 +40,21 @@ setInterval(function() {
     }, 3000);
   }
 
+  function isDesktopOrLaptop() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    return /(?:windows|macintosh|linux|x11)/.test(userAgent);
+  }
+  
+  function showNotAvailableMessage() {
+    const notAvailableMessage = "This website is not available for use on this platform.";
+    alert(notAvailableMessage);
+  }
+  
+  // Check if the device is not a desktop or laptop
+  if (!isDesktopOrLaptop()) {
+    showNotAvailableMessage();
+  }
+  
   // // Add an event listener to the overlay element
   // const st = document.querySelector('#strangerthings-link');
   // st.addEventListener('click', function() {
