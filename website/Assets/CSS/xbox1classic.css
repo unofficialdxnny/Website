@@ -34,33 +34,3 @@
     left: 488px;
 }
 
-
-.xbox .sticks {
-    position: absolute;
-    width: 371px;
-    height: 196px;
-    top: 239px;
-    left: 144px;
-}
-
-.xbox .stick {
-    position: absolute;
-    background: url(https://gamepadviewer.com/xbox-assets-old/stick.png);
-    background-position: -85px 0;
-    height: 83px;
-    width: 83px;
-}
-
-.xbox .stick.pressed {
-    background-position: 0 0;
-}
-
-.xbox .stick.left {
-    top: 0;
-    left: 0;
-}
-
-.xbox .stick.right {
-    top: 113px;
-    left: 288px;
-}
