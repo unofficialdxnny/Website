@@ -30,15 +30,28 @@ setInterval(function() {
     // Remove the temporary textarea from the DOM
     document.body.removeChild(textarea);
 
-    // Show the notification box
+    // Show the notification box with the slide-in animation
     const notificationBox = document.getElementById('notification-box');
     notificationBox.style.display = 'block';
+    notificationBox.classList.remove('slide-out');
+    notificationBox.classList.add('slide-in');
 
     // Hide the notification box after a delay (e.g., 3 seconds)
     setTimeout(() => {
-      notificationBox.style.display = 'none';
+      // Hide the notification box with the slide-out animation
+      notificationBox.classList.remove('slide-in');
+      notificationBox.classList.add('slide-out');
+      // Delay the removal to allow the slide-out animation to complete
+      setTimeout(() => {
+        notificationBox.style.display = 'none';
+      }, 300);
     }, 3000);
   }
+
+
+
+
+
 
   function isDesktopOrLaptop() {
     const userAgent = navigator.userAgent.toLowerCase();

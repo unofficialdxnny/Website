@@ -168,4 +168,17 @@ kbd:active {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   display: none;
+  /* Define the slide-in animation */
+  animation: slideIn 0.3s ease-in;
+}
+
+/* Define the slide-out animation */
+@keyframes slideOut {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(-200%); }
+}
+
+/* Add a class to trigger the slide-out animation */
+.slide-out {
+  animation: slideOut 0.3s ease-out;
 }
