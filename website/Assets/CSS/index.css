@@ -1,5 +1,8 @@
 *{
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
     background-color: #141d26;   
@@ -188,4 +191,52 @@ kbd:active {
 /* Add a class to trigger the slide-out animation */
 .slide-out {
   animation: slideOut 0.3s ease-out;
+}
+
+
+
+
+/* Search container styling */
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Search input styling */
+.search-input {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 200px;
+}
+
+.search-input:focus {
+  border-color: #6e83a3;
+}
+
+/* Search button styling */
+.search-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #6e83a3;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #465e82;
+}
+
+/* Icon (you can use Font Awesome icons, or any other icon library) */
+.search-button i {
+  color: #fff;
 }
