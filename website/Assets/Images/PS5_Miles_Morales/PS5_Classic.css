@@ -1,6 +1,6 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(https://github.com/unofficialdxnny/Website/blob/main/website/Assets/Images/PS5_Miles_Morales/Base.png?raw=true);
+    background: url(White_Skin.png);
     height: 700px;
     width: 1200px;
     /*    margin-left: -403px;
@@ -11,6 +11,29 @@
     display: none;
 }
 
+.ds4 .triggers {
+    width: 598px;
+    height: 90px;
+    position: absolute;
+    left: 299px;
+    top: 38px;
+}
+
+.ds4 .trigger {
+    width: 99px;
+    height: 100%;
+    background: url(Trigger_Pressed.png);
+    opacity: 0;
+}
+
+.ds4 .trigger.left {
+    float: left;
+}
+
+.ds4 .trigger.right {
+    float: right;
+    background-position-x: 99px;
+}
 
 .ds4 .bumper {
     width: 200px;
