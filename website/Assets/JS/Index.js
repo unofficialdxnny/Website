@@ -15,38 +15,25 @@ setInterval(function() {
     // Create a temporary textarea element to hold the URL
     const textarea = document.createElement('textarea');
     textarea.value = urlToCopy;
-
+  
     // Make the textarea hidden
     textarea.style.position = 'absolute';
     textarea.style.left = '-9999px';
-
+  
     // Add the textarea to the DOM
     document.body.appendChild(textarea);
-
+  
     // Select and copy the URL from the textarea
     textarea.select();
     document.execCommand('copy');
-
+  
     // Remove the temporary textarea from the DOM
     document.body.removeChild(textarea);
-
-    // Show the notification box with the slide-in animation
-    const notificationBox = document.getElementById('notification-box');
-    notificationBox.style.display = 'block';
-    notificationBox.classList.remove('slide-out');
-    notificationBox.classList.add('slide-in');
-
-    // Hide the notification box after a delay (e.g., 3 seconds)
-    setTimeout(() => {
-      // Hide the notification box with the slide-out animation
-      notificationBox.classList.remove('slide-in');
-      notificationBox.classList.add('slide-out');
-      // Delay the removal to allow the slide-out animation to complete
-      setTimeout(() => {
-        notificationBox.style.display = 'none';
-      }, 300);
-    }, 3000);
+  
+    // Show an alert to indicate that the URL has been copied
+    alert('URL has been copied to the clipboard.');
   }
+  
 
 
 
