@@ -159,3 +159,13 @@ if (!isDesktopOrLaptop()) {
 // });
 
 
+window.addEventListener("load", function () {
+  const preloadContainer = document.getElementById("preloadContainer");
+  const content = document.getElementById("content");
+
+  // Simulate the loading process
+  setTimeout(function () {
+    preloadContainer.style.display = "none";
+    content.classList.add("show");
+  }, 3000); // Replace 3000 with your desired loading time in milliseconds
+});
