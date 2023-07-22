@@ -1,6 +1,6 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(White_SkinNo_Buttons.png);
+    background: url(miles_morales_base_white.png);
     height: 700px;
     width: 1200px;
     /*    margin-left: -403px;
@@ -74,7 +74,7 @@
 }
 
 .ds4 .touchpad.pressed {
-    background: url(Touchpad.png) no-repeat center;
+    background: url(Touchpad_light.png) no-repeat center;
 }
 
 .ds4 .meta {
