@@ -8,7 +8,8 @@
 }
 
 .ds4.disconnected div {
-    display: none;
+    /* display: none; */
+    background: url(disconnected.gif);
 }
 
 .ds4 .triggers {
