@@ -8,7 +8,22 @@
 </head>
 <body>
 
-
+    <div class="container">
+        <h1>Gamepad Builder</h1>
+        <form id="gpv">
+          <label for="name">Controller Name</label>
+          <select id="name" name="name" required>
+            <option value="">Select a controller name</option>
+            <option value="Playstation 3">Playstation 3</option>
+            <option value="Playstation 4">Playstation 4</option>
+            <option value="Xbox 360">Xbox 360</option>
+            <option value="Xbox one">Xbox one</option>
+            <!-- Add more options as needed -->
+          </select>
+    
+          <button type="button" onclick="generateCSS()">Submit</button>
+        </form>
+      </div>
     
     <script src="./Assets/JS/builder.js"></script>
 </body>
