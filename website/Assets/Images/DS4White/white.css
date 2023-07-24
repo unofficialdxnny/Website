@@ -5,3 +5,7 @@
 .ds4.white .stick {
     background-image: url(sticks.png);
 }
+
+.ds4.white .face {
+    background-image: url(dpad.png);
+}
