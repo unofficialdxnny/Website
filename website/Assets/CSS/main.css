@@ -21,15 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .profile img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Align items with space between, pushing the content to the top and bottom */
   }
   
   .profile h2 {
@@ -109,6 +101,33 @@ body {
     font-size: 16px;
     line-height: 1.6;
   }
+  
+/* styles.css */
+
+/* ... (previous CSS rules) ... */
+
+.profile {
+    text-align: center; /* Center the content horizontally within the .profile div */
+  }
+  
+  .profile .pfp {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Round the profile picture */
+    margin: 0 auto 10px; /* Center the image and add some bottom margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Override the .spotify class styles to keep the Spotify image normal */
+  .profile #Spotify-now-playing {
+    border-radius: 5px; /* Add a slight border radius for a subtle rounded corner effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for a lift effect */
+    
+  }
+
+  
+
   
   /* Add media queries here to make the layout responsive as per your requirements */
   
