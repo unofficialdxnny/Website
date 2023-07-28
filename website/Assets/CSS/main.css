@@ -7,22 +7,21 @@ body {
   }
   
   .container {
-    display: flex;
+    display: grid; /* Use CSS Grid to maintain equal-sized columns */
+    grid-template-columns: 30% 1fr; /* Left section occupies 30% and right section occupies the rest (1fr) */
     max-width: 1200px;
     margin: 0 auto;
   }
   
   .left-section {
-    width: 30%;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 5);
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; /* Align items with space between, pushing the content to the top and bottom */
+    
   }
+  
+  
   
   .profile h2 {
     font-size: 24px;
@@ -116,13 +115,13 @@ body {
     object-fit: cover;
     border-radius: 50%; /* Round the profile picture */
     margin: 0 auto 10px; /* Center the image and add some bottom margin */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   }
   
   /* Override the .spotify class styles to keep the Spotify image normal */
   .profile #Spotify-now-playing {
     border-radius: 5px; /* Add a slight border radius for a subtle rounded corner effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for a lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Add a box shadow for a lift effect */
     
   }
 
