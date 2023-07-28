@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Assets/CSS/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="./Assets/CSS/main.css">
 </head>
 <body>
-   
-    
-    <script src="./Assets/JS/Index.js"></script>
+  <div class="container">
+    <div class="left-section">
+      <div class="profile">
+        <img src="your-profile-picture.jpg" alt="Your Profile Picture">
+        <h2>Your Name</h2>
+        <p>Email: your.email@example.com</p>
+        <div class="social-icons">
+          <!-- Add your social media icons here (e.g., using Font Awesome or other icon libraries) -->
+        </div>
+      </div>
+    </div>
+    <div class="right-section">
+      <nav class="navbar">
+        <button class="nav-item" onclick="showAbout()">About</button>
+        <button class="nav-item" onclick="showEducation()">Education</button>
+        <button class="nav-item" onclick="showProjects()">Projects</button>
+        <!-- Add more navigation items as needed -->
+      </nav>
+      <div class="content about" id="aboutContent">
+        <h2>About Me</h2>
+        <p>Add your introduction and personal details here.</p>
+      </div>
+      <div class="content education" id="educationContent">
+        <h2>Education</h2>
+        <p>Add your educational background and qualifications here.</p>
+      </div>
+      <div class="content projects" id="projectsContent">
+        <h2>Projects</h2>
+        <!-- Add information about your projects here, you can use cards or other elements as needed -->
+      </div>
+      <!-- Add more content sections and customize as per your requirements -->
+    </div>
+  </div>
+  <script src="./Assets/JS/main.js"></script>
 </body>
 </html>
