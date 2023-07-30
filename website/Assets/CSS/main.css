@@ -2,8 +2,8 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #141d26;
+  
 }
 
 .container {
@@ -100,12 +100,14 @@ body {
 .content h2 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: beige;
   
 }
 
 .content p {
   font-size: 16px;
   line-height: 1.6;
+  color: beige;
 }
 
 /* Media queries */
