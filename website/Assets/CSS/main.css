@@ -131,6 +131,17 @@ body {
   width: 100%;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #141d26;
+  
+  padding: 10px;
+}
+
+
 /* Responsive-ness for different screen-sizes */
 @media screen and (max-width: 810px) {
   .gallery {
