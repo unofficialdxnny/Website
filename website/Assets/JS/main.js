@@ -3,9 +3,9 @@ function showAbout() {
     document.getElementById("aboutContent").classList.add("show");
   }
   
-  function showEducation() {
+  function showgpv() {
     hideAllContent();
-    document.getElementById("educationContent").classList.add("show");
+    document.getElementById("GamepadContent").classList.add("show");
   }
   
   function showProjects() {
