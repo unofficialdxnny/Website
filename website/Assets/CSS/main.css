@@ -1,133 +1,126 @@
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-  }
-  
-  .container {
-    display: grid; /* Use CSS Grid to maintain equal-sized columns */
-    grid-template-columns: 30% 1fr; /* Left section occupies 30% and right section occupies the rest (1fr) */
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .left-section {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 5);
-    border-radius: 10px;
-    height: 400px;
-    
-  }
-  
-  
-  
-  .profile h2 {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-  
-  .profile p {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .social-icons a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 50%;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    background-color: #0056b3;
-  }
-  
-  .right-section {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .navbar {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .nav-item {
-    padding: 10px 15px;
-    font-size: 16px;
-    color: #007bff;
-    background-color: #fff;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .nav-item:hover {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .content {
-    display: none;
-  }
-  
-  .content.show {
-    display: block;
-  }
-  
-  .content h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .content p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-/* styles.css */
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
 
-/* ... (previous CSS rules) ... */
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* Change to a single column layout on mobile */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-section {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: auto; /* Change to auto height to adjust based on content */
+}
 
 .profile {
-    text-align: center; /* Center the content horizontally within the .profile div */
-  }
+  text-align: center;
+}
+
+.profile .pfp {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reduce the box shadow for a lighter effect */
+}
+
+.profile #Spotify-now-playing {
+  border-radius: 5px; /* Add a slight border radius for a subtle rounded corner effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Add a box shadow for a lift effect */
   
-  .profile .pfp {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%; /* Round the profile picture */
-    margin: 0 auto 10px; /* Center the image and add some bottom margin */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-  }
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center the social icons horizontally */
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #0056b3;
+}
+
+.right-section {
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow the navigation buttons to wrap on small screens */
+  justify-content: center; /* Center the navigation buttons horizontally */
+}
+
+.nav-item {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.content {
+  display: none;
+}
+
+.content.show {
+  display: block;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
   
-  /* Override the .spotify class styles to keep the Spotify image normal */
-  .profile #Spotify-now-playing {
-    border-radius: 5px; /* Add a slight border radius for a subtle rounded corner effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Add a box shadow for a lift effect */
-    
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Media queries */
+
+/* Mobile styles for screens up to 600px */
+@media only screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr; /* Change to a single column layout on mobile */
   }
 
-  
+  .navbar {
+    justify-content: space-around; /* Adjust alignment for smaller screens */
+  }
 
-  
-  /* Add media queries here to make the layout responsive as per your requirements */
-  
+  .left-section {
+    margin-bottom: 20px; /* Add some space between left and right sections */
+  }
+}
