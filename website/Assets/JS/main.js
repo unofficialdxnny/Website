@@ -8,9 +8,9 @@ function showAbout() {
     document.getElementById("GamepadContent").classList.add("show");
   }
   
-  function showProjects() {
+  function showBanners() {
     hideAllContent();
-    document.getElementById("projectsContent").classList.add("show");
+    document.getElementById("BannersContent").classList.add("show");
   }
   
   function hideAllContent() {
