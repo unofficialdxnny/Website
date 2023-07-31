@@ -141,6 +141,21 @@ body {
   padding: 10px;
 }
 
+.gallery .image {
+  position: relative;
+}
+
+.gallery .image p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adding a background color for better readability */
+  color: #fff; /* Optional: Changing the text color to white */
+}
 
 /* Responsive-ness for different screen-sizes */
 @media screen and (max-width: 810px) {
