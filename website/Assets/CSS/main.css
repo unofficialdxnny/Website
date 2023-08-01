@@ -15,10 +15,12 @@ body {
 
 .left-section {
   padding: 20px;
-  background-color: #fff;
+  background-color: #232c35;
   box-shadow: 0 4px 12px rgb(255, 255, 255);
   border-radius: 10px;
   height: auto; /* Change to auto height to adjust based on content */
+  
+  color: beige;
 }
 
 .profile {
