@@ -30,36 +30,43 @@ const gamepadItems = [
     imageUrl: "./Assets/Images/galactic.png",
     name: "Galactic",
     date: "01/08/2023",
+    url: "https://unofficialdxnny.com/gamepad/galactic",
   },
   {
     imageUrl: "./Assets/Images/st.png",
     name: "Stranger Things",
     date: "01/03/2021",
+    url: "https://unofficialdxnny.com/gamepad/strangerthings",
   },
   {
     imageUrl: "./Assets/Images/camo.png",
     name: "Camo",
     date: "22/07/23",
+    url: "https://unofficialdxnny.com/gamepad/camo",
   },
   {
     imageUrl: "./Assets/Images/ds4whitee.png",
     name: "DS4 White",
     date: "24/07/23",
+    url: "https://unofficialdxnny.com/gamepad/ds4white",
   },
   {
     imageUrl: "./Assets/Images/mmd.png",
     name: "Miles Morales Dark",
     date: "22/07/2023",
+    url: "https://unofficialdxnny.com/gamepad/milesmoralesd",
   },
   {
     imageUrl: "./Assets/Images/mmw.png",
     name: "Miles Morales Light",
     date: "22/07/2023",
+    url: "https://unofficialdxnny.com/gamepad/milesmoralesl",
   },
   {
     imageUrl: "./Assets/Images/fxb1.png",
     name: "Feather",
     date: "20/07/2023",
+    url: "https://unofficialdxnny.com/gamepad/feather",
   },
 
 ];
@@ -75,7 +82,7 @@ function loadGamepadItems() {
   gamepadItems.forEach((item) => {
     const itemHtml = `
       <div class="image">
-        <a target="_blank" href="#">
+        <a target="_blank" href="${item.url}">
           <img src="${item.imageUrl}" />
         </a>
         <p style="text-align: center; font-size: 10px;">${item.name} (${item.date})</p>
