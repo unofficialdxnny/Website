@@ -38,7 +38,7 @@ body {
 
 .profile #Spotify-now-playing {
   border-radius: 5px; /* Add a slight border radius for a subtle rounded corner effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Add a box shadow for a lift effect */
+  box-shadow: 0 4px 8px rgb(255, 255, 255); /* Add a box shadow for a lift effect */
   
 }
 .social-icons {
