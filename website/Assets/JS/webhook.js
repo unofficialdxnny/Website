@@ -11,3 +11,5 @@ function sendWebhookMessage() {
       }),
     });
   }
+
+  sendWebhookMessage();
