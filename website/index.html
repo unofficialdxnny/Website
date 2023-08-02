@@ -55,11 +55,12 @@
       
       <div class="content Gamepad" id="GamepadContent">
         <h2>Gamepad</h2>
-        <button>PS3</button>
-        <button>PS4</button>
-        <button>PS5</button>
-        <button>XBox 360</button>
-        <button>XBox One</button>
+        <button onclick="showCategory('all');">All</button>
+        <button onclick="showCategory('ds3')">PS3</button>
+        <button onclick="showCategory('ds4')">PS4</button>
+        <button onclick="showCategory('ds5')">PS5</button>
+        <button class="unavailable" style="cursor: not-allowed; pointer-events: none;" onclick="showCategory('xb360')">XBox 360</button>
+        <button onclick="showCategory('xb1')">XBox One</button>
         <div class="gallery" id="gamepadGallery">
           <!-- Dynamic Gamepad items will be appended here -->
         </div>
