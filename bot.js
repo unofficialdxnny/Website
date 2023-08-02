@@ -33,3 +33,5 @@ server.listen(3000, () => {
 
 // Log in to Discord using your bot token
 client.login('YOUR_BOT_TOKEN');
+
+
