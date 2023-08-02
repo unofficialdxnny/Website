@@ -90,7 +90,7 @@ function showCategory(category) {
     if (category === "all" || item.category === category) {
       const itemHtml = `
         <div class="image">
-          <a target="_blank" href="#">
+          <a target="_blank" href="${item.url}">
             <img src="${item.imageUrl}" />
           </a>
           <p style="text-align: center; font-size: 10px;">${item.name} (${item.date})</p>
