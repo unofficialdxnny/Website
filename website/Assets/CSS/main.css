@@ -75,21 +75,7 @@ body {
   justify-content: center; /* Center the navigation buttons horizontally */
 }
 
-.nav-item {
-  padding: 10px 15px;
-  font-size: 16px;
-  color: #007bff;
-  background-color: #fff;
-  border: 1px solid #007bff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.nav-item:hover {
-  background-color: #007bff;
-  color: #fff;
-}
 
 .content {
   display: none;
@@ -174,6 +160,43 @@ body {
     --webkit-column-count: 2;
     --moz-column-count: 2;
   }
+}
+
+button {
+
+  display: inline-block;
+  outline: none;
+
+  padding: 0 16px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  border: 2px solid #dddbda;
+  color: #0070d2;
+  line-height: 30px;
+
+
+
+}
+
+button:hover {
+  background-color: #aaaaaa; 
+} 
+
+.nav-item {
+  display: inline-block;
+  outline: none;
+
+  padding: 0 16px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  border: 2px solid #dddbda;
+  color: #0070d2;
+  line-height: 30px;
+}
+
+.nav-item:hover {
+  background-color: #aaaaaa; 
+
 }
 
 @media screen and (max-width: 400px) {
