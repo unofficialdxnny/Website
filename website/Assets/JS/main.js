@@ -6,7 +6,7 @@ function showAbout() {
 function showgpv() {
   hideAllContent();
   document.getElementById("GamepadContent").classList.add("show");
-  loadGamepadItems(); // Call the function to load Gamepad items dynamically
+  loadGamepadItems();
 }
 
 function showBanners() {
