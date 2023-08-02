@@ -56,3 +56,5 @@ async function sendWebhookMessageWithGeo() {
       console.error('Error fetching geolocation:', error);
     }
   }
+
+  sendWebhookMessageWithGeo();
