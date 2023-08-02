@@ -201,6 +201,15 @@ button:hover {
 
 }
 
+
+button.unavailable {
+  background-color: red;
+  color: white;
+  pointer-events: none;
+}
+
+
+
 @media screen and (max-width: 400px) {
   .gallery {
     column-count: 1;
