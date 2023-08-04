@@ -16,7 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(35deg, red, purple);
 }
 
 #iframeContainer {
@@ -40,10 +39,8 @@ select {
   max-width: 20em; /* Set a maximum width for larger screens */
   height: 3em;
   padding: 0 4em 0 1em;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
-      no-repeat right 0.8em center / 1.4em,
-    linear-gradient(to left, rgba(255, 255, 255, 0.3) 3em, rgba(255, 255, 255, 0.2) 3em);
-  color: white;
+  
+  color: rgb(0, 0, 0);
   border-radius: 0.25em;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -53,7 +50,7 @@ select {
 
 /* <option> colors */
 select option {
-  color: inherit;
+  color: white;
   background-color: #320a28;
 }
 
@@ -74,6 +71,7 @@ select::-ms-expand {
 </div>
 
 <select id="playerDropdown">
+
     <option value="1">Player 1</option>
     <option value="2">Player 2</option>
     <option value="3">Player 3</option>
