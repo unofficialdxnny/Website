@@ -75,7 +75,13 @@ const gamepadItems = [
     url: "https://unofficialdxnny.com/gamepad/feather",
     category: "xb1",
   },
-
+  {
+    imageUrl: "./Assets/Images/destiny.png",
+    name: "Destiny 2",
+    date: "07/08/2023",
+    url: "https://unofficialdxnny.com/gamepad/destiny",
+    category: "ds5",
+  },
 ];
 
 // Function to dynamically generate the content for Gamepad items
