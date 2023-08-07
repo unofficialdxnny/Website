@@ -1,6 +1,6 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(Black_SkinNo_Buttons.png);
+    background: url(White_SkinNo_Buttons.png);
     height: 700px;
     width: 1200px;
     /*    margin-left: -403px;
@@ -8,7 +8,7 @@
 }
 
 .ds4.disconnected div {
-    display: none;
+    background: url(disconnected.css);
 }
 
 .ds4 .triggers {
