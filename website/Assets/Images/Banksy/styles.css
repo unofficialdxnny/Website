@@ -14,6 +14,23 @@
 .xbox.disconnected {
     background: url(disconnected.gif);
 }
+
+
+.xbox .abxy {
+    position: absolute;
+    width: 153px;
+    height: 156px;
+    top: 192px;
+    left: 488px;
+}
+
+.xbox .button {
+    position: absolute;
+    background: url(abxy.png);
+    width: 48px;
+    height: 48px;
+}
+
 /* 
 .xbox.disconnected div {
     display: none;
