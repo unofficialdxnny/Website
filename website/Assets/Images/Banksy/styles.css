@@ -31,6 +31,14 @@
     height: 48px;
 }
 
+.xbox .stick {
+    position: absolute;
+    background: url(stick.png);
+    background-position: -85px 0;
+    height: 83px;
+    width: 83px;
+}
+
 /* 
 .xbox.disconnected div {
     display: none;
