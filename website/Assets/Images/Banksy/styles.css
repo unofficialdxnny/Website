@@ -39,6 +39,13 @@
     width: 83px;
 }
 
+
+.xbox .face {
+    background: url(dpad.png);
+    position: absolute;
+    opacity: 0;
+}
+
 /* 
 .xbox.disconnected div {
     display: none;
