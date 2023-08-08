@@ -46,6 +46,13 @@
     opacity: 0;
 }
 
+
+.xbox .back, .xbox .start {
+    background: url(start-select.png);
+    width: 33px;
+    height: 33px;
+    opacity: 0;
+}
 /* 
 .xbox.disconnected div {
     display: none;
