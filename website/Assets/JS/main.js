@@ -89,6 +89,14 @@ const gamepadItems = [
     url: "https://unofficialdxnny.com/gamepad/banksy",
     category: "xb1",
   },
+  {
+    imageUrl: "./Assets/Images/isla.png",
+    name: "Custom Controller For Isla",
+    date: "07/08/2023",
+    url: "https://unofficialdxnny.com/gamepad/isla",
+    category: "ds4",
+  },
+
 ];
 
 // Function to dynamically generate the content for Gamepad items
