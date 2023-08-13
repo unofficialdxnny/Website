@@ -96,6 +96,13 @@ const gamepadItems = [
     url: "https://unofficialdxnny.com/gamepad/isla",
     category: "ds4",
   },
+  {
+    imageUrl: "https://cdn.discordapp.com/attachments/1140408481871036526/1140424529206853633/image.png",
+    name: "Custom navyblue controller for M...",
+    date: "14/08/2023",
+    url: "https://unofficialdxnny.com/gamepad/navyblue",
+    category: "ds4",
+  },
 
 ];
 
