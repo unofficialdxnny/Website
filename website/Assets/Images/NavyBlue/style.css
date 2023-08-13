@@ -16,10 +16,11 @@
     background-image: url(bumper.png);
 }
 
-/* .ds4.white .trigger {
-    background-image: url(ps4-white-assets/triggers.svg);
+.ds4.white .stick {
+    background-image: url(sticks.png);
 }
 
+/*
 
 
 .ds4.white .touchpad.pressed {
