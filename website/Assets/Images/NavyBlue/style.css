@@ -32,20 +32,9 @@
     background: url(touchpad_pressed.svg) no-repeat center;
 }
 
-/*
-
-
-.ds4.white .touchpad.pressed {
-    background-image: url(ps4-white-assets/touchpad.svg);
-}
-
-
 .ds4.white .button {
-    background-image: url(ps4-white-assets/face.svg);
+    background-image: url(face.png);
 }
 
-
-
- */
 
 /*END PS4 White Controller Styling*/
