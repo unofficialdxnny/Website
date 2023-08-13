@@ -8,6 +8,10 @@
     background: url(disconnected.png);
 }
 
+.ds4.white .trigger {
+    background-image: url(triggers.png);
+}
+
 .ds4.white .bumper {
     background-image: url(bumper.png);
 }
