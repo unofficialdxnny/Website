@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currently Playing</title>
+</head>
+<body>
+    <h1>Currently Playing</h1>
+    <p id="trackInfo"></p>
+    
+    <script>
+        function updateTrackInfo() {
+            fetch('/get_track')
+                .then(response => response.json())
+                .then(data => {
+                    const trackInfoElement = document.getElementById('trackInfo');
+                    trackInfoElement.innerHTML = `Now Playing: ${data.title} by ${data.artist} from ${data.album}`;
+                });
+        }
+
+        setInterval(updateTrackInfo, 5000); // Update every 5 seconds
+        updateTrackInfo(); // Initial update
+    </script>
+</body>
+</html>
