@@ -105,9 +105,9 @@ const gamepadItems = [
   },
   {
     imageUrl: "https://media.discordapp.net/attachments/1142287652272492585/1142511470689648700/image.png?width=644&height=363",
-    name: "Hakimo Toga",
+    name: "Hamiko Toga",
     date: "19/08/2023",
-    url: "https://unofficialdxnny.com/gamepad/hakimotoga",
+    url: "https://unofficialdxnny.com/gamepad/HamikoToga",
     category: "ds5",
   },
 
