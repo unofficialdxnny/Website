@@ -103,6 +103,13 @@ const gamepadItems = [
     url: "https://unofficialdxnny.com/gamepad/navyblue",
     category: "ds4",
   },
+  {
+    imageUrl: "https://media.discordapp.net/attachments/1142287652272492585/1142511470689648700/image.png?width=644&height=363",
+    name: "Hakimo Toga",
+    date: "19/08/2023",
+    url: "https://unofficialdxnny.com/gamepad/hakimotoga",
+    category: "ds5",
+  },
 
 ];
 
