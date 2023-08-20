@@ -74,9 +74,9 @@
     top: 74px;
 }
 
-.ds4 .touchpad.pressed {
+/* .ds4 .touchpad.pressed {
     background: url(tpp.png) no-repeat center;
-}
+} */
 
 .ds4 .meta {
     width: 100px;
