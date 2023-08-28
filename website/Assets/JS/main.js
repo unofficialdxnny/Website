@@ -117,6 +117,13 @@ const gamepadItems = [
     url: "https://unofficialdxnny.com/gamepad/LJames",
     category: "ds5",
   },
+  {
+    imageUrl: "https://unofficialdxnny.com/Assets/Images/Camie.png",
+    name: "Lebron James",
+    date: "27/08/2023",
+    url: "https://unofficialdxnny.com/gamepad/LJames",
+    category: "ds5",
+  },
 
 ];
 
