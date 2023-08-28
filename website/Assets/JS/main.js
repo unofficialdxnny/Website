@@ -118,7 +118,7 @@ const gamepadItems = [
     category: "ds5",
   },
   {
-    imageUrl: "https://unofficialdxnny.com/Assets/Images/Camie.png",
+    imageUrl: "https://cdn.discordapp.com/attachments/1073929980343496815/1145794868044644362/image.png",
     name: "Camie ",
     date: "21/08/2023",
     url: "https://unofficialdxnny.com/gamepad/camie",
