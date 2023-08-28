@@ -119,8 +119,8 @@ const gamepadItems = [
   },
   {
     imageUrl: "https://unofficialdxnny.com/Assets/Images/Camie.png",
-    name: "Lebron James",
-    date: "27/08/2023",
+    name: "Camie ",
+    date: "21/08/2023",
     url: "https://unofficialdxnny.com/gamepad/camie",
     category: "ds5",
   },
