@@ -88,6 +88,7 @@
 
 .ds4 .meta.pressed {
     /* background: url(Home.png) no-repeat center; */
+    display: none;
 }
 
 .ds4 .p0{
