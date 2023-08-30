@@ -1,6 +1,6 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(base.gif);
+    background: url(base.png);
     height: 700px;
     width: 1200px;
     /*    margin-left: -403px;
@@ -88,7 +88,6 @@
 
 .ds4 .meta.pressed {
     /* background: url(Home.png) no-repeat center; */
-    display: none;
 }
 
 .ds4 .p0{
