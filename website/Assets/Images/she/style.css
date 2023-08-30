@@ -9,6 +9,7 @@
 
 .ds4.disconnected div {
     display: none;
+    /* background: url(disconnected.gif); */
 }
 
 .ds4 .triggers {
@@ -86,10 +87,9 @@
 }
 
 .ds4 .meta.pressed {
-    background: url(Home.png) no-repeat center;
+    /* background: url(Home.png) no-repeat center; */
 }
 
-/*Not needed, but I like keeping them here for posterity*/
 .ds4 .p0{
 background-position: 0 -6px;
 }
@@ -151,6 +151,13 @@ background-position: 0 -70px;
     height: 171px;
     top: 200px;
     left: 762px;
+}
+
+.ds4 .button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url(FaceButtons.png);
 }
 
 .ds4 .button.pressed {
@@ -222,14 +229,19 @@ background-position: 0 -70px;
     left: 286px;
 }
 
+.ds4 .face {
+    background: url(Dpad.png);
+    position: absolute;
+}
+
 .ds4 .face.up, .ds4 .face.down {
-    width: 36px;
+    width: 37px;
     height: 52px;
 }
 
 .ds4 .face.left, .ds4 .face.right {
     width: 52px;
-    height: 36px;
+    height: 40px;
 }
 
 .ds4 .face.up {
@@ -267,7 +279,6 @@ background-position: 0 -70px;
 
 /*END PS4 Controller Styling*/
 
-/*BEGIN PS4 White Controller Styling*/
 .ds4.white .back, .ds4 .start {
     background-image: url(Start.png);
     width: 26px;
