@@ -64,11 +64,50 @@ select::-ms-expand {
   display: none;
 }
 
+.overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        }
+
 </style>
 
 <div id="iframeContainer">
     <iframe id="gamepadIframe" src="https://gamepadviewer.com/?p=1&s=5&editcss=https%3A%2F%2Funofficialdxnny.com%2FAssets%2FImages%2Fshe%2Fstyle.css" width="900" height="700"></iframe>
 </div>
+
+
+<div class="overlay">
+    <p>This Text will be removed once the overlay has been payed for</p>
+</div>
+
+<script>
+    setTimeout(function() {
+        var iframe = document.getElementById("myIframe").contentWindow.document;
+
+        // Disable scrolling within the iframe
+        iframe.body.style.overflow = "hidden";
+
+        // Remove the overlay after 10 seconds
+        var overlay = iframe.createElement("div");
+        overlay.className = "overlay";
+        overlay.innerHTML = "<p>This page is frozen for your attention.</p>";
+        iframe.body.appendChild(overlay);
+
+        setTimeout(function() {
+            overlay.style.display = "none";
+        }, 10000); // Remove overlay after 10 seconds
+    }, 10000); // 10 seconds
+</script>
 
 <!-- <select id="playerDropdown">
 
@@ -91,5 +130,7 @@ select::-ms-expand {
     });
 </script> -->
 
+
+<script src="./Assets/JS/freeze.js"></script>
 </body>
 </html>
