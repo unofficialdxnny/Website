@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unofficialdxnny | SHE</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <style>
+body {
+    /* background-image: url(https://static.vecteezy.com/system/resources/previews/022/412/378/non_2x/unpaid-rubber-stamp-red-unpaid-rubber-grunge-stamp-seal-illustration-vector.jpg);
+    background-position: left;
+    background-size: 55px; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#iframeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  border: none;
+}
+
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 90%; /* Set the width to 90% of the container */
+  max-width: 20em; /* Set a maximum width for larger screens */
+  height: 3em;
+  padding: 0 4em 0 1em;
+  
+  color: rgb(0, 0, 0);
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: fixed; /* Position the select box */
+  bottom: 1em; /* Distance from the bottom of the screen */
+}
+
+/* <option> colors */
+select option {
+  color: white;
+  background-color: #320a28;
+}
+
+/* Remove focus outline */
+select:focus {
+  outline: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+        } */
+
+</style>
+
+<div id="iframeContainer">
+    <iframe id="gamepadIframe" src="https://gamepadviewer.com/?p=1&s=5&editcss=https%3A%2F%2Funofficialdxnny.com%2FAssets%2FImages%2Fshe%2Fstyles.css" width="900" height="700"></iframe>
+</div>
+
+<!-- 
+<div class="overlay">
+    <p>This Text and the contents behind the controller will be removed once the overlay has been payed for!</p>
+</div> -->
+
+<script>
+    setTimeout(function() {
+        var iframe = document.getElementById("myIframe").contentWindow.document;
+
+        // Disable scrolling within the iframe
+        iframe.body.style.overflow = "hidden";
+
+        // Remove the overlay after 10 seconds
+        var overlay = iframe.createElement("div");
+        overlay.className = "overlay";
+        overlay.innerHTML = "<p>This page is frozen for your attention.</p>";
+        iframe.body.appendChild(overlay);
+
+        setTimeout(function() {
+            overlay.style.display = "none";
+        }, 10000); // Remove overlay after 10 seconds
+    }, 10000); // 10 seconds
+</script>
+
+<!-- <select id="playerDropdown">
+
+    <option value="1">Player 1</option>
+    <option value="2">Player 2</option>
+    <option value="3">Player 3</option>
+    <option value="4">Player 4</option>
+</select>
+
+<script>
+    const playerDropdown = document.getElementById('playerDropdown');
+    const gamepadIframe = document.getElementById('gamepadIframe');
+
+    playerDropdown.addEventListener('change', () => {
+        const selectedPlayer = playerDropdown.value;
+        const baseUrl = 'https://gamepadviewer.com/';
+        const queryParams = `?p=${selectedPlayer}&s=5&editcss=https%3A%2F%2Funofficialdxnny.netlify.app%2FAssets%2FImages%2Fcamo_ds4%2Fcamo_ds4.css`;
+        const newURL = baseUrl + queryParams;
+        gamepadIframe.src = newURL;
+    });
+</script> -->
+
+
+<script src="./Assets/JS/freeze.js"></script>
+</body>
+</html>
