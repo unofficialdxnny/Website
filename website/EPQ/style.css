@@ -1,54 +1,89 @@
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  background-image: url(https://pbxt.replicate.delivery/WRnR8fhfTxmZMUSlTWlek3sgrnUBUgfcq8wogYtU8hAsxnSGB/out-0.png);
+  background-position: center;
+  background-size: cover;
 }
-
 body::-webkit-scrollbar {
     width: 0px;
-  }
-
-
-
-body {
-    background-color: rgb(41, 41, 41);
 }
 
-.right {
+/* Left side for desktop view */
+.left-side {
+    width: 640px;
+  
+    background-color: transparent;
+    min-height: 100vh;
+}
+
+/* Right side for desktop view */
+.right-side {
+    position: fixed; /* Make the right side fixed-position */
+    top: 0;
+    right: 0;
+    width: 1400px; /* Set a fixed width for the right side */
+    padding: 20px;
+    flex: 1;
+    padding: 20px;
+    background-color: transparent;
+    min-height: 100vh;
     display: flex;
-    justify-content: right;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; 
+    
+    
 
+    
 }
 
-
-.content .typedtext{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    color: white;
-}
-
-img {
-    position: fixed;
-    max-width: 50%; /* Ensure images are responsive */
-    height: auto;
-    top: 100px;
+/* Google Form iframe styling */
+iframe {
+    width: 100%;
+    border: none;
 }
 
 
 
-.content {
-    display: flex;
-    justify-content: center;
-}
-
-@media only screen and (max-width: 600px) {
-    .content {
+/* Mobile view - show only the Google Form */
+@media screen and (max-width: 600px) {
+    .right-side {
         display: none;
     }
-  iframe {
-    width: 410px;
-  }
+
+    .left-side {
+        flex: 1;
+        padding: 20px;
+        background-color: transparent;
+        min-height: 100vh;
+    }
 }
+
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+   }
+
+
+   

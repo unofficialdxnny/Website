@@ -4,17 +4,29 @@
  */
 function typingEffect() {
     const contactTexts = shuffleArray([
-        'How does AI impact our daily lives, from virtual assistants \nto recommendation systems?',
-        'Can you explain the role of AI in personalized healthcare,\n such as AI-powered diagnostics and treatment recommendations?',
-        'Have you experienced AI-driven content recommendations\n in streaming platforms and social media?',
-        'How is AI shaping the future of transportation, including self-driving \ncars and intelligent traffic management?',
-        'What are the creative applications of AI in art,\n music, and entertainment?',
-        'How do AI-powered chatbots and virtual customer\n service agents enhance user experiences?',
-        "Could you elaborate on AI's role in optimizing \nsupply chains and logistics?",
-        "What ethical challenges do we face with AI\n in hiring and recruitment processes?",
-        'How are language translation services benefiting \nfrom AI advancements?',
-        'What are some examples of AI-driven smart homes\n and IoT devices that simplify our daily routines?',
-      ]);
+        'Information Retrieval and Research',
+        'Personalized Recommendations',
+        'Automation',
+        'Content Creation',
+        'Language Translation',
+        'Virtual Assistants',
+        'Data Analysis',
+        'Image and Video Processing',
+        'Healthcare',
+        'Finance',
+        'Education',
+        'Customer Service',
+        'Autonomous Vehicles',
+        'Security',
+        'Entertainment',
+        'Environmental Monitoring',
+        'Accessibility',
+        'Innovation',
+        'E-commerce',
+        'Language Learning',
+        'Innovaton'
+    ]);
+    
           const typedtext = document.getElementsByClassName("typedtext")[0];
     let removing = false;
     let idx = char = 0;
