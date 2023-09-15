@@ -28,3 +28,17 @@ body {
     left: 50%;
     color: white;
 }
+
+img {
+    position: fixed;
+    max-width: 50%; /* Ensure images are responsive */
+    height: auto;
+    top: 100px;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+}

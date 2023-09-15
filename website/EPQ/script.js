@@ -66,3 +66,24 @@ function shuffleArray(array) {
 
     return array;
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get a reference to the imageContainer div
+    const imageContainer = document.getElementById("imageContainer");
+
+    // Array of image URLs to load
+    const imageUrls = [
+        "voice.png",
+        "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/homepod/ios14-siri-icon.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png",
+        // Add more image URLs as needed
+    ];
+
+    // Loop through the imageUrls array and create image elements
+    imageUrls.forEach(function (imageUrl) {
+        const img = document.createElement("img");
+        img.src = imageUrl;
+        imageContainer.appendChild(img);
+    });
+});
