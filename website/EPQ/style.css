@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+  }
+
+
+body {
+    background-color: rgb(41, 41, 41);
+}
+
+.right {
+    display: flex;
+    justify-content: right;
+
+}
+
+
+.content .typedtext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    color: white;
+}
