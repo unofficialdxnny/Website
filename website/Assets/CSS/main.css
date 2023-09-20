@@ -1,0 +1,50 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.left-side {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px #302f2f;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+
+
+}
+
+.about-me {
+    margin-bottom: 20px;
+
+}
+
+.about-me h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+
+.social-icons img {
+    width: 30px;
+
+}
+
