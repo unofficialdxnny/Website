@@ -10,14 +10,8 @@ body {
 }
 
 
-
-
-
-
-
-
-   /* Style for the navbar container */
-   .navbar {
+/* Style for the navbar container */
+.navbar {
     background-color: #333; /* Background color for the navbar */
     overflow: hidden;
     padding: 20px 0; /* Increase vertical padding to make the navbar bigger */
@@ -30,8 +24,6 @@ body {
     color: white;
     margin-left: 20px; /* Add some left margin to create space */
 }
-
-
 
 /* Style for the links on the right */
 .navbar-right {
@@ -53,16 +45,21 @@ body {
     color: #333; /* Link text color on hover */
 }
 
-   /* Style for the Spotify Now Playing */
-   .spotify-player {
+/* Style for the Spotify Now Playing */
+.spotify-player {
     max-width: 100%; /* Make it responsive */
 }
 
-/* Media query for smaller screens */
+/* Media query for smaller screens (mobile) */
 @media (max-width: 768px) {
-    .spotify-player {
-        display: block;
-        margin: 0 auto; /* Center the element horizontally */
-        max-width: 80%; /* Adjust the size for smaller screens */
+    .navbar-left {
+        float: none; /* Remove float for centering */
+        text-align: center; /* Center the name */
+        margin-left: 0; /* Reset left margin */
+        margin-bottom: 10px; /* Add space between name and links */
+    }
+    .navbar-right {
+        float: none; /* Remove float for centering */
+        text-align: center; /* Center the links */
     }
 }
