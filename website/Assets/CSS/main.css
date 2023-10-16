@@ -50,6 +50,13 @@ body {
     max-width: 100%; /* Make it responsive */
 }
 
+#Spotify-now-playing {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
 /* Media query for smaller screens (mobile) */
 @media (max-width: 768px) {
     .navbar-left {
@@ -61,5 +68,10 @@ body {
     .navbar-right {
         float: none; /* Remove float for centering */
         text-align: center; /* Center the links */
+    }
+
+    #Spotify-now-playing {
+        width: 200px;
+        float: left;
     }
 }
