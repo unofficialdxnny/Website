@@ -25,6 +25,7 @@ body {
     margin-left: 20px; /* Add some left margin to create space */
 }
 
+
 /* Style for the links on the right */
 .navbar-right {
     float: right;
@@ -44,6 +45,8 @@ body {
     background-color: #ddd; /* Background color on hover */
     color: #333; /* Link text color on hover */
 }
+
+
 
 /* Style for the Spotify Now Playing */
 .spotify-player {
