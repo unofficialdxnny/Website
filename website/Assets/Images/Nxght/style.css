@@ -12,12 +12,14 @@
     background-image: url(triggers.png);
 }
 
-/* 
-
-
 .ds4.white .bumper {
     background-image: url(ps4-white-assets/bumper.svg);
 }
+
+/* 
+
+
+
 
 .ds4.white .touchpad.pressed {
     background-image: url(ps4-white-assets/touchpad.svg);
