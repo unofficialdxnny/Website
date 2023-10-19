@@ -7,10 +7,13 @@
     /* background: url(ps4-assets/disconnected.svg); */
     display: none;
 }
-/* 
+
 .ds4.white .trigger {
-    background-image: url(ps4-white-assets/triggers.svg);
+    background-image: url(triggers.png);
 }
+
+/* 
+
 
 .ds4.white .bumper {
     background-image: url(ps4-white-assets/bumper.svg);
