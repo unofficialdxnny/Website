@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Days One', sans-serif;
+    background-color: #292929;
 
 }
 
@@ -15,6 +16,7 @@ body {
     background-color: #333; /* Background color for the navbar */
     overflow: hidden;
     padding: 20px 0; /* Increase vertical padding to make the navbar bigger */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
 }
 
 /* Style for the name on the left */
@@ -23,8 +25,17 @@ body {
     font-size: 25px;
     color: white;
     margin-left: 20px; /* Add some left margin to create space */
+    animation: glow 2s infinite alternate; /* Add glow animation */
 }
 
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Initial text shadow */
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Final text shadow */
+    }
+}
 
 /* Style for the links on the right */
 .navbar-right {
