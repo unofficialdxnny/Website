@@ -176,6 +176,9 @@ body {
     
 }
 
+::-webkit-scrollbar{
+    width: 0px;
+}
 
 
 /* Projects Cards */
