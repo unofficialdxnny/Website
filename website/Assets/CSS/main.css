@@ -39,6 +39,20 @@ body {
     }
 }
 
+
+.navbar-left span .red {
+    animation: glowr 2s infinite alternate;
+}
+
+@keyframes glowr {
+    0% {
+        text-shadow: 0 0 10px red; /* Initial text shadow */
+    }
+    100% {
+        text-shadow: 0 0 20px red; /* Final text shadow */
+    }
+}
+
 /* Style for the links on the right */
 .navbar-right {
     float: right;
