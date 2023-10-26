@@ -14,11 +14,13 @@ body {
 /* Style for the navbar container */
 .navbar {
     background-color: #333; /* Background color for the navbar */
-    overflow: hidden;
     padding: 20px 0; /* Increase vertical padding to make the navbar bigger */
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    position: fixed; /* Make the navbar fixed */
+    width: 100%; /* Make the navbar span the full width of the viewport */
+    top: 0; /* Stick it to the top of the viewport */
+    z-index: 100; /* Ensure it's on top of other content */
 }
-
 /* Style for the name on the left */
 .navbar-left {
     float: left;
@@ -63,6 +65,40 @@ body {
 .spotify-player {
     max-width: 100%; /* Make it responsive */
 }
+
+
+
+/* about section */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.glowing-title {
+    font-size: 30px;
+    color: #333;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add a glowing effect to the title */
+    margin-left: 20px; /* Space on the left for the title */
+}
+
+.centered-paragraph {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.white-text {
+    color: white;
+    animation: glow 2s infinite alternate; /* Add glow animation */
+
+}
+
 
 #Spotify-now-playing {
     position: absolute;
