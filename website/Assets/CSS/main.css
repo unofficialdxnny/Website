@@ -67,9 +67,7 @@ body {
 }
 
 
-
-/* about section */
-
+/* Default styles for the about section */
 .about-section {
     display: flex;
     flex-direction: column;
@@ -81,8 +79,8 @@ body {
 .glowing-title {
     font-size: 30px;
     color: #333;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add a glowing effect to the title */
-    margin-left: 20px; /* Space on the left for the title */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin-left: 20px;
 }
 
 .centered-paragraph {
@@ -95,9 +93,29 @@ body {
 
 .white-text {
     color: white;
-    animation: glow 2s infinite alternate; /* Add glow animation */
-
+    animation: glow 2s infinite alternate;
 }
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px; /* Add some padding for smaller screens */
+    }
+
+    .glowing-title {
+        font-size: 24px; /* Decrease title font size */
+    }
+
+    .centered-paragraph {
+        font-size: 16px; /* Decrease paragraph font size */
+        max-width: 100%; /* Adjust the maximum width to fit the screen */
+    }
+
+    .white-text {
+        font-size: 16px; /* Decrease font size for white-text spans */
+    }
+}
+
 
 
 #Spotify-now-playing {
@@ -121,7 +139,8 @@ body {
     }
 
     #Spotify-now-playing {
-        width: 200px;
-        float: left;
+        display: none;
     }
+
+    
 }
