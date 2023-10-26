@@ -96,6 +96,22 @@ body {
     animation: glow 2s infinite alternate;
 }
 
+
+.red {
+    color: red;
+    animation: glowred 2s infinite alternate;
+}
+
+
+@keyframes glowred {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Initial text shadow */
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Final text shadow */
+    }
+}
+
 /* Media query for smaller screens (e.g., mobile) */
 @media (max-width: 768px) {
     .about-section {

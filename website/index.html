@@ -57,6 +57,31 @@ content="https://unofficialdxnny.com">
 </div>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var whiteTextSpans = document.querySelectorAll(".white-text");
+
+  whiteTextSpans.forEach(function(span) {
+    var text = span.textContent;
+    var newText = "";
+
+    var redIndices = [];
+    while (redIndices.length < 3) {
+      var randomIndex = Math.floor(Math.random() * text.length);
+      if (!redIndices.includes(randomIndex)) {
+        redIndices.push(randomIndex);
+      }
+    }
+
+    for (var i = 0; i < text.length; i++) {
+      var randomClass = redIndices.includes(i) ? "red" : "";
+      newText += `<span class="${randomClass}">${text[i]}</span>`;
+    }
+
+    span.innerHTML = newText;
+  });
+});
+</script>
   <script src="./Assets/JS/Index.js"></script>
   <script src="./Assets/JS/webhook.js"></script>
 </body>
