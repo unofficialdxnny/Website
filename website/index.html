@@ -30,7 +30,11 @@ content="https://unofficialdxnny.com">
 </head>
 <body>
 
-    <div class="navbar">
+<br>
+<br>
+<br>
+
+  <div class="navbar">
     <div class="navbar-left">
         <span><span class="red">D</span>anial <span class="red">A</span>hmed</span>
     </div>
@@ -42,116 +46,34 @@ content="https://unofficialdxnny.com">
         <a href="#">Contact</a>
     </div>
 </div>
-<img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false">
-
-<div class="about-section">
-  <h1 class="glowing-title">About Me</h1>
-  <p class="centered-paragraph">
-      I'm <span class="white-text">17 years old</span> and have a deep passion for everything related to <span class="white-text">computing</span> . Currently building web projects using my <span class="white-text">frontend</span> skills. I love creating engaging and user-friendly web experiences using various frameworks and technologies.
-      <br><br>
-      I'm currently pursuing a degree in <span class="white-text">Information Technology and Graphics Design</span>, where I'm constantly honing my skills and knowledge in these fields.
-      <br><br>
-      Aside from my tech interests, I'm an avid <span class="white-text">sports</span>  enthusiast. <span class="white-text">Table tennis</span>  and <span class="white-text">football</span>  are my favorite sports, and I enjoy playing and watching them in my free time.
-  </p>
-
-</div>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-  var whiteTextSpans = document.querySelectorAll(".white-text");
-
-  whiteTextSpans.forEach(function(span) {
-    var text = span.textContent;
-    var newText = "";
-
-    var redIndices = [];
-    while (redIndices.length < 3) {
-      var randomIndex = Math.floor(Math.random() * text.length);
-      if (!redIndices.includes(randomIndex)) {
-        redIndices.push(randomIndex);
-      }
-    }
-
-    for (var i = 0; i < text.length; i++) {
-      var randomClass = redIndices.includes(i) ? "red" : "";
-      newText += `<span class="${randomClass}">${text[i]}</span>`;
-    }
-
-    span.innerHTML = newText;
-  });
-});
-</script>
-
-
-<div class="projects-section">
-  <h1 class="glowing-title">
-    Projects
-  </h1>
-  
-  <br>
-  <div class="project-content">
-    <div id="card-gallery" class="card-gallery">
-      <!-- Cards will be dynamically added here -->
+  <header>
+    <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" alt="Profile Picture">
+    <h1 class="glowing-text">My name is Danial Ahmed</h1>
+</header>
+<section id="info">
+    <div id="categories">
+        <p>Frontend | Python | GFX | VFX</p>
+        <img src="https://avatars.githubusercontent.com/u/82535503?v=4" alt="pfp" class="pfp">
     </div>
-    <div class='projects-container'>
-      <div class='project-box'>
-        <div class='skill-container'>
-          <div class='skill'>HTML</div>
-          <div class='skill'>CSS</div>
-          <div class='skill'>JS</div>
-       
-        </div>
-        <a href="https://github.com/unofficialdxnny/Website" target="_blank" rel="noopener noreferrer"><img src="https://unofficialdxnny.com/Assets/Images/Embed.png" /></a>
-        <a href="https://github.com/unofficialdxnny/Website" target="_blank" rel="noopener noreferrer"><div class='project-card-footer'>
-          <p>This Website</p>
-          <p>All you see in code!</p>
-          </div></a>
-      </div>
-      <div class='project-box'>
-        <div class='skill-container'>
-          <div class='skill'>Python</div>
-          <div class='skill'>Batch</div>
-        </div>
-        <a href="https://github.com/unofficialdxnny/Jarvis" target="_blank" rel="noopener noreferrer"><img src="https://i.pinimg.com/736x/fd/39/0f/fd390f3fb303ea4001da1d7b72aef6c3.jpg" />
-        <div class='project-card-footer'>
-          <p>Jarvis</p>
-          <p>My version of Jarvis from Iron Man!.</p>
-          </div></a>
-      </div>
+    <div id="about">
+        <p>
+            I'm 17 years old and have a deep passion for everything related to computing. Currently building web projects using my frontend skills. I love creating engaging and user-friendly web experiences using various frameworks and technologies. 
+            <br><br>
+            I'm currently pursuing a degree in Information Technology and Graphics Design, where I'm constantly honing my skills and knowledge in these fields. 
+            <br><br>
+            Aside from my tech interests, I'm an avid sports enthusiast. Table tennis and football are my favorite sports, and I enjoy playing and watching them in my free time.
+        </p>
     </div>
-    <div class='projects-container'>
-      <div class='project-box'>
-        <div class='skill-container'>
-          <div class='skill'>JS</div>
-         
-        </div>
-        <a href="https://github.com/unofficialdxnny/gmail-spammer" target="_blank" rel="noopener noreferrer"><img src="https://primetel.com.cy/portal-img/single_post/3/gmail-spam.jpg" />
-        <div class='project-card-footer'>
-          <p>Gmail Email Spammer</p>
-          <p>Spam a friends inbox with this simple bot.</p>
-          </div></a>
-      </div>
-      <div class='project-box'>
-        <div class='skill-container'>
-          <div class='skill'>Electron</div>
-          <div class='skill'>NodeJS</div>
-          <div class='skill'>Selenium</div>
-        </div>
-        <img src="https://repository-images.githubusercontent.com/686165082/337f07e5-b8c2-4020-a72f-5403e55c9887" />
-        <div class='project-card-footer'>
-          <p>SnapRevive</p>
-          <p>Automate the Snapchat Website and boost your snapscore. Now an app!</p>
-          </div>
-      </div>
+    <div id="contact">
+        <ul>
+            <li>🌍 I'm based in London | UK</li>
+            <li>🖥️ See my portfolio at <a href="http://unofficialdxnny.com">MyPortfolio</a></li>
+            <li>✉️ You can contact me at <a href="mailto:ahmeddanial324@gmail.com">ahmeddanial324@gmail.com</a></li>
+            <li>🚀 I'm currently working on <a href="http://visionary-flan-9c75b9.netlify.app/">CityZone</a></li>
+            <li>🤝 I'm open to collaborating on Scripts | Websites</li>
+        </ul>
     </div>
-  </div>
-</div>
-
-
-
-
-
+</section>
 
 
   <script src="./Assets/JS/Index.js"></script>

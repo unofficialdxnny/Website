@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
-
-* {
-    margin: 0;
-}
-
+/* Global Styles */
 body {
-    font-family: 'Days One', sans-serif;
-    background-color: #292929;
-      margin: 0;
-    min-height: 100vh;
-    display: grid;
-    place-content: center;
-
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
 
 
 /* Style for the navbar container */
@@ -77,220 +72,86 @@ body {
     color: #333; /* Link text color on hover */
 }
 
-
-
-/* Style for the Spotify Now Playing */
-.spotify-player {
-    max-width: 100%; /* Make it responsive */
-}
-
-
-/* Default styles for the about section */
-.about-section {
+header {
+    background-color: #1c1917;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
-.glowing-title {
-    font-size: 30px;
-    color: #333;
+header img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.glowing-text {
+    font-size: 24px;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    margin-left: 20px;
 }
 
-.centered-paragraph {
-    font-size: 18px;
-    color: #333;
-    text-align: center;
-    max-width: 600px;
-    margin-top: 20px;
-}
-
-.white-text {
-    color: white;
-    animation: glow 2s infinite alternate;
+section {
+    background-color: #1c1917;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 
-.red {
-    color: red;
-    animation: glowred 2s infinite alternate;
+.pfp {
+    border-radius: 50%;
 }
 
 
-@keyframes glowred {
-    0% {
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Initial text shadow */
-    }
-    100% {
-        text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Final text shadow */
-    }
-}
-
-/* Media query for smaller screens (e.g., mobile) */
-@media (max-width: 768px) {
-    .about-section {
-        padding: 20px; /* Add some padding for smaller screens */
-    }
-
-    .glowing-title {
-        font-size: 24px; /* Decrease title font size */
-    }
-
-    .centered-paragraph {
-        font-size: 16px; /* Decrease paragraph font size */
-        max-width: 100%; /* Adjust the maximum width to fit the screen */
-    }
-
-    .white-text {
-        font-size: 16px; /* Decrease font size for white-text spans */
-    }
-}
-
-
-
-#Spotify-now-playing {
-    position: absolute;
-   top: 80px;
-   left: 0;
-   width: 250px;
-    
-}
-
-/* Media query for smaller screens (mobile) */
-@media (max-width: 768px) {
-    .navbar-left {
-        float: none; /* Remove float for centering */
-        text-align: center; /* Center the name */
-        margin-left: 0; /* Reset left margin */
-        margin-bottom: 10px; /* Add space between name and links */
-    }
-    .navbar-right {
-        float: none; /* Remove float for centering */
-        text-align: center; /* Center the links */
-    }
-
-    #Spotify-now-playing {
-        display: none;
-    }
-
-    
-}
-
-::-webkit-scrollbar{
-    width: 0px;
-}
-
-
-/* Projects Cards */
-
-
-.projects-container {
+#info {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
-  
-  .project-box {
-    flex-basis: 100%; /* Make each box take the full width of its container */
-    height: auto;
-    box-shadow: 3px 2px 17px 0px rgba(50, 50, 50, 0.9);
-    background-color: #1C1D21;
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  
-.skill-container {
-	width: 375px;
-	height: 215px;
-	position: absolute;
-	z-index: 10;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	overflow: hidden;
-}
-.skill {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-self: center;
-	margin: 10px;
-	z-index: 10;
-	cursor: default;
-	background-color: #1C1D21;
-	width: 100px;
-	height: 30px;
-	border-radius: 5px;
-	color: #92CDCF;
-	opacity: 0;
-	transform: translateX(-400px);
-	transition: all 0.6s 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.skill:nth-child(2) {
-	transform: translateY(-400px);
-}
-.skill:nth-child(3) {
-	transform: translateX(400px);
-}
-.skill:nth-child(5) {
-	transform: translateY(400px);
-}
-.skill:nth-child(6) {
-	transform: translateX(400px);
-}
-.project-box img {
-	width: 100%;
-	height: 275px;
-	background-color: #EEEFF7;
-	margin: 0px;
-	padding: 0px;
-	transition: all 0.3s ease-in-out;
 }
 
-.project-box a {
+#categories p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 16px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#contact li {
+    margin: 5px;
+}
+
+#contact a {
     text-decoration: none;
 }
-.project-card-footer {
-	font-family: 'Roboto Mono Thin', monospace;
-	font-size: 15px;
-  letter-spacing: 2px;
-	width: 100%;
-	height: 125px;
-	background-color: #1C1D21;
-	align-self: center;
-	color: #bdc3c7;
-	transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.project-card-footer p {
-	margin: 0px;
-	padding-left: 15px;
-	padding-top: 15px;
-}
-.project-card-footer p:nth-child(2) {
-	font-family: 'Roboto Mono', monospace;
-	font-size: 12px;
-	margin-top: 0px;
-}
-.project-box:hover .project-card-footer {
-	transform: translateY(-65px);
-}
-.project-box:hover img {
-	filter: grayscale(70%);
-}
-.project-box:hover .skill {
-	opacity: 0.9;
-	transform: translateX(0px);
+
+#contact img {
+    display: inline-block;
 }
 
+/* Add your grid layout styles for skills, socials, and badges sections */
 
 
-/* gamepads gallery */
-
-
-
-
+@media (max-width: 767px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
