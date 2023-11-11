@@ -14,10 +14,6 @@ body {
   .logo {
     font-size: 24px;
   }
-
-a:hover {
-    color: #66b3ff;
-  }
   
   #nav-links {
     list-style: none;
@@ -31,9 +27,22 @@ a:hover {
   #nav-links a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    position: relative;
   }
   
-  #nav-links a:hover {
-    color: #66b3ff;
+  #nav-links a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #66b3ff;
+    position: absolute;
+    bottom: -5px;
+    transition: width 0.3s;
+  }
+  
+  #nav-links a:hover:after {
+    width: 100%;
+    /* Adjust other properties to fit your design */
   }
   
