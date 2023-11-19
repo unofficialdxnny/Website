@@ -279,3 +279,6 @@ body.dark-theme .project-card a:hover {
 
 */
 
+::-webkit-scrollbar {
+  width: 0;
+}
