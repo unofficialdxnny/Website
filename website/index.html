@@ -55,8 +55,32 @@ content="https://unofficialdxnny.com">
             <p>I'm currently pursuing a degree in Information Technology and Graphics Design, where I'm constantly honing my skills and knowledge in these fields.</p>
                 
             <p>Aside from my tech interests, I'm an avid sports enthusiast. Table tennis and football are my favorite sports, and I enjoy playing and watching them in my free time.</p>
+            <br><br>
+            <div class="snp">
+              <img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false">
+            </div>
         </div>
     </section>
+
+    <script>
+      // Function to refresh the image source
+      function refreshImage() {
+        // Get the image element
+        var image = document.getElementById("Spotify-now-playing");
+    
+        // Get the current source
+        var currentSource = image.src;
+    
+        // Add a timestamp parameter to the URL to force a refresh
+        var newSource = currentSource + "?timestamp=" + new Date().getTime();
+    
+        // Set the new source
+        image.src = newSource;
+      }
+    
+      // Refresh the image every 3 seconds
+      setInterval(refreshImage, 3000);
+    </script>
 
 <!-- Social Icons -->
 <div class="social-icons">
