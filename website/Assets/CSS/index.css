@@ -51,3 +51,29 @@ body {
 
 /* About me section */
 
+
+
+/* theme-toggle.css */
+
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#toggle-button {
+  padding: 10px;
+  background-color: #66b3ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
