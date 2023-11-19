@@ -2,10 +2,9 @@
 document.addEventListener('keyup', function (event) {
     if (event.key === 'T' || event.key === 't') {
         // Add fade class to trigger fade in and out
-        document.body.classList.add('fade-theme');
         
         // Toggle between light and dark modes after a delay
-        setTimeout(toggleTheme, 500); // Adjust the delay as needed
+        setTimeout(toggleTheme); // Adjust the delay as needed
     }
 });
 function toggleTheme() {
@@ -54,3 +53,4 @@ function enableLightMode() {
         body.classList.remove('fade-theme');
     }, 1000);
 }
+

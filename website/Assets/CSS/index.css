@@ -115,11 +115,11 @@ body.dark-theme {
 }
 
 
-/* Add fade transition */
+/* Add fade transition
 .fade-theme {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-}
+} */
 
 /* social media icons */
 .social-icons {
@@ -179,4 +179,6 @@ body.dark-theme .social-icons a .fab {
 .social-icons a:hover {
   transform: translateY(-20px);
 }
+
+
 
