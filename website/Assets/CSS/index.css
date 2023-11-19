@@ -182,3 +182,88 @@ body.dark-theme .social-icons a .fab {
 
 
 
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.project-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  display: block;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #e6e6e6;
+}
+
+/* Light Theme Styles */
+body.light-theme .portfolio-section {
+  background-color: #f2f2f2;
+}
+
+body.light-theme .project-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .project-card a {
+  background-color: #66b3ff;
+  color: #fff;
+}
+
+body.light-theme .project-card a:hover {
+  background-color: #3385ff;
+}
+
+/* Dark Theme Styles */
+body.dark-theme .portfolio-section {
+  background-color: #1a1a1a;
+}
+
+body.dark-theme .project-card {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .project-card h3,
+body.dark-theme .project-card p {
+  color: #ccc;
+}
+
+body.dark-theme .project-card a {
+  background-color: #66b3ff;
+  color: #fff;
+}
+
+body.dark-theme .project-card a:hover {
+  background-color: #3385ff;
+}
