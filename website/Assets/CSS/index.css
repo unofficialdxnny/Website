@@ -115,6 +115,12 @@ body.dark-theme {
 }
 
 
+/* Add fade transition */
+.fade-theme {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
 /* social media icons */
 .social-icons {
   position: fixed;
@@ -125,8 +131,8 @@ body.dark-theme {
 }
 
 .social-icons a {
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
+  width: 40px;
+  height: 40px;
   text-align: center;
   text-decoration: none;
   color: #000;
@@ -135,32 +141,31 @@ body.dark-theme {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  transition: transform 0.5s;
-  background-color: #fff; /* Light mode background color */
+  transition: transform 0.5s, background-color 1s, color 1s, opacity 1s;
+  background-color: #fff;
 }
 
 .social-icons a .fab {
-  font-size: 20px; /* Adjust size as needed */
-  line-height: 40px; /* Adjust size as needed */
+  font-size: 20px;
+  line-height: 40px;
   position: relative;
   z-index: 10;
-  transition: color 0.5s;
-  color: #000; /* Light mode icon color */
+  color: #000;
 }
 
 body.dark-theme .social-icons a {
-  background-color: #1a1a1a; /* Dark mode background color */
+  background-color: #1a1a1a;
 }
 
 body.dark-theme .social-icons a .fab {
-  color: #fff; /* Dark mode icon color */
+  color: #fff;
 }
 
 .social-icons a::after {
   content: '';
   width: 100%;
   height: 100%;
-  top: -50px; /* Adjust distance as needed */
+  top: -50px;
   left: 0;
   background-color: #66b3ff;
   position: absolute;
@@ -171,7 +176,7 @@ body.dark-theme .social-icons a .fab {
   top: 0;
 }
 
-
 .social-icons a:hover {
   transform: translateY(-20px);
 }
+

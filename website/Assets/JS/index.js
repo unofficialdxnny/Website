@@ -1,23 +1,13 @@
-// dark theme
-function toggleTheme() {
-    const body = document.body;
-    body.classList.toggle("dark-theme");
-}
-
-// theme-toggle.js
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Check local storage for theme preference
-    const savedTheme = localStorage.getItem('theme');
-    
-    // Apply the saved theme or default to light mode
-    if (savedTheme === 'dark') {
-        enableDarkMode();
-    } else {
-        enableLightMode();
+// Theme Toggle Button
+document.addEventListener('keyup', function (event) {
+    if (event.key === 'T' || event.key === 't') {
+        // Add fade class to trigger fade in and out
+        document.body.classList.add('fade-theme');
+        
+        // Toggle between light and dark modes after a delay
+        setTimeout(toggleTheme, 500); // Adjust the delay as needed
     }
 });
-
 function toggleTheme() {
     const body = document.body;
     
@@ -37,6 +27,14 @@ function enableDarkMode() {
 
     // Save theme preference in local storage
     localStorage.setItem('theme', 'dark');
+
+    // Add fade class to trigger fade in and out
+    body.classList.add('fade-theme');
+    
+    // Remove the fade class after the animation duration (1000ms in this example)
+    setTimeout(() => {
+        body.classList.remove('fade-theme');
+    }, 1000);
 }
 
 function enableLightMode() {
@@ -47,4 +45,12 @@ function enableLightMode() {
 
     // Save theme preference in local storage
     localStorage.setItem('theme', 'light');
+
+    // Add fade class to trigger fade in and out
+    body.classList.add('fade-theme');
+    
+    // Remove the fade class after the animation duration (1000ms in this example)
+    setTimeout(() => {
+        body.classList.remove('fade-theme');
+    }, 1000);
 }
