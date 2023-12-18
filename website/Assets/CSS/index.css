@@ -282,3 +282,43 @@ body.dark-theme .project-card a:hover {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+
+/* Project Cards */
+
+#projects {
+  display: flex; /* Use flexbox to display cards next to each other */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line on small screens */
+  justify-content: center; /* Center cards horizontally */
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Limit the maximum width of each card */
+  width: 100%; /* Take up full width on small screens */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.github-icon {
+  font-size: 24px;
+  color: #0366d6; /* GitHub icon color */
+}
