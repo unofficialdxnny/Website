@@ -1,0 +1,38 @@
+/*BEGIN PS3 White Controller Styling*/
+.controller.ps.white {
+    background-image: url(base.png);
+}
+
+.ps.white.disconnected {
+    background-image: url(disconnected.png);
+}
+
+/* 
+.ps.white .trigger {
+    background-image: url(ps3-white-assets/triggers.png);
+}
+
+
+.ps.white .bumper {
+    background-image: url(ps3-white-assets/bumpers.png);
+}
+
+.ps.white .quadrant {
+    background-image: url(ps3-white-assets/player-n.png);
+}
+
+.ps.white .back, .ps.white .start {
+    background-image: url(ps3-white-assets/menus.png);
+}
+
+.ps.white .button {
+    background-image: url(ps3-white-assets/face-buttons.png);
+}
+
+.ps.white .stick {
+    background-image: url(ps3-white-assets/thumbs.png);
+}
+
+.ps.white .face {
+    background-image: url(ps3-white-assets/dpad.png);
+} */

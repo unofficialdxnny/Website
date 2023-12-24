@@ -1,0 +1,11 @@
+.controller.ds4.white {
+    background-image: url(https://github.com/unofficialdxnny/Website/blob/main/website/Assets/Images/DS4White/base.png?raw=true);
+}
+
+.ds4.white .stick {
+    background-image: url(sticks.png);
+}
+
+.ds4.white .face {
+    background-image: url(dpad.png);
+}
