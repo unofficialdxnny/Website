@@ -1,16 +1,22 @@
 const projectsData = [
     {
-        image: 'https://icon-library.com/images/snapchat-ghost-icon/snapchat-ghost-icon-3.jpg',
+        image: 'https://unofficialdxnny.com/Assets/Images/Snapify.png',
         title: 'Snapify',
         description: 'Got No Friends??? Just boost your snapscore for free!!!',
         githubLink: 'https://github.com/unofficialdxnny/Snapify',
     },
     {
-        image: 'https://cdn.discordapp.com/attachments/1073929980343496815/1186328819439775805/vLkBOK4.png?ex=6592d9cf&is=658064cf&hm=208241097069cbb778787aa8d4f3ab0ed038956f478f265efafa14ceed7ac347&',
+        image: 'https://unofficialdxnny.com/Assets/Images/MonkeyTyper.png',
         title: 'Monkey Typer',
         description: 'Get Maximum score saved to your account. You can increase the typing speed but after the default timer is exceeded it will detect the bot.',
         githubLink: 'https://github.com/unofficialdxnny/monkeyTyper',
     },
+    {
+        image: 'https://unofficialdxnny.com/Assets/Images/coffeemax.png',
+        title: 'The Coffeemax',
+        description: 'Website for Coffeemax cafe which is located in Farnham, UK',
+        githubLink: 'https://thecoffeemax.com',
+    }
     // Add more projects as needed
 ];
 

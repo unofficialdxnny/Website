@@ -298,9 +298,15 @@ body.dark-theme .project-card a:hover {
   padding: 16px;
   margin: 16px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 123, 255, 0); /* Initial box shadow with blue light strip */
   max-width: 300px; /* Limit the maximum width of each card */
   width: 100%; /* Take up full width on small screens */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase the size of the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 123, 255, 0.7); /* Updated box shadow on hover with blue light strip */
 }
 
 .card img {
