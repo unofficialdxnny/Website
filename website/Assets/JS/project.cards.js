@@ -6,7 +6,7 @@ const projectsData = [
         githubLink: 'https://github.com/unofficialdxnny/Snapify',
     },
     {
-        image: 'https://unofficialdxnny.com/Assets/Images/MonkeyTyper.png',
+        image: 'https://cdn.discordapp.com/attachments/1073929980343496815/1186328819439775805/vLkBOK4.png?ex=6592d9cf&is=658064cf&hm=208241097069cbb778787aa8d4f3ab0ed038956f478f265efafa14ceed7ac347&',
         title: 'Monkey Typer',
         description: 'Get Maximum score saved to your account. You can increase the typing speed but after the default timer is exceeded it will detect the bot.',
         githubLink: 'https://github.com/unofficialdxnny/monkeyTyper',
