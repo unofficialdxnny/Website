@@ -54,10 +54,54 @@ body {
   transform-origin: top right;
   margin-top: -100px; /* Adjust margin as needed */
   margin-right: 70px; /* Adjust margin as needed */
-  width: ;
+  color: black;
 }
 
 
 @media only screen and (max-width: 767px) {
 
+}
+
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-section h2 {
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}
+
+.about-text {
+  width: 60%;
+  text-align: left;
+}
+
+.profile-image {
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .profile-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
