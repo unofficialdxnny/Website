@@ -84,10 +84,8 @@ body {
 .profile-image {
   width: 50%;
   height: 50%;
-  background-size: cover;
-  background-position: center;
   border-radius: 50%; /* Make the image round */
-  object-fit: cover;
+  overflow: hidden; /* Ensure the rounded corners are visible */
   display: flex;
   align-items: center;
   justify-content: space-around;
