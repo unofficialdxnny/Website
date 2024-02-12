@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.main {
+  height: 28vh;
+  width: 100%;
+  background-color: #bfbbb8;
+  /* background-image: url(https://picsum.photos/1920/1000); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maincontent {
+  text-align: center;
+  color: #fff; 
+}
+
+.maincontent .title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  
+}
+
+.maincontent .slogan {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  color: transparent;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-size: 1.5em;
+}
+
+
+.snp {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  margin-top: -100px; /* Adjust margin as needed */
+  margin-right: 70px; /* Adjust margin as needed */
+  width: ;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+}
