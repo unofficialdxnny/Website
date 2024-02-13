@@ -81,3 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// social media icons
+
