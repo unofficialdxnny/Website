@@ -380,3 +380,27 @@ body {
 .cls-18 {
   fill: #fff;
 }
+
+
+/* navbar */
+
+.navbar {
+  background-color: #121212; /* Match your website's color scheme */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white; /* Match your website's text color */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Add an underline effect on hover */
+}
