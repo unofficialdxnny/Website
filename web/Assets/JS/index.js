@@ -53,3 +53,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // progress cards
 
+document.addEventListener("DOMContentLoaded", function () {
+  const projects = document.querySelector('.projects');
+  const cardContainer = document.querySelector('.card-container');
+  const cards = document.querySelectorAll('.card');
+
+  // Clone the cards to create a loop
+  cards.forEach((card) => {
+    const clone = card.cloneNode(true);
+    cardContainer.appendChild(clone);
+  });
+
+  let scrollPosition = 0;
+
+  // Listen for scroll events on the projects container
+  projects.addEventListener('scroll', function () {
+    const cardWidth = cards[0].offsetWidth;
+    const totalWidth = cards.length * cardWidth;
+
+    // Update the scroll position
+    scrollPosition = projects.scrollLeft;
+
+    // Check if the user has scrolled beyond the last card
+    if (scrollPosition >= totalWidth - projects.offsetWidth) {
+      // Reset the scroll position to the beginning
+      projects.scrollLeft = 0;
+    }
+  });
+});
