@@ -49,3 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
       // Refresh the image every 3 seconds
       setInterval(refreshImage, 3000);
+
+
+// progress cards
+
