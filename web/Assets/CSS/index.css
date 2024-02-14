@@ -386,23 +386,67 @@ body {
 /* navbar */
 
 .navbar {
-  background-color: #121212; /* Match your website's color scheme */
+  background-color: #121212;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   z-index: 1000;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
 }
 
 .navbar a {
-  color: white; /* Match your website's text color */
+  color: white;
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
 }
 
 .navbar a:hover {
-  text-decoration: underline; /* Add an underline effect on hover */
+  text-decoration: underline;
 }
 
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Smooth transition for max-height */
+}
+
+.navbar.active .nav-links {
+  max-height: 300px; /* Adjust the maximum height as needed */
+}
+
+.nav-links a {
+  display: none;
+  font-size: 16px;
+}
+
+.navbar.active .nav-links a {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 15px 10px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
