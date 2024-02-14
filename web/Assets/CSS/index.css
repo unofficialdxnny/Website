@@ -15,7 +15,7 @@ body {
   height: 28vh;
   width: 100%;
   background-color: #bfbbb8;
-  background-image: url(https://images.unsplash.com/photo-1504903271097-d7e7c7f5f7ad?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(../Images/main_bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -401,6 +401,7 @@ body {
   top: 28vh; /* Adjust the top position based on the main section height */
   z-index: 999;
   transition: all 0.3s ease;
+  color: white;
 }
 
 /* Hamburger menu styles */
@@ -418,6 +419,7 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  color: white;
 }
 
 .navbar.active .nav-links {
