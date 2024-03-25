@@ -99,88 +99,6 @@ body {
   justify-content: space-around;
 }
 
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-  }
-
-  .about-text,
-  .profile-image {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* cards */
-
-.projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #ffffff;
-}
-
-.card {
-  width: 300px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  margin: 10px;
-  padding: 20px;
-  background-color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
-}
-
-.card img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.project-title {
-  color: white;
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-}
-
-.card h3 {
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: white;
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-}
-
-.card p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.card:hover {
-  transform: translateY(5px); /* Move the card down by 5px on hover */
-  box-shadow: none; /* Remove the box shadow on hover */
-}
-
-/* Media query for mobile view */
-@media (max-width: 767px) {
-  .projects {
-    flex-direction: column; /* Stack cards vertically on mobile */
-    align-items: stretch; /* Stretch cards to full width */
-  }
-
-  .card {
-    width: 100%; /* Make cards take full width on mobile */
-  }
-}
-
 
 /* social media icons */
 
@@ -387,6 +305,100 @@ body {
 }
 
 
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-text,
+  .profile-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* cards */
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.card {
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-title {
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.card h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(5px); /* Move the card down by 5px on hover */
+  box-shadow: none; /* Remove the box shadow on hover */
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .projects {
+    flex-direction: column; /* Stack cards vertically on mobile */
+    align-items: stretch; /* Stretch cards to full width */
+  }
+
+  .card {
+    width: 100%; /* Make cards take full width on mobile */
+  }
+}
+
+
+
+/* project wrapper links */
+
+
+.projects-wrapper a {
+  text-decoration: none;
+  color: #121212;
+}
+
+
 /* navbar */
 
 
@@ -451,40 +463,5 @@ body {
   }
 }
 
-/* gallery */
 
-
-.gallery-section {
-  height: 100vh;
-}
-
-.gallery-section h1 {
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-  color: white;
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-}
-.gallery{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1vh;
-  margin-inline: auto;
-  max-width: 40rem;
-  background: #fcf9f9;
-  padding: 1vh;
-}
-
-.gallery > img{
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  transition: all 0.3s ease;
-}
-
-.gallery:has(img:hover) img:not(:hover) {
-  scale: 0.8;
-  opacity: 0.5;
-  filter: grayscale(70%);
-}
 
