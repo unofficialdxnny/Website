@@ -92,9 +92,16 @@ document.addEventListener("DOMContentLoaded", function () {
       return button;
     }
 
-    // Function to generate buttons dynamically
     function generateButtons(amount) {
       const buttonsContainer = document.getElementById('buttonsContainer');
+    
+      // Define social media links
+      const socialMediaLinks = [
+        'https://discord.gg/8WyFZF3kqn',
+        'https://www.instagram.com/unofficialdxnny/',
+        'https://www.behance.net/dannytvyt',
+        'https://www.reddit.com/user/unofficialdxnny/'
+      ];
 
       // SVG content for each button
       const svgContents = [
@@ -139,8 +146,13 @@ document.addEventListener("DOMContentLoaded", function () {
       // Generate buttons and append to the container
       for (let i = 0; i < amount; i++) {
         const button = createButton(svgContents[i]);
+        // Add event listener to open link in new tab on button click
+        button.addEventListener('click', function() {
+          window.open(socialMediaLinks[i], '_blank');
+        });
         buttonsContainer.appendChild(button);
       }
+    
     }
 
     // Call the function with the desired number of buttons

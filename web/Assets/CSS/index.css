@@ -450,3 +450,41 @@ body {
     display: block;
   }
 }
+
+/* gallery */
+
+
+.gallery-section {
+  height: 100vh;
+}
+
+.gallery-section h1 {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1vh;
+  margin-inline: auto;
+  max-width: 40rem;
+  background: #fcf9f9;
+  padding: 1vh;
+}
+
+.gallery > img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.gallery:has(img:hover) img:not(:hover) {
+  scale: 0.8;
+  opacity: 0.5;
+  filter: grayscale(70%);
+}
+
