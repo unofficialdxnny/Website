@@ -51,46 +51,26 @@ document.addEventListener("DOMContentLoaded", function() {
       setInterval(refreshImage, 3000);
 
 
-// progress cards
 
-document.addEventListener("DOMContentLoaded", function () {
-  const projects = document.querySelector('.projects');
-  const cardContainer = document.querySelector('.card-container');
-  const cards = document.querySelectorAll('.card');
-
-  // Clone the cards to create a loop
-  cards.forEach((card) => {
-    const clone = card.cloneNode(true);
-    cardContainer.appendChild(clone);
-  });
-
-  let scrollPosition = 0;
-
-  // Listen for scroll events on the projects container
-  projects.addEventListener('scroll', function () {
-    const cardWidth = cards[0].offsetWidth;
-    const totalWidth = cards.length * cardWidth;
-
-    // Update the scroll position
-    scrollPosition = projects.scrollLeft;
-
-    // Check if the user has scrolled beyond the last card
-    if (scrollPosition >= totalWidth - projects.offsetWidth) {
-      // Reset the scroll position to the beginning
-      projects.scrollLeft = 0;
-    }
-  });
-});
 
 // social media icons
 
-    // Function to create buttons with SVGs
-    function createButton(svgContent) {
-      const button = document.createElement('button');
-      button.classList.add('button');
-      button.innerHTML = svgContent;
-      return button;
-    }
+function createButton(svgContent, label) {
+  const button = document.createElement('button');
+  button.classList.add('button');
+  button.innerHTML = svgContent;
+
+  // Create label element
+  const tooltip = document.createElement('span');
+  tooltip.classList.add('tooltip');
+  tooltip.innerText = label;
+
+  // Append label to button
+  button.appendChild(tooltip);
+
+  return button;
+}
+
 
     function generateButtons(amount) {
       const buttonsContainer = document.getElementById('buttonsContainer');
@@ -105,6 +85,13 @@ document.addEventListener("DOMContentLoaded", function () {
         'https://www.instagram.com/unofficialdxnny/',
         'https://www.behance.net/dannytvyt',
         'https://www.reddit.com/user/unofficialdxnny/'
+      ];
+
+      const labels = [
+        'Discord',
+        'Instagram',
+        'Behance',
+        'Reddit'
       ];
 
       // SVG content for each button
@@ -148,18 +135,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
       ];
 
-      // Generate buttons and append to the container
-      for (let i = 0; i < amount; i++) {
-        const button = createButton(svgContents[i]);
-        // Add event listener to open link in new tab on button click
-        button.addEventListener('click', function() {
-          window.open(socialMediaLinks[i], '_blank');
-        });
-        buttonsContainer.appendChild(button);
-      }
-    
-    }
+ // Clone icons to fill the container
+  let clones = [];
+  for (let i = 0; i < 500; i++) { // Adjust the number of clones as needed
+    clones = clones.concat(svgContents);
+  }
 
+  // Generate buttons and append to the container
+  clones.forEach((svgContent, index) => {
+    const button = createButton(svgContent, labels[index % labels.length]);
+    // Add event listener to open link in new tab on button click
+    const linkIndex = index % socialMediaLinks.length;
+    button.addEventListener('click', function() {
+      window.open(socialMediaLinks[linkIndex], '_blank');
+    });
+    buttonsContainer.appendChild(button);
+  });
+
+}
     // Call the function with the desired number of buttons
     generateButtons(4); // You can change the number as needed
 
