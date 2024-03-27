@@ -8,6 +8,7 @@
 body {
   font-family: 'Arial', sans-serif;
   user-select: none;
+  background-color: ;
 
 }
 
@@ -399,10 +400,13 @@ body {
 }
 
 
+
+
+
 /* navbar */
 
 
-/* navbar */
+
 .navbar {
   background-color: #121212;
   padding: 15px;
