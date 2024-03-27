@@ -212,40 +212,46 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // online status
-    async function updateDiscordStatus() {
-      try {
-        const response = await fetch('https://api.lanyard.rest/v1/users/898937224895270972');
-        const data = await response.json();
+async function updateDiscordStatus() {
+  try {
+    const response = await fetch('https://api.lanyard.rest/v1/users/898937224895270972');
+    const data = await response.json();
 
-        if (response.ok) {
-          const status = data.data.discord_status;
-          const h1Element = document.getElementById('discord-status');
+    if (response.ok) {
+      const status = data.data.discord_status;
+      const h1Element = document.getElementById('discord-status');
+      const mainElement = document.querySelector('.main');
 
-          // Change color based on status
-          switch (status) {
-            case 'online':
-              h1Element.style.color = 'green';
-              break;
-            case 'idle':
-              h1Element.style.color = 'yellow';
-              break;
-            case 'dnd':
-              h1Element.style.color = 'red';
-              break;
-            case 'offline':
-              h1Element.style.color = 'gray';
-              break;
-            default:
-              h1Element.style.color = 'black'; // Default color if status is unknown
-          }
-        } else {
-          console.error('Error fetching Discord status:', data);
-        }
-      } catch (error) {
-        console.error('Error fetching Discord status:', error);
+      // Change color based on status
+      switch (status) {
+        case 'online':
+          h1Element.style.color = 'green';
+          mainElement.style.backgroundColor = 'green';
+          break;
+        case 'idle':
+          h1Element.style.color = 'yellow';
+          mainElement.style.backgroundColor = 'yellow';
+          break;
+        case 'dnd':
+          h1Element.style.color = 'red';
+          mainElement.style.backgroundColor = 'red';
+          break;
+        case 'offline':
+          h1Element.style.color = 'gray';
+          mainElement.style.backgroundColor = 'gray';
+          break;
+        default:
+          h1Element.style.color = 'black'; // Default color if status is unknown
+          mainElement.style.backgroundColor = 'white'; // Default background color if status is unknown
       }
+    } else {
+      console.error('Error fetching Discord status:', data);
     }
+  } catch (error) {
+    console.error('Error fetching Discord status:', error);
+  }
+}
 
-    // Call the function immediately and then every 5 seconds
-    updateDiscordStatus();
-    setInterval(updateDiscordStatus, 5000); // 5000 milliseconds = 5 seconds
+// Call the function immediately and then every 5 seconds
+updateDiscordStatus();
+setInterval(updateDiscordStatus, 5000); // 5000 milliseconds = 5 seconds
