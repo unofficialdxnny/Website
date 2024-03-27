@@ -65,6 +65,21 @@ body {
   z-index: 999;
 }
 
+.snp:hover::after {
+  content: "Listen Along";
+  position: absolute;
+  bottom: 100%; /* Adjust as needed */
+  left: 0%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity */
+  color: white; /* Adjust text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px; /* Adjust font size */
+  white-space: nowrap;
+  z-index: 1;
+  rotate: 90deg;
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -405,9 +420,9 @@ body {
 
 /* navbar */
 
-.online { color: green; }
-    .idle { color: yellow; }
-    .dnd { color: red; }
+.online { color: #4f8832; }
+    .idle { color: #f79c18; }
+    .dnd { color: #812e25; }
     .offline { color: gray; }
 
 .navbar {
