@@ -219,4 +219,4 @@ async function updateDiscordStatus() {
 
 // Call the function immediately and then every 5 seconds
 updateDiscordStatus();
-setInterval(updateDiscordStatus, 5000); // 5000 milliseconds = 5 seconds
+setInterval(updateDiscordStatus, 1); // 5000 milliseconds = 5 seconds
