@@ -405,7 +405,10 @@ body {
 
 /* navbar */
 
-
+.online { color: green; }
+    .idle { color: yellow; }
+    .dnd { color: red; }
+    .offline { color: gray; }
 
 .navbar {
   background-color: #121212;
