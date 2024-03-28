@@ -169,7 +169,7 @@ function createButton(svgContent, label) {
 
 
 
-    // online status
+// online status
 async function updateDiscordStatus() {
   try {
     const response = await fetch('https://api.lanyard.rest/v1/users/898937224895270972');
@@ -199,8 +199,8 @@ async function updateDiscordStatus() {
           mainElement.style.backgroundColor = 'gray';
           break;
         default:
-          h1Element.style.color = 'black'; // Default color if status is unknown
-          mainElement.style.backgroundColor = 'white'; // Default background color if status is unknown
+          h1Element.style.color = 'black';
+          mainElement.style.backgroundColor = 'white';
       }
     } else {
       console.error('Error fetching Discord status:', data);
@@ -210,6 +210,6 @@ async function updateDiscordStatus() {
   }
 }
 
-// Call the function immediately and then every 5 seconds
+
 updateDiscordStatus();
-setInterval(updateDiscordStatus, 1000); // 5000 milliseconds = 5 seconds
+setInterval(updateDiscordStatus, 1000);

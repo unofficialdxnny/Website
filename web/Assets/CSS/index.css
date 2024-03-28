@@ -438,11 +438,19 @@ body {
 
 
 /* navbar */
-
-.online { color: #4f8832; }
-    .idle { color: #f79c18; }
-    .dnd { color: #812e25; }
-    .offline { color: gray; }
+.online {
+  color: #4f8832
+}
+.idle {
+  color: #f79c18;
+}
+.dnd {
+  color: #812e25;
+  background-color: #812e25;
+}
+.offline {
+  color: gray;
+}
 
 .navbar {
   background-color: #121212;
