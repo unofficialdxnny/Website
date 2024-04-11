@@ -12,6 +12,7 @@ body {
 
 }
 
+
 .main {
   height: 28vh;
   width: 100%;
@@ -28,15 +29,19 @@ body {
   left: 0;
   right: 0;
   z-index: 999;
+
 }
 
 .maincontent {
   text-align: center;
   color: #fff;
+  
+  
 }
 
 .maincontent .title {
   text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  
 }
 
 .maincontent .slogan {

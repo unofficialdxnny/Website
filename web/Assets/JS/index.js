@@ -169,47 +169,61 @@ function createButton(svgContent, label) {
 
 
 
-// online status
-async function updateDiscordStatus() {
-  try {
-    const response = await fetch('https://api.lanyard.rest/v1/users/898937224895270972');
-    const data = await response.json();
+    async function updateDiscordStatus() {
+      try {
+        const response = await fetch('https://api.lanyard.rest/v1/users/898937224895270972');
+        const data = await response.json();
+    
+        if (response.ok) {
+          const status = data.data.discord_status;
+          const activity = data.data.activities.find(act => act.type === 0); // Find 'playing' activity
+          const h1Element = document.getElementById('discord-status');
+          const mainElement = document.querySelector('.main');
+    
+          // Change color based on status
+          switch (status) {
+            case 'online':
+              h1Element.style.color = 'green';
+              mainElement.style.backgroundColor = 'green';
+              break;
+            case 'idle':
+              h1Element.style.color = 'yellow';
+              mainElement.style.backgroundColor = 'yellow';
+              break;
+            case 'dnd':
+              h1Element.style.color = 'red';
+              mainElement.style.backgroundColor = 'red';
+              break;
+            case 'offline':
+              h1Element.style.color = 'gray';
+              mainElement.style.backgroundColor = 'gray';
+              break;
+            default:
+              h1Element.style.color = 'black';
+              mainElement.style.backgroundColor = 'white';
+          }
 
-    if (response.ok) {
-      const status = data.data.discord_status;
-      const h1Element = document.getElementById('discord-status');
-      const mainElement = document.querySelector('.main');
+          if (activity) {
+            const activityName = activity.name.toLowerCase();
+            const backgroundImageMap = {
+              'visual studio code': 'https://cdn.neowin.com/news/images/uploaded/2021/08/1628250995_vscode_story.jpg',
+              'counter-strike 2': 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Counter_Strike_2_Logo.png'
 
-      // Change color based on status
-      switch (status) {
-        case 'online':
-          h1Element.style.color = 'green';
-          mainElement.style.backgroundColor = 'green';
-          break;
-        case 'idle':
-          h1Element.style.color = 'yellow';
-          mainElement.style.backgroundColor = 'yellow';
-          break;
-        case 'dnd':
-          h1Element.style.color = 'red';
-          mainElement.style.backgroundColor = 'red';
-          break;
-        case 'offline':
-          h1Element.style.color = 'gray';
-          mainElement.style.backgroundColor = 'gray';
-          break;
-        default:
-          h1Element.style.color = 'black';
-          mainElement.style.backgroundColor = 'white';
+            }
+
+            const newBackgroundImage = backgroundImageMap[activityName];
+            if (newBackgroundImage) {
+              mainElement.style.backgroundImage = `url(${newBackgroundImage})`;
+            }
+          }
+        } else {
+          console.error('Error fetching Discord status:', data);
+        }
+      } catch (error) {
+        console.error('Error fetching Discord status:', error);
       }
-    } else {
-      console.error('Error fetching Discord status:', data);
     }
-  } catch (error) {
-    console.error('Error fetching Discord status:', error);
-  }
-}
-
-
-updateDiscordStatus();
-setInterval(updateDiscordStatus, 1000);
+    
+    updateDiscordStatus();
+    setInterval(updateDiscordStatus, 1000); // Update frequently
+    
