@@ -103,8 +103,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (activity) {
           const activityName = activity.name.toLowerCase();
           const backgroundImageMap = {
-            'visual studio code': 'https://unofficialdxnny.com/beta/Assets/Images/vsc.png',
-            'counter-strike 2': 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Counter_Strike_2_Logo.png'
+            'visual studio code': 'https://raw.githubusercontent.com/gist/vininjr/d29bb07bdadb41e4b0923bc8fa748b1a/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif',
+            'counter-strike 2': 'https://uk.roccat.com/cdn/shop/articles/unnamed_55f146d6-79fc-40bf-8af7-fced526db499.jpg?v=1689777796',
+            'Rocket League': 'https://cdn.mos.cms.futurecdn.net/RCKjNUoGo89e84cWJAqhhG-1200-80.jpeg'
 
           }
 
