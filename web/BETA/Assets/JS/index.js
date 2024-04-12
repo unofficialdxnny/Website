@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (activity) {
           const activityName = activity.name.toLowerCase();
           const backgroundImageMap = {
-            'visual studio code': 'https://raw.githubusercontent.com/gist/vininjr/d29bb07bdadb41e4b0923bc8fa748b1a/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif',
+            'visual studio code': 'https://unofficialdxnny.com/beta/Assets/Images/vsc.png',
             'counter-strike 2': 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Counter_Strike_2_Logo.png'
 
           }
