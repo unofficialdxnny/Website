@@ -6,47 +6,47 @@
     <title>unofficialdxnny | Gamepad Viewer</title>
     <link rel="shortcut icon" href="./Assets/Images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./Assets/CSS/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
     
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./Assets/Images/game-controller.png" alt="Your Brand" height="30">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="controllersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Controllers
+          </a>
+          <div class="dropdown-menu" aria-labelledby="controllersDropdown">
+            <a class="dropdown-item" href="#">Xbox</a>
+            <a class="dropdown-item" href="#">PlayStation</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="skinsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Skins
+          </a>
+          <div class="dropdown-menu" aria-labelledby="skinsDropdown">
+            <a class="dropdown-item" href="#">Default</a>
+            <a class="dropdown-item" href="#">Dark</a>
+            <a class="dropdown-item" href="#">Light</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="./Assets/Images/game-controller.png" alt="PlayStation" class="img-fluid" width="32"></a>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPlayers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Players
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownPlayers">
-                <a class="dropdown-item" href="#"><img src="./Assets/Images/p1.png" alt="p1" class="img-fluid"></a>
-                <a class="dropdown-item" href="#"><img src="./Assets/Images/p2.png" alt="p2" class="img-fluid"></a>
-                <a class="dropdown-item" href="#"><img src="./Assets/Images/p3.png" alt="p3" class="img-fluid"></a>
-                <a class="dropdown-item" href="#"><img src="./Assets/Images/p4.png" alt="p4" class="img-fluid"></a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownImages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Images
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownImages">
-                <a class="dropdown-item" href="#"><img src="./Assets/Images/playstation.png" alt="PlayStation" class="img-fluid"> PlayStation</a>
-                <a class="dropdown-item" href="#"><img src="./Assets/Images/xbox.png" alt="Image 2" class="img-fluid"> Xbox</a>
-                <!-- Add more images as needed -->
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 <script src="./Assets/JS/index.js"></script>
 </body>
 </html>
