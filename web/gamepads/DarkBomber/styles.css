@@ -9,6 +9,8 @@
 
 .ds4.disconnected {
     background: url(disconnected.gif);
+    filter: brightness(0) invert(1);
+
 }
 
 .ds4.disconnected div {
