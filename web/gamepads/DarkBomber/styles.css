@@ -8,7 +8,7 @@
 }
 
 .ds4.disconnected {
-    background: url(disconnected.gif);
+    background: url(disconnected.gif) no-repeat center center;
     background-size: contain;
 }
 
