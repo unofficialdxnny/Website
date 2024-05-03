@@ -9,6 +9,7 @@
 
 .ds4.disconnected {
     background: url(disconnected.gif);
+    background-size: contain;
 }
 
 .ds4.disconnected div {
