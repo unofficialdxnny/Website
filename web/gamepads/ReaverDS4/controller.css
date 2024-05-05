@@ -4,23 +4,23 @@
 }
 
 .ds4.white.disconnected {
-    background: url(disconnected.svg);
+    background: url(disconnected.png);
 }
 
 .ds4.white .trigger {
-    background-image: url(triggers.svg);
+    background-image: url(triggers.png);
 }
 
 .ds4.white .bumper {
-    background-image: url(bumper.svg);
+    background-image: url(bumper.png);
 }
 
 .ds4.white .touchpad.pressed {
-    background-image: url(touchpad.svg);
+    background-image: url(touchpad.png);
 }
 
 .ds4.white .back, .ds4 .start {
-    background-image: url(start.svg);
+    background-image: url(start.png);
 }
 
 .ds4.white .button {
@@ -28,7 +28,7 @@
 }
 
 .ds4.white .stick {
-    background-image: url(sticks.svg);
+    background-image: url(sticks.png);
 }
 
 .ds4.white .face {
