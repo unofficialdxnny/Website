@@ -19,7 +19,7 @@
     background-image: url(touchpad.png);
 }
 
-.ds4.white .back, .ds4 .start {
+.ds4.white .back, .ds4 .start.pressed {
     background-image: url(start.png);
 }
 
