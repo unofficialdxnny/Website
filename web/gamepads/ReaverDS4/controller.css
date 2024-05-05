@@ -20,7 +20,7 @@
 }
 
 .ds4.white .back, .ds4 .start {
-    background-image: url(start);
+    background-image: url(start.png);
 }
 
 .ds4.white .button {
