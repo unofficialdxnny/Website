@@ -8,6 +8,7 @@ body {
 }
 /* header */
 .header {
+  position: relative;
   background-color: #333;
   background-image: url('https://unofficialdxnny.com/Assets/Images/updated main bg.png');
   background-position: center;
@@ -15,6 +16,16 @@ body {
   background-size: cover;
   height: 35vh;
 }
+
+.snp img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
 .online {
   color: #4f8832;
 }
@@ -36,7 +47,7 @@ body {
   background: rgba(235, 233, 233, 0.25); /* Adjust opacity as needed */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
 }
