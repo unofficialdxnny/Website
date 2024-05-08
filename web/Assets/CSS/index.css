@@ -1,15 +1,16 @@
- /* Style for the header */
- .header {
+body {
+  background-color: black !important;
+}
+/* .header {
   background-color: #333;
   background-image: url('https://unofficialdxnny.com/Assets/Images/updated main bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-height: 35vh;
-}
-
+  height: 35vh;
+} */
 .online {
-  color: #4f8832
+  color: #4f8832;
 }
 .idle {
   color: #f79c18;
@@ -20,4 +21,30 @@ height: 35vh;
 }
 .offline {
   color: gray;
+}
+
+
+/* navbar */
+
+.glassmorphic-navbar {
+  background: rgba(235, 233, 233, 0.25); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.glassmorphic-navbar .navbar-brand {
+  color: #fff;
+}
+
+.glassmorphic-navbar .navbar-nav .nav-link {
+  color: #fff;
+  padding: 10px;
+}
+
+.glassmorphic-navbar .navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
 }
