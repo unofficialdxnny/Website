@@ -8,6 +8,8 @@ async function updateDiscordStatus() {
       const h1Element = document.getElementById('discord-status');
       const mainElement = document.querySelector('.main');
       const imageElement = document.querySelector('.snp img');
+      const game = data.data.activities.find(activity => activity.type === 0);
+      const gameImageElement = document.getElementById('game-image');
 
       // Change color based on status
       switch (status) {
@@ -42,7 +44,16 @@ async function updateDiscordStatus() {
   } catch (error) {
     console.error('Error fetching Discord status:', error);
   }
+
+  if (game !== null) {
+    gameImageElement.src = 'online_game_image_url';
+
+  }
 }
 
 updateDiscordStatus();
 setInterval(updateDiscordStatus, 1000);
+
+
+// game
+
