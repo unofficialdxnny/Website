@@ -17,13 +17,19 @@ body {
   height: 35vh;
 }
 
-.snp img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.snp {
+  position: relative;
+  width: 25%;
 }
 
+.snp img {
+  position: fixed;
+}
 
+@media only screen and (max-width: 600px) {
+  .snp img {
+display: none;  }
+}
 
 
 .online {
