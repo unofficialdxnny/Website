@@ -8,8 +8,8 @@ async function updateDiscordStatus() {
       const h1Element = document.getElementById('discord-status');
       const mainElement = document.querySelector('.main');
       const imageElement = document.querySelector('.snp img');
-      const game = data.data.activities.find(activity => activity.type === 0);
-      const gameImageElement = document.getElementById('game-image');
+      // const game = data.data.activities.find(activity => activity.type === 0);
+      // const gameImageElement = document.getElementById('game-image');
 
       // Change color based on status
       switch (status) {
@@ -45,15 +45,24 @@ async function updateDiscordStatus() {
     console.error('Error fetching Discord status:', error);
   }
 
-  if (game !== null) {
-    gameImageElement.src = 'online_game_image_url';
+  // if (game !== null) {
+  //   gameImageElement.src = 'online_game_image_url';
 
-  }
+  // }
 }
 
 updateDiscordStatus();
 setInterval(updateDiscordStatus, 1000);
 
 
-// game
+// navbar click sound
 
+function nav_click_sound() {
+  console.log('Button clicked'); // Debugging statement
+  const audio = new Audio('https://unofficialdxnny.com/Assets/Sounds/click.mp3'); // Ensure the path is correct
+  audio.play().then(() => {
+      console.log('Audio playing'); // Debugging statement
+  }).catch((error) => {
+      console.error('Error playing audio:', error); // Debugging statement
+  });
+}
