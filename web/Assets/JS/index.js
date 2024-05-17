@@ -77,3 +77,16 @@ function nav_click_sound() {
       console.error('Error playing audio:', error); // Debugging statement
   });
 }
+
+
+// pop up
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById('popupContainer').style.display = 'none';
+}
+
+// Show the popup when the website loads
+window.onload = function() {
+  document.getElementById('popupContainer').style.display = 'flex';
+};
