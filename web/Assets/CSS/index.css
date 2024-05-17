@@ -18,7 +18,7 @@ body {
 }
 
 .snp {
-  position: relative;
+  position: fixed;
   width: 25%;
 }
 
@@ -95,5 +95,53 @@ display: none;  }
   animation: flickIn 2s ease forwards;
 }
 
-/* game widget */
+/* about me */
 
+.introduction {
+  padding: 50px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: right;
+}
+
+.intro-container {
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+span {
+  font-weight: bold;
+  animation: glow 2s infinite alternate;}
+
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    justify-content: flex-end;
+  }
+}

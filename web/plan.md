@@ -1,6 +1,6 @@
 ### Essential Elements:
 - **Home Page:**
-  - Introduction: Brief introduction about yourself.
+  - ~~Introduction: Brief introduction about yourself.~~
   - Professional Headline: Your profession or area of expertise.
   - Profile Picture: A professional photo of yourself.
 - **About Page:**

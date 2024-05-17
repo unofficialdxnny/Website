@@ -8,6 +8,8 @@ async function updateDiscordStatus() {
       const h1Element = document.getElementById('discord-status');
       const mainElement = document.querySelector('.main');
       const imageElement = document.querySelector('.snp img');
+      const spans = document.querySelectorAll('#discord-status span');
+
       // const game = data.data.activities.find(activity => activity.type === 0);
       // const gameImageElement = document.getElementById('game-image');
 
@@ -17,26 +19,35 @@ async function updateDiscordStatus() {
           h1Element.style.color = 'green';
           mainElement.style.backgroundColor = 'green';
           imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=4f8832&');
+          spans.forEach(span => span.style.color = 'green');
           break;
         case 'idle':
           h1Element.style.color = 'yellow';
           mainElement.style.backgroundColor = 'yellow';
           imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=f79c18&');
+          spans.forEach(span => span.style.color = 'yellow');
+
           break;
         case 'dnd':
           h1Element.style.color = 'red';
           mainElement.style.backgroundColor = 'red';
           imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=812e25&');
+          spans.forEach(span => span.style.color = 'red');
+
           break;
         case 'offline':
           h1Element.style.color = 'gray';
           mainElement.style.backgroundColor = 'gray';
           imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=gray&');
+          spans.forEach(span => span.style.color = 'gray');
+
           break;
         default:
           h1Element.style.color = 'black';
           mainElement.style.backgroundColor = 'white';
           imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=000000&');
+          spans.forEach(span => span.style.color = 'white');
+
       }
     } else {
       console.error('Error fetching Discord status:', data);
