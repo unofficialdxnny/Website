@@ -204,10 +204,27 @@ body.dark-theme .social-icons a .fab {
   height: 100%;
   top: -50px;
   left: 0;
-  background-color: #66b3ff;
   position: absolute;
+  background-color: #66b3ff;
   transition: 0.5s;
 }
+
+/* 
+.social-icons .online i::after {
+  background-color: #4f8832;
+}
+
+.social-icons .dnd i::after {
+  background-color: #812e25;
+}
+
+.social-icons .idle i::after {
+  background-color: #f79c18;
+}
+
+.social-icons .offline i::after {
+  background-color: gray;
+} */
 
 .social-icons a:hover::after {
   top: 0;
@@ -216,6 +233,17 @@ body.dark-theme .social-icons a .fab {
 .social-icons a:hover {
   transform: translateY(-20px);
 }
+
+/* Initial color of social icons */
+.social-icons a i {
+  color: black; /* Default color */
+}
+
+/* Change color of social icons on hover */
+.social-icons a:hover i {
+  color: green; /* Change this to the color you want on hover */
+}
+
 
 
 
@@ -232,3 +260,13 @@ body.dark-theme .social-icons a .fab {
 
 
 
+/* status circle */
+.status-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  vertical-align: middle;
+  background-color: black; /* Default color */
+}

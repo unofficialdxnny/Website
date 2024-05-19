@@ -55,73 +55,82 @@ function enableDarkMode() {
 
 
 async function updateDiscordStatus() {
-    try {
+  try {
       const response = await fetch('https://api.lanyard.rest/v1/users/898937224895270972');
       const data = await response.json();
-  
+
       if (response.ok) {
-        const status = data.data.discord_status;
-        const h1Element = document.getElementById('discord-status');
-        const mainElement = document.querySelector('.main');
-        const imageElement = document.querySelector('.snp img');
-        const spans = document.querySelectorAll('#discord-status span');
+          const status = data.data.discord_status;
+          const imageElement = document.getElementById('Spotify-now-playing');
+          const statusCircle = document.getElementById('status-circle');
+          const socialIcons = document.querySelectorAll('.social-icons a');
+
+          
+          let colorCode;
+          let circleColor;
+                switch (status) {
+                    case 'online':
+                        colorCode = '4f8832'; // Green
+                        circleColor = 'green';
+                        
+
+                        break;
+                    case 'idle':
+                        colorCode = 'f79c18'; // Yellow
+                        circleColor = 'yellow';
+
+                        break;
+                    case 'dnd':
+                        colorCode = '812e25'; // Red
+                        circleColor = 'red';
+
+                        break;
+                    case 'offline':
+                        colorCode = 'gray'; // Gray
+                        circleColor = 'gray';
+
+                        break;
+                    default:
+                        colorCode = '000000'; // Black as default
+                        circleColor = 'black';
+                }
+
+
+
+          
+
+                  // Update the image URL with the new bar_color
+                  const newSrc = imageElement.src.replace(/bar_color=.*?(&|$)/, `bar_color=${colorCode}$1`);
+                  if (imageElement.src !== newSrc) {
+                      imageElement.src = newSrc;
+                  }
   
-        // const game = data.data.activities.find(activity => activity.type === 0);
-        // const gameImageElement = document.getElementById('game-image');
-  
-        // Change color based on status
-        switch (status) {
-          case 'online':
-            h1Element.style.color = 'green';
-            mainElement.style.backgroundColor = 'green';
-            imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=4f8832&');
-            spans.forEach(span => span.style.color = 'green');
-            break;
-          case 'idle':
-            h1Element.style.color = 'yellow';
-            mainElement.style.backgroundColor = 'yellow';
-            imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=f79c18&');
-            spans.forEach(span => span.style.color = 'yellow');
-  
-            break;
-          case 'dnd':
-            h1Element.style.color = 'red';
-            mainElement.style.backgroundColor = 'red';
-            imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=812e25&');
-            spans.forEach(span => span.style.color = 'red');
-  
-            break;
-          case 'offline':
-            h1Element.style.color = 'gray';
-            mainElement.style.backgroundColor = 'gray';
-            imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=gray&');
-            spans.forEach(span => span.style.color = 'gray');
-  
-            break;
-          default:
-            h1Element.style.color = 'black';
-            mainElement.style.backgroundColor = 'white';
-            imageElement.src = imageElement.src.replace(/bar_color=.*?&/, 'bar_color=000000&');
-            spans.forEach(span => span.style.color = 'white');
-  
-        }
+                  statusCircle.style.backgroundColor = circleColor;
+
+                        // Set background color for the ::after pseudo-element of each social icon
+      socialIcons.forEach(icon => {
+        icon.style.position = 'relative'; // Ensure parent is relatively positioned
+        icon.style.overflow = 'hidden'; // Ensure overflow is hidden to contain ::after pseudo-element
+        icon.style.setProperty('--after-background-color', colorCode);
+      });
+
+      // Add class to social icons to match circle color
+      socialIcons.forEach(icon => {
+        icon.className = ''; // Clear existing classes
+        icon.classList.add(status); // Add class based on Discord status
+      });
+
+
       } else {
-        console.error('Error fetching Discord status:', data);
+          console.error('Error fetching Discord status:', data);
       }
-    } catch (error) {
+  } catch (error) {
       console.error('Error fetching Discord status:', error);
-    }
-  
-    // if (game !== null) {
-    //   gameImageElement.src = 'online_game_image_url';
-  
-    // }
   }
-  
-  updateDiscordStatus();
-  setInterval(updateDiscordStatus, 1000);
-  
-  
+}
+
+updateDiscordStatus();
+setInterval(updateDiscordStatus, 1000);
   // navbar click sound
   
   function nav_click_sound() {
