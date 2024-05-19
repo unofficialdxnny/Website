@@ -1,58 +1,89 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
   }
 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    background: rgba(255, 255, 255, 0.2); /* Set the background color with transparency */
-    backdrop-filter: blur(10px); /* Add a blur effect for the glassmorphic look */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+
+/* navbar */
+
+
+
+.glassmorphic-navbar {
+  background: rgba(235, 233, 233, 0.25); /* Adjust opacity as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.glassmorphic-navbar .navbar-brand {
+  color: #000000;
+}
+
+.glassmorphic-navbar .navbar-nav .nav-link {
+  color: #000000;
+  padding: 10px;
+}
+
+.glassmorphic-navbar .navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+
+/* navbar */
+.glassmorphic-navbar {
+  background: rgba(235, 233, 233, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+body.dark-theme .glassmorphic-navbar {
+  background: rgba(235, 233, 233, 0.25);
+}
+
+body.light-theme .glassmorphic-navbar {
+  background: rgba(255, 255, 255, 0.8); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.glassmorphic-navbar .navbar-brand,
+.glassmorphic-navbar .navbar-nav .nav-link {
+  color: #66b3ff;
+}
+
+body.light-theme .glassmorphic-navbar .navbar-brand,
+body.light-theme .glassmorphic-navbar .navbar-nav .nav-link {
+  color: #000000;
+}
+
+body.dark-theme .glassmorphic-navbar .navbar-nav .nav-link:hover,
+body.light-theme .glassmorphic-navbar .navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+
+
+@keyframes flickIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-  
-  .logo {
-    font-size: 24px;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  #nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  #nav-links li {
-    margin-right: 50px;
-  }
-  
-  #nav-links a {
-    text-decoration: none;
-    color: #66b3ff;
-    position: relative;
-  }
-  
-  #nav-links a:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #66b3ff;
-    position: absolute;
-    bottom: -5px;
-    transition: width 0.3s;
-  }
-  
-  #nav-links a:hover:after {
-    width: 100%;
-    /* Adjust other properties to fit your design */
-  }
+}
+
+/* Apply flick-in animation to navbar */
+.flick-in {
+  animation: flickIn 2s ease forwards;
+}
   
 
 /* About Me Section */
@@ -189,91 +220,6 @@ body.dark-theme .social-icons a .fab {
 
 
 
-/* Portfolio Section */
-.portfolio-section {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.project-card {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
-}
-
-.project-card h3 {
-  font-size: 24px;
-  margin: 20px 0 10px;
-}
-
-.project-card p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.project-card a {
-  display: block;
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
-  transition: background-color 0.3s;
-}
-
-.project-card a:hover {
-  background-color: #e6e6e6;
-}
-
-/* Light Theme Styles */
-body.light-theme .portfolio-section {
-  background-color: #f2f2f2;
-}
-
-body.light-theme .project-card {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-body.light-theme .project-card a {
-  background-color: #66b3ff;
-  color: #fff;
-}
-
-body.light-theme .project-card a:hover {
-  background-color: #3385ff;
-}
-
-/* Dark Theme Styles */
-body.dark-theme .portfolio-section {
-  background-color: #1a1a1a ;
-}
-
-body.dark-theme .project-card {
-  background-color: #1a1a1a;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-body.dark-theme .project-card h3,
-body.dark-theme .project-card p {
-  color: #ccc;
-}
-
-body.dark-theme .project-card a {
-  background-color: #66b3ff;
-  color: #fff;
-}
-
-body.dark-theme .project-card a:hover {
-  background-color: #3385ff;
-}
-
 
 /* scroll bar
 
@@ -284,75 +230,5 @@ body.dark-theme .project-card a:hover {
 }
 
 
-/* Project Cards */
-
-#projects {
-  display: flex; /* Use flexbox to display cards next to each other */
-  flex-wrap: wrap; /* Allow cards to wrap to the next line on small screens */
-  justify-content: center; /* Center cards horizontally */
-  padding: 20px;
-}
-
-.card {
-  border: 1px solid #ddd;
-  padding: 16px;
-  margin: 16px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 123, 255, 0); /* Initial box shadow with blue light strip */
-  max-width: 300px; /* Limit the maximum width of each card */
-  width: 100%; /* Take up full width on small screens */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
-}
-
-.card:hover {
-  transform: scale(1.05); /* Increase the size of the card on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 123, 255, 0.7); /* Updated box shadow on hover with blue light strip */
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
-}
-
-.card-title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.card-description {
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.github-icon {
-  font-size: 24px;
-  color: #0366d6; /* GitHub icon color */
-}
-
-/* gamepad gallery */
 
 
-.gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.gallery-item {
-  position: relative;
-  width: 1500px; /* Adjust the width as needed */
-  padding-bottom: 750px; /* Set the aspect ratio (height = width * 0.75) */
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.gallery-item iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
