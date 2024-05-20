@@ -7,7 +7,13 @@ body {
 
 /* navbar */
 
+.section-content {
+  display: none;
+}
 
+#about {
+  display: block; /* Initially display the About section */
+}
 
 .glassmorphic-navbar {
   background: rgba(235, 233, 233, 0.25); /* Adjust opacity as needed */

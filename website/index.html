@@ -38,50 +38,66 @@
 
   <nav class="navbar navbar-expand-lg fixed-top glassmorphic-navbar flick-in">
     <div class="container">
-      <a class="navbar-brand" onclick="nav_click_sound()" href="#">unofficialdxnny</a>
+      <a class="navbar-brand" onclick="nav_click_sound()" href="#" data-section="home">unofficialdxnny</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" onclick="nav_click_sound()" href="#">Home</a>
+   
+          <li class="nav-item">
+            <a class="nav-link" onclick="nav_click_sound()" href="#" data-section="about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="nav_click_sound()" href="#">About</a>
+            <a class="nav-link" onclick="nav_click_sound()" href="#" data-section="gamepads">GamePads</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="nav_click_sound()" href="#">GamePads</a>
+            <a class="nav-link" onclick="nav_click_sound()" href="#" data-section="gfx">GFX</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="nav_click_sound()" href="#">GFX</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="nav_click_sound()" href="#">VFX</a>
+            <a class="nav-link" onclick="nav_click_sound()" href="#" data-section="vfx">VFX</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-
-
       <br><br><br><br><br>
-   <!-- About Me Section -->
-   <section id="about" class="about-section">
-    <div class="container">
-      <h2 class="section-heading underline" id="name">DANIAL AHMED<span id="status-circle" class="status-circle"></span></h2>
-        <p>I'm <span id="age" class="age">18 years</span> old and have a deep passion for everything related to computing. Currently building web projects using my frontend skills. I love creating engaging and user-friendly web experiences using various frameworks and technologies.</p>
-        <p>I'm currently pursuing a degree in Information Technology and Graphics Design, where I'm constantly honing my skills and knowledge in these fields.</p>
-        <p>Aside from my tech interests, I'm an avid sports enthusiast. Table tennis and football are my favorite sports, and I enjoy playing and watching them in my free time.</p>
-        <br><br>
-        <div class="snp">
-            <img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false">
-        </div>
-    </div>
-</section>
 
-
+        <!-- Sections --> 
+        <section id="about" class="section-content">
+          <div class="container">
+            <h2 class="section-heading underline" id="name">DANIAL AHMED<span id="status-circle" class="status-circle"></span></h2>
+            <p>I'm <span id="age" class="age">18 years</span> old and have a deep passion for everything related to computing. Currently building web projects using my frontend skills. I love creating engaging and user-friendly web experiences using various frameworks and technologies.</p>
+            <p>I'm currently pursuing a degree in Information Technology and Graphics Design, where I'm constantly honing my skills and knowledge in these fields.</p>
+            <p>Aside from my tech interests, I'm an avid sports enthusiast. Table tennis and football are my favorite sports, and I enjoy playing and watching them in my free time.</p>
+            <br><br>
+            <div class="snp">
+                <img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false">
+            </div>
+          </div>
+        </section>
+        
+        <section id="gamepads" class="section-content">
+          <div class="container">
+            <h2 class="section-heading">GamePads</h2>
+            <p>GamePads content goes here.</p>
+          </div>
+        </section>
+        
+        <section id="gfx" class="section-content">
+          <div class="container">
+            <h2 class="section-heading">GFX</h2>
+            <p>GFX content goes here.</p>
+          </div>
+        </section>
+        
+        <section id="vfx" class="section-content">
+          <div class="container">
+            <h2 class="section-heading">VFX</h2>
+            <p>VFX content goes here.</p>
+          </div>
+        </section>
+      
     <script>
       // Function to refresh the image source
       function refreshImage() {
@@ -91,7 +107,7 @@
         // Get the current source
         var currentSource = image.src;
     
-        // Add a timestamp parameter to the URL to force a refresh
+        // Add a timestamp parameter to the URL to forces a refresh
         var newSource = currentSource + "?timestamp=" + new Date().getTime();
     
         // Set the new source
