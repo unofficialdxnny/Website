@@ -290,3 +290,27 @@ body.dark-theme .social-icons a .fab {
   vertical-align: middle;
   background-color: black; /* Default color */
 }
+
+
+/* section animation */
+
+.section-content {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interactions with hidden sections */
+  animation-name: fadeInOut;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+}
+
+.section-content.visible {
+  opacity: 1;
+  pointer-events: auto; /* Allow interactions with visible section */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -120,3 +120,28 @@ function nav_click_sound() {
         console.error('Error playing audio:', error);
     });
 }
+
+
+// section load
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.section-content');
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const sectionId = this.getAttribute('data-section');
+            const currentSection = document.getElementById(sectionId);
+
+            sections.forEach(section => {
+                if (section !== currentSection) {
+                    section.classList.remove('visible');
+                }
+            });
+
+            currentSection.classList.add('visible');
+        });
+    });
+
+    // Initially show the About section
+    document.querySelectorAll('.nav-link')[0].click();
+});
