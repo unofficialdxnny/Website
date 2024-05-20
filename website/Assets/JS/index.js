@@ -145,3 +145,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initially show the About section
     document.querySelectorAll('.nav-link')[0].click();
 });
+

@@ -1,0 +1,115 @@
+.card {
+    float: left;
+    padding: 1rem;
+    min-width: 500px;
+    .menu-content {
+      @include cf;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        display: inline-block;
+      }
+      a {
+        color: $white;
+      }
+    }
+    .wrapper {
+      background-color: $white;
+      min-height: 540px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
+      &:hover {
+        .data {
+          transform: translateY(0);
+        }
+      }
+    }
+    .data {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(calc(80px + 1em));
+      transition: transform 0.3s;
+      .content {
+        padding: 1.5em;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .type {
+      font-size: 12px;
+    }
+    .title {
+      margin-top: 10px;
+    }
+    .text {
+      height: 70px;
+      margin: 0;
+    }
+    input[type='checkbox'] {
+      display: none;
+    }
+    input[type='checkbox']:checked + .menu-content {
+      transform: translateY(-60px);
+    }
+  }
+
+
+  
+.example-3 {
+    .wrapper {
+      background: url(https://images.unsplash.com/photo-1547405358-4ef2671bb1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) 30% 1% / cover no-repeat;
+    }
+    .date {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #333;
+      color: $white;
+      padding: .75rem;
+      span {
+        display: block;
+        text-align: center;
+      }
+      .day {
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 2px 3px 2px rgba($black, 0.18);
+      }
+      .month {
+        text-transform: uppercase;
+      }
+      .month,
+      .year {
+        font-size: 10px;
+      }
+    }
+    .content {
+      background-color: #333;
+      color: white;
+      box-shadow: 0 5px 30px 10px rgba($black, 0.3);
+    }
+    .title {
+      a {
+        color: white;
+      }
+    }
+      .menu-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      li {
+        text-align: center;
+        width: 3rem;
+        background-color: #333;
+        height: 3rem;
+        position: relative;
+      }
+      a {
+        font-size: 24px;
+      }
+    }
+  }
