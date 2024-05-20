@@ -99,7 +99,7 @@ updateDiscordStatus();
 setInterval(updateDiscordStatus, 1000);
 
 function nav_click_sound() {
-    const audio = new Audio('https://unofficialdxnny.com/Assets/Sounds/MoansGroansSexyFem PE134701.mp3');
+    const audio = new Audio('https://unofficialdxnny.com/Assets/Sounds/click.mp3');
     audio.play().catch((error) => {
         console.error('Error playing audio:', error);
     });
