@@ -71,6 +71,7 @@
     position: absolute;
     left: 422px;
     top: 74px;
+    background: url('Home.png');
 }
 
 .ds4 .touchpad.pressed {
@@ -86,7 +87,7 @@
 }
 
 .ds4 .meta.pressed {
-    background: url(Home.png) no-repeat center;
+    display: none;
 }
 
 /*Not needed, but I like keeping them here for posterity*/
@@ -214,22 +215,20 @@ background-position: 0 -70px;
     left: calc(100% - 105px);
 }
 
-.ds4 .dpad {
+
+.ds4 .face {
+    background: url(Dpad.png);
     position: absolute;
-    width: 125px;
-    height: 126px;
-    top: 220px;
-    left: 286px;
 }
 
 .ds4 .face.up, .ds4 .face.down {
-    width: 36px;
+    width: 37px;
     height: 52px;
 }
 
 .ds4 .face.left, .ds4 .face.right {
     width: 52px;
-    height: 36px;
+    height: 40px;
 }
 
 .ds4 .face.up {
@@ -260,7 +259,6 @@ background-position: 0 -70px;
     /* margin-top: 5px; */
     background-position-y: 52px;
 }
-
 .ds4.half {
     margin-top: -300px;
 }
