@@ -83,10 +83,12 @@
     position: absolute;
     left: 546px;
     bottom: 264px;
+    background: url(Home.png) no-repeat center;
+
 }
 
 .ds4 .meta.pressed {
-    background: url(Home.png) no-repeat center;
+    display: none;
 }
 
 .ds4 .p0{
