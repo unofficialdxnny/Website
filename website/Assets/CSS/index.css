@@ -29,6 +29,50 @@ body {
   display: block; /* Initially display the About section */
 }
 
+/* Custom hamburger icon styles */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  width: 30px;
+  height: 12px;
+  background: #000; /* Change to desired color */
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #66b3ff; /* Change to desired color */
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Styles for light and dark themes */
+body.dark-theme .navbar-toggler-icon,
+body.dark-theme .navbar-toggler-icon::before,
+body.dark-theme .navbar-toggler-icon::after {
+  color: #ffffff;
+}
+
+body.light-theme .navbar-toggler-icon,
+body.light-theme .navbar-toggler-icon::before,
+body.light-theme .navbar-toggler-icon::after {
+  background: #000000;
+}
+
+
+
 .glassmorphic-navbar {
   background: rgba(235, 233, 233, 0.25); /* Adjust opacity as needed */
   backdrop-filter: blur(10px);
