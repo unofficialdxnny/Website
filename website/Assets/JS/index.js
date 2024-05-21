@@ -56,7 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const imageElement = document.getElementById('Spotify-now-playing');
                 const statusCircles = document.querySelectorAll('.status-circle');
                 const socialIcons = document.querySelectorAll('.social-icons a');
-                
+                const backgroundAbout = document.querySelector('.background-about');
+
                 let colorCode;
                 let circleColor;
                 switch (status) {
@@ -90,23 +91,67 @@ document.addEventListener('DOMContentLoaded', function() {
                     circle.style.backgroundColor = circleColor;
                 });
 
-                // Update the ::after pseudo-element background color for each social icon
                 socialIcons.forEach(icon => {
                     icon.style.setProperty('--after-background-color', colorCode);
                 });
 
-                // Add class to social icons to match circle color
                 socialIcons.forEach(icon => {
-                    icon.className = ''; // Clear existing classes
-                    icon.classList.add(status); // Add class based on Discord status
+                    icon.className = '';
+                    icon.classList.add(status);
                 });
 
+                if (data.data.listening_to_spotify) {
+                    const spotifyTrack = data.data.spotify;
+                    if (spotifyTrack && spotifyTrack.album_art_url) {
+                        backgroundAbout.style.backgroundImage = `url(${spotifyTrack.album_art_url})`;
+                        backgroundAbout.style.backgroundSize = 'cover';
+                        backgroundAbout.style.backgroundPosition = 'center';
+                        setDynamicTextColor(spotifyTrack.album_art_url);
+                    }
+                } else {
+                    backgroundAbout.style.backgroundImage = '';
+                }
             } else {
                 console.error('Error fetching Discord status:', data);
             }
         } catch (error) {
             console.error('Error fetching Discord status:', error);
         }
+    }
+
+    function setDynamicTextColor(imageUrl) {
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.crossOrigin = 'Anonymous';
+        img.src = imageUrl;
+
+        img.onload = function() {
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0, img.width, img.height);
+            const imageData = ctx.getImageData(0, 0, img.width, img.height).data;
+
+            let r = 0, g = 0, b = 0;
+            for (let i = 0; i < imageData.length; i += 4) {
+                r += imageData[i];
+                g += imageData[i + 1];
+                b += imageData[i + 2];
+            }
+
+            r = Math.floor(r / (imageData.length / 4));
+            g = Math.floor(g / (imageData.length / 4));
+            b = Math.floor(b / (imageData.length / 4));
+
+            const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+            const textColor = brightness > 125 ? 'black' : 'white';
+
+            const aboutSection = document.querySelector('.section-content#about');
+            aboutSection.style.color = textColor;
+            aboutSection.querySelectorAll('h1, p').forEach(element => {
+                element.style.color = textColor;
+            });
+        };
     }
 
     updateDiscordStatus();
