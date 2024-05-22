@@ -415,4 +415,24 @@ body.dark-theme .social-icons a .fab {
 
 
 
+ /* project cards */
+.card {
+  transition: transform 0.5s ease; /* Slowed down the transition duration */
+}
 
+.card:hover {
+  transform: scale(0.75); /* Changed scale to make the card slightly larger */
+}
+
+.card .card-body .card-title {
+  color: #66b3ff;
+}
+
+.card .card-body .card-text {
+  color: #333;
+}
+
+/* .card-img-top {
+  width: 150px;
+  height: 150px;
+} */
