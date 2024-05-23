@@ -152,6 +152,10 @@ body.light-theme .glassmorphic-navbar .navbar-nav .nav-link:hover {
 
 /* About Me Section */
 
+.section-content#about, .section-content#about p {
+  transition: color 0.5s ease-in-out;
+}
+
 .background-about {
   position: relative;
   padding: 20px;

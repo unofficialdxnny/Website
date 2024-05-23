@@ -129,8 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
         img.onload = function() {
             canvas.width = img.width;
             canvas.height = img.height;
-            ctx.drawImage(img, 0, 0, img.width, img.height);
-            const imageData = ctx.getImageData(0, 0, img.width, img.height).data;
+            ctx.drawImage(img, img.width * 0.25, img.height * 0.25, img.width * 0.5, img.height * 0.5, 0, 0, canvas.width, canvas.height);
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
 
             let r = 0, g = 0, b = 0;
             for (let i = 0; i < imageData.length; i += 4) {
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const aboutSection = document.querySelector('.section-content#about');
             aboutSection.style.color = textColor;
-            aboutSection.querySelectorAll('h1, p').forEach(element => {
+            aboutSection.querySelectorAll('p').forEach(element => {
                 element.style.color = textColor;
             });
         };
