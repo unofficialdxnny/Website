@@ -45,7 +45,10 @@ function refreshImage() {
 
 setInterval(refreshImage, 3000);
 
+
 document.addEventListener('DOMContentLoaded', function() {
+    let currentImageUrl = '';
+
     async function updateDiscordStatus() {
         try {
             const response = await fetch('https://api.lanyard.rest/v1/users/898937224895270972');
@@ -103,10 +106,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.data.listening_to_spotify) {
                     const spotifyTrack = data.data.spotify;
                     if (spotifyTrack && spotifyTrack.album_art_url) {
-                        backgroundAbout.style.backgroundImage = `url(${spotifyTrack.album_art_url})`;
-                        backgroundAbout.style.backgroundSize = 'cover';
-                        backgroundAbout.style.backgroundPosition = 'center';
-                        setDynamicTextColor(spotifyTrack.album_art_url);
+                        if (currentImageUrl !== spotifyTrack.album_art_url) {
+                            currentImageUrl = spotifyTrack.album_art_url;
+                            fadeBackgroundImage(backgroundAbout, currentImageUrl);
+                            setDynamicTextColor(currentImageUrl);
+                        }
                     }
                 } else {
                     backgroundAbout.style.backgroundImage = '';
@@ -117,6 +121,14 @@ document.addEventListener('DOMContentLoaded', function() {
         } catch (error) {
             console.error('Error fetching Discord status:', error);
         }
+    }
+
+    function fadeBackgroundImage(element, imageUrl) {
+        element.classList.add('fade-out');
+        setTimeout(() => {
+            element.style.backgroundImage = `url(${imageUrl})`;
+            element.classList.remove('fade-out');
+        }, 1000); // Match this duration with the CSS transition time
     }
 
     function setDynamicTextColor(imageUrl) {
