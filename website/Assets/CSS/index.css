@@ -458,3 +458,39 @@ body.dark-theme .social-icons a .fab {
   text-decoration-color: white;
   color: inherit;
 }
+
+/* vfx */
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-wrapper {
+  margin: 10px;
+  flex: 1 0 30%; /* Adjust this value for the desired spacing */
+}
+
+.video-wrapper iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for desktop screens */
+@media screen and (max-width: 1024px) {
+  .video-wrapper {
+    flex-basis: 30%; /* Adjust this value for the desired width */
+  }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .video-gallery {
+    flex-direction: column;
+  }
+  
+  .video-wrapper {
+    flex-basis: 100%;
+  }
+}
