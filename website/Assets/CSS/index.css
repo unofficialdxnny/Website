@@ -13,6 +13,10 @@ body {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Horizontal offset, vertical offset, blur radius, shadow color */
 }
 
+.drop-shadow-text-nav-link {
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Horizontal offset, vertical offset, blur radius, shadow color */
+}
 .drop-shadow-text {
   font-size: 48px;
   font-weight: bold;
