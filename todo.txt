@@ -1,0 +1,8 @@
+Add Graphics to gfx section
+change favicon to blue scheme - done
+Amend the Projects cards
+Add rocket league decals 
+Add a youtube icon to socials - done
+if spotify pauses than make the text back to white
+if spotify pauses than hide the spotify player
+add embed to every gpv
