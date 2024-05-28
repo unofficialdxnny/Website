@@ -431,7 +431,7 @@ body.dark-theme .social-icons a .fab {
 
 
 
- /* project cards */
+/* project cards */
 .card {
   transition: transform 0.5s ease; /* Slowed down the transition duration */
 }
@@ -454,10 +454,15 @@ body.dark-theme .social-icons a .fab {
 } */
 
 .card a {
-  text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration: none;
   color: inherit;
 }
+
+.card a:hover {
+  text-decoration: none !important;
+  color: inherit;
+}
+
 
 /* vfx */
 
