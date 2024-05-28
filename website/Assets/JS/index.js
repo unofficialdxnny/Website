@@ -157,18 +157,29 @@ document.addEventListener('DOMContentLoaded', function() {
             b = Math.floor(b / (imageData.length / 4));
 
             const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-            const textColor = brightness > 125 ? 'black' : 'white';
+            let textColor = brightness > 125 ? 'black' : 'white';
+
+            // Ensure colors are not too dull
+            if (textColor === 'black' && brightness > 80 && brightness < 125) {
+                textColor = 'white';
+            } else if (textColor === 'white' && brightness < 150 && brightness > 125) {
+                textColor = 'black';
+            }
 
             const aboutSection = document.querySelector('.section-content#about');
-            aboutSection.style.color = textColor;
-            aboutSection.querySelectorAll('p').forEach(element => {
-                element.style.color = textColor;
-            });
+            if (isElementInViewport(aboutSection)) {
+                aboutSection.style.color = textColor;
+                aboutSection.querySelectorAll('p').forEach(element => {
+                    element.style.color = textColor;
+                });
 
-            const socialIcons = document.querySelectorAll('.social-icons a');
-            socialIcons.forEach(icon => {
-                icon.querySelector('i').style.color = textColor;
-            });
+                const socialIcons = document.querySelectorAll('.social-icons a');
+                socialIcons.forEach(icon => {
+                    icon.querySelector('i').style.color = textColor;
+                });
+            } else {
+                resetSocialIconColorToDefault();
+            }
         };
     }
 
@@ -178,11 +189,40 @@ document.addEventListener('DOMContentLoaded', function() {
         aboutSection.querySelectorAll('p').forEach(element => {
             element.style.color = 'white';
         });
+        resetSocialIconColorToDefault();
     }
+
+    function resetSocialIconColorToDefault() {
+        const socialIcons = document.querySelectorAll('.social-icons a');
+        socialIcons.forEach(icon => {
+            icon.querySelector('i').style.color = 'white';
+        });
+    }
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function checkSectionVisibility() {
+        const aboutSection = document.querySelector('.section-content#about');
+        if (!isElementInViewport(aboutSection)) {
+            resetSocialIconColorToDefault();
+        }
+    }
+
+    window.addEventListener('scroll', checkSectionVisibility);
+    window.addEventListener('resize', checkSectionVisibility);
 
     updateDiscordStatus();
     setInterval(updateDiscordStatus, 1000);
 });
+
 
 
 
