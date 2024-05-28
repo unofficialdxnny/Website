@@ -287,7 +287,7 @@ body.dark-theme {
 }
 
 body.dark-theme .social-icons a {
-  background-color: #1a1a1a;
+  background-color: transparent;
 }
 
 body.dark-theme .social-icons a .fab {
@@ -301,8 +301,11 @@ body.dark-theme .social-icons a .fab {
   top: -50px;
   left: 0;
   position: absolute;
-  background-color: #66b3ff;
   transition: 0.5s;
+}
+
+body.dark-theme .social-icons a .fab .fa-instagram::after {
+  background-color: red;
 }
 
 /* 
