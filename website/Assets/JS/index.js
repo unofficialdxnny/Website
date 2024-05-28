@@ -45,7 +45,6 @@ function refreshImage() {
 
 setInterval(refreshImage, 3000);
 
-
 document.addEventListener('DOMContentLoaded', function() {
     let currentImageUrl = '';
 
@@ -60,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const statusCircles = document.querySelectorAll('.status-circle');
                 const socialIcons = document.querySelectorAll('.social-icons a');
                 const backgroundAbout = document.querySelector('.background-about');
+                const aboutSection = document.querySelector('.section-content#about');
 
                 let colorCode;
                 let circleColor;
@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 } else {
                     backgroundAbout.style.backgroundImage = '';
+                    resetTextColorToDefault();
                 }
             } else {
                 console.error('Error fetching Discord status:', data);
@@ -166,9 +167,18 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 
+    function resetTextColorToDefault() {
+        const aboutSection = document.querySelector('.section-content#about');
+        aboutSection.style.color = 'white';
+        aboutSection.querySelectorAll('p').forEach(element => {
+            element.style.color = 'white';
+        });
+    }
+
     updateDiscordStatus();
     setInterval(updateDiscordStatus, 1000);
 });
+
 
 
 function nav_click_sound() {

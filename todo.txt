@@ -1,10 +1,10 @@
 Add Graphics to gfx section
-change favicon to blue scheme - done
 Amend the Projects cards
 Add rocket league decals 
-Add a youtube icon to socials - done
 if spotify pauses than make the text back to white
 if spotify pauses than hide the spotify player
 add embed to every gpv
 Add favicon to all pages
 add embed with watermark on all pages
+add custom bg colour to each social link
+if no music playing than show my logo (https://cdn.discordapp.com/avatars/898937224895270972/5f0563ecd061e5a149f7a5775707ca82.png?size=4096)
