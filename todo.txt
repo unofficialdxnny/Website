@@ -6,3 +6,5 @@ Add a youtube icon to socials - done
 if spotify pauses than make the text back to white
 if spotify pauses than hide the spotify player
 add embed to every gpv
+Add favicon to all pages
+add embed with watermark on all pages
