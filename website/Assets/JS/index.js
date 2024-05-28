@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 let circleColor;
                 switch (status) {
                     case 'online':
-                        colorCode = '4f8832';
+                        colorCode = '#4f8832';
                         circleColor = 'green';
                         break;
                     case 'idle':
-                        colorCode = 'f79c18';
+                        colorCode = '#f79c18';
                         circleColor = 'yellow';
                         break;
                     case 'dnd':
-                        colorCode = '812e25';
+                        colorCode = '#812e25';
                         circleColor = 'red';
                         break;
                     case 'offline':
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         circleColor = 'gray';
                         break;
                     default:
-                        colorCode = '000000';
+                        colorCode = '#000000';
                         circleColor = 'black';
                 }
 
@@ -94,13 +94,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     circle.style.backgroundColor = circleColor;
                 });
 
+                const textColor = window.getComputedStyle(aboutSection).color;
+                aboutSection.style.color = textColor;
                 socialIcons.forEach(icon => {
-                    icon.style.setProperty('--after-background-color', colorCode);
-                });
-
-                socialIcons.forEach(icon => {
-                    icon.className = '';
-                    icon.classList.add(status);
+                    icon.querySelector('i').style.color = textColor;
                 });
 
                 if (data.data.listening_to_spotify) {
@@ -166,6 +163,11 @@ document.addEventListener('DOMContentLoaded', function() {
             aboutSection.style.color = textColor;
             aboutSection.querySelectorAll('p').forEach(element => {
                 element.style.color = textColor;
+            });
+
+            const socialIcons = document.querySelectorAll('.social-icons a');
+            socialIcons.forEach(icon => {
+                icon.querySelector('i').style.color = textColor;
             });
         };
     }
