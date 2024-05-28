@@ -113,7 +113,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 } else {
-                    backgroundAbout.style.backgroundImage = '';
+                    if (currentImageUrl !== '') {
+                        currentImageUrl = '';
+                        fadeBackgroundImage(backgroundAbout, '');
+                    }
                     resetTextColorToDefault();
                 }
             } else {
@@ -127,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function fadeBackgroundImage(element, imageUrl) {
         element.classList.add('fade-out');
         setTimeout(() => {
-            element.style.backgroundImage = `url(${imageUrl})`;
+            element.style.backgroundImage = imageUrl ? `url(${imageUrl})` : '';
             element.classList.remove('fade-out');
         }, 1000); // Match this duration with the CSS transition time
     }
@@ -178,6 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
     updateDiscordStatus();
     setInterval(updateDiscordStatus, 1000);
 });
+
 
 
 
