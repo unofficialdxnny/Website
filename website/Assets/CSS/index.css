@@ -3,7 +3,55 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
   }
-
+  
+  body.light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark-theme {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  /* Add a transition for smooth theme switching */
+  body {
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  #toggle-button {
+    padding: 10px;
+    background-color: #66b3ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Your existing CSS styles */
+  
+  /* Example of dark theme specific styles */
+  body.dark-theme .navbar-toggler-icon,
+  body.dark-theme .navbar-toggler-icon::before,
+  body.dark-theme .navbar-toggler-icon::after {
+    background: white;
+  }
+  
+  body.dark-theme .glassmorphic-navbar {
+    background: rgba(20, 20, 20, 0.25);
+  }
+  
+  body.dark-theme .container p {
+    color: #ccc;
+  }
+  
 
 /* shadow */
 
@@ -492,14 +540,23 @@ body.dark-theme .social-icons a .fab .fa-instagram::after {
 
 /* contact form */
 
-
 form {
   max-width: 500px;
   margin: 0 auto;
-  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-theme form {
+  background-color: white;
+
+}
+
+body.dark-theme form {
+  background-color: #1a1a1a;
+  color: #66b3ff;
 }
 
 label {
@@ -510,7 +567,6 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  background-color: black;
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -518,6 +574,20 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-theme input[type="text"],
+body.light-theme input[type="email"],
+body.light-theme textarea {
+  background-color: white;
+  color: #66b3ff;
+}
+
+body.dark-theme input[type="text"],
+body.dark-theme input[type="email"],
+body.dark-theme textarea {
+  background-color: black;
   color: #66b3ff;
 }
 
@@ -527,7 +597,7 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: #151515;
+  background-color: #66b3ff;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -536,5 +606,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #555;
+  background-color: #4a81b8;
 }

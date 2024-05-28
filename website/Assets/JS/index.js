@@ -369,3 +369,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     initializeFormHandling(); // Call the function to initialize form handling
 });
+
+
+// themes
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('toggle-button');
+  
+    // Function to toggle theme
+    const toggleTheme = () => {
+      document.body.classList.toggle('dark-theme');
+      document.body.classList.toggle('light-theme');
+    };
+  
+    // Add event listener to the button
+    toggleButton.addEventListener('click', toggleTheme);
+  
+    // Add event listener for the 't' key
+    document.addEventListener('keyup', (event) => {
+      if (event.key === 't' || event.key === 'T') {
+        toggleTheme();
+      }
+    });
+  
+    // Initialize the theme based on the current class
+    if (!document.body.classList.contains('dark-theme') && !document.body.classList.contains('light-theme')) {
+      document.body.classList.add('light-theme');
+    }
+  });
