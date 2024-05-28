@@ -471,10 +471,14 @@ body.dark-theme .social-icons a .fab .fa-instagram::after {
 /* project cards */
 .card {
   transition: transform 0.5s ease; /* Slowed down the transition duration */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+
 }
 
 .card:hover {
   transform: scale(0.75); /* Changed scale to make the card slightly larger */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+
 }
 
 .card .card-body .card-title {
