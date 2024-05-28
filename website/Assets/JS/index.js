@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 let circleColor;
                 switch (status) {
                     case 'online':
-                        colorCode = '#4f8832';
+                        colorCode = '4f8832';
                         circleColor = 'green';
                         break;
                     case 'idle':
-                        colorCode = '#f79c18';
+                        colorCode = 'f79c18';
                         circleColor = 'yellow';
                         break;
                     case 'dnd':
-                        colorCode = '#812e25';
+                        colorCode = '812e25';
                         circleColor = 'red';
                         break;
                     case 'offline':
@@ -81,11 +81,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         circleColor = 'gray';
                         break;
                     default:
-                        colorCode = '#000000';
+                        colorCode = '000000';
                         circleColor = 'black';
                 }
 
-                const newSrc = imageElement.src.replace(/bar_color=.*?(&|$)/, `bar_color=${colorCode}$1`);
+                const newSrc = imageElement.src.replace(/bar_color=[^&]+/, `bar_color=${colorCode}`);
                 if (imageElement.src !== newSrc) {
                     imageElement.src = newSrc;
                 }
