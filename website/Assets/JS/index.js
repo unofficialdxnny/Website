@@ -216,3 +216,114 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initially show the About section
     document.querySelectorAll('.nav-link')[0].click();
 });
+
+
+// contact form
+document.addEventListener('DOMContentLoaded', function() {
+        // Placeholder strings
+        const placeholderStrings = [
+            "Can you please make me a controller overlay?",
+            "I need help with setting up OBS.",
+            "Could you design a logo for my channel?",
+            "I'm interested in your services. Can we discuss further?"
+        ];
+    
+        // Function to animate placeholder typing
+        function animatePlaceholderTyping(element, strings, interval) {
+            let index = 0;
+            let textIndex = 0;
+            let currentText = '';
+            const placeholderLength = strings[index].length;
+    
+            setInterval(() => {
+                if (textIndex < placeholderLength) {
+                    currentText += strings[index].charAt(textIndex);
+                    element.setAttribute("placeholder", currentText);
+                    textIndex++;
+                } else {
+                    setTimeout(() => {
+                        currentText = '';
+                        textIndex = 0;
+                        index = (index + 1) % strings.length;
+                        placeholderLength = strings[index].length;
+                    }, interval);
+                }
+            }, interval);
+        }
+    
+        // Select the message textarea
+        const messageTextarea = document.getElementById('message');
+    
+        // Start the placeholder typing animation
+        animatePlaceholderTyping(messageTextarea, placeholderStrings, 100); // Typing speed: 100 milliseconds per character
+
+        
+    // Wrap your existing code inside this function
+    function initializeFormHandling() {
+        // Cooldown duration in milliseconds (5 minutes)
+        const cooldownDuration = 5 * 60 * 1000;
+
+        // Object to store last message timestamps for each client
+        const lastMessageTimestamps = {};
+
+        document.getElementById('discordForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            const nameField = document.querySelector('#discordForm #name');
+            console.log(nameField); // Check if the element is selected correctly
+            const name = nameField.value;
+            console.log(name); // Check if the value is retrieved correctly
+            
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const currentTime = Date.now();
+            const lastMessageTime = lastMessageTimestamps[email] || 0;
+
+            if (currentTime - lastMessageTime < cooldownDuration) {
+                const remainingTime = Math.ceil((cooldownDuration - (currentTime - lastMessageTime)) / 1000);
+                alert(`Please wait ${remainingTime} seconds before sending another message.`);
+                return;
+            }
+
+            sendMessageToDiscord(name, email, message);
+            lastMessageTimestamps[email] = currentTime;
+        });
+
+        function sendMessageToDiscord(name, email, message) {
+            // Your webhook URL
+            const webhookURL = 'https://discord.com/api/webhooks/1244852519302336572/hIM76wzmJcBQEnzEQSwIG7sbqvpMmFsp4Eq4px3f1F4zejbVM3Tf0vVDfwWa9oW_pbpx';
+
+            const payload = {
+                embeds: [{
+                    title: 'New Contact Message from unofficialdxnny.com',
+                    description: `**Name/Username:** ${name}\n**Contact Email:** ${email}\n**Message:** ${message}`,
+                    color: 0x007bff, // Blue color
+                    timestamp: new Date().toISOString()
+                }]
+            };
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to send message to Discord.');
+                }
+                alert('Message sent successfully!');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = ''; // Clear the input fields
+            })
+            .catch(error => {
+                alert('Error: ' + error.message);
+            });
+        }
+    }
+
+    initializeFormHandling(); // Call the function to initialize form handling
+});

@@ -62,6 +62,9 @@
           <li class="nav-item">
             <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#" data-section="vfx">VFX</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#" data-section="contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -207,28 +210,26 @@
           </div>
         </section>
         
+        <section id="contact" class="section-content">
+          <div class="container">
+            <h2 class="section-heading drop-shadow-text">Get In Touch<span id="status-circle" class="status-circle"></span></h2>
+            <p>Anything you would like to say, ask or request</p>
+        <br><br>
+            <form id="discordForm">
+                <label for="name">Name/Discord username:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Contact Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Can you please make me a controller overlay?" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>
+        
+     
+          </div>
+        </section>
       
-    <script>
-      // Function to refresh the image source
-      function refreshImage() {
-        // Get the image element
-        var image = document.getElementById("Spotify-now-playing");
-    
-        // Get the current source
-        var currentSource = image.src;
-    
-        // Add a timestamp parameter to the URL to forces a refresh
-        var newSource = currentSource + "?timestamp=" + new Date().getTime();
-    
-        // Set the new source
-        image.src = newSource;
-      }
-    
-      // Refresh the image every 3 seconds
-      setInterval(refreshImage, 1000);
-    </script>
-
-
+        
 
 <br><br><br>
 
@@ -253,6 +254,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script src="./Assets/JS/index.js"></script>
-  <script src="./Assets/JS/project.cards.js"></script>
+
 </body>
 </html>

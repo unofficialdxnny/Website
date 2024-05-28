@@ -1,97 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Now Playing Showcase</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="widget-container">
-    <img src="" alt="Game Image" class="game-image">
-    <div class="game-details">
-      <h2 class="game-name"></h2>
-      <p class="game-state"></p>
+    <h1>Contact Us</h1>
+    <form id="discordForm">
+        <label for="name">Name/Username:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Contact Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Send Message</button>
+    </form>
 
-    </div>
-  </div>
-  
-  <div class="snp">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=(bar-color-hex-code-goes-here)&bar_color_cover=false" alt="" class="s">
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      async function updateDiscordStatus() {
-        try {
-          const response = await fetch('https://api.lanyard.rest/v1/users/898937224895270972');
-          const data = await response.json();
-
-          if (response.ok) {
-            const status = data.data.discord_status;
-            const gameActivity = data.data.activities.find(activity => activity.type === 0);
-            const gameImageElement = document.querySelector('.game-image');
-            const gameNameElement = document.querySelector('.game-name');
-            const gameStateElement = document.querySelector('.game-state');
-            const gameModeElement = document.getElementById('game-mode');
-            const gameServerElement = document.getElementById('game-server');
-            const widget = document.getElementsByClassName('.widget-container')
-
-            // Change color based on status
-            switch (status) {
-              case 'online':
-                document.body.style.backgroundColor = 'green';
-                break;
-              case 'idle':
-                document.body.style.backgroundColor = 'yellow';
-                break;
-              case 'dnd':
-                document.body.style.backgroundColor = 'red';
-                break;
-              case 'offline':
-                document.body.style.backgroundColor = 'gray';
-                break;
-              default:
-                document.body.style.backgroundColor = 'white';
-            }
-
-            if (gameActivity) {
-              if (gameActivity.name === 'Rocket League') {
-                // Display specific data for Rocket League
-                gameImageElement.src = 'https://allandevery.co.uk/cdn/shop/files/BA000000503-BLK-ZOOM_da9da9e4-ffd2-4c0e-84b2-15c4cb1bf8b7.jpg?v=1682526095'
-                gameNameElement.textContent = gameActivity.name;
-                gameStateElement.textContent = gameActivity.state;
-                gameModeElement.textContent = `Mode: ${gameActivity.details}`;
-                gameServerElement.textContent = `Server: ${gameActivity.state}`;
-              } else {
-                // Hide specific data if not Rocket League
-                gameModeElement.textContent = '';
-                gameServerElement.textContent = '';
-              }
-
-              gameImageElement.src = gameActivity.assets.large_image;
-              document.querySelector('.snp').style.display = 'none';
-            } else {
-              // Show .snp element if no game activity
-              document.querySelector('.snp').style.display = '';
-              widget.style.display = 'none'
-              gameNameElement.textContent = '';
-              gameStateElement.textContent = '';
-              gameModeElement.textContent = '';
-              gameServerElement.textContent = '';
-            }
-          } else {
-            console.error('Error fetching Discord status:', data);
-          }
-        } catch (error) {
-          console.error('Error fetching Discord status:', error);
-        }
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+          padding: 20px;
       }
 
-      updateDiscordStatus();
-      setInterval(updateDiscordStatus, 10000); // Update every 10 seconds
-    });
-  </script>
-  <script src="script.js"></script>
+      h1 {
+          text-align: center;
+          margin-bottom: 20px;
+          color: #333;
+      }
+
+      form {
+          max-width: 500px;
+          margin: 0 auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+          font-weight: bold;
+          color: #555;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+      }
+
+      textarea {
+          resize: vertical;
+          height: 150px;
+      }
+
+      button[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+          background-color: #555;
+      }
+  </style>
+
+
+    <script>
+        // Cooldown duration in milliseconds (5 minutes)
+        const cooldownDuration = 5 * 60 * 1000;
+
+        // Object to store last message timestamps for each client
+        const lastMessageTimestamps = {};
+
+        document.getElementById('discordForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+                alert('Please fill out all fields.');
+                return;
+            }
+
+            const currentTime = Date.now();
+            const lastMessageTime = lastMessageTimestamps[email] || 0;
+
+            if (currentTime - lastMessageTime < cooldownDuration) {
+                const remainingTime = Math.ceil((cooldownDuration - (currentTime - lastMessageTime)) / 1000);
+                alert(`Please wait ${remainingTime} seconds before sending another message.`);
+                return;
+            }
+
+            sendMessageToDiscord(name, email, message);
+            lastMessageTimestamps[email] = currentTime;
+        });
+
+        function sendMessageToDiscord(name, email, message) {
+            // Your webhook URL
+            const webhookURL = 'https://discord.com/api/webhooks/1244852519302336572/hIM76wzmJcBQEnzEQSwIG7sbqvpMmFsp4Eq4px3f1F4zejbVM3Tf0vVDfwWa9oW_pbpx';
+
+            const payload = {
+                embeds: [{
+                    title: 'New Contact Message from unofficialdxnny.com',
+                    description: `**Name/Username:** ${name}\n**Contact Email:** ${email}\n**Message:** ${message}`,
+                    color: 0x007bff, // Blue color
+                    timestamp: new Date().toISOString()
+                }]
+            };
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to send message to Discord.');
+                }
+                alert('Message sent successfully!');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = ''; // Clear the input fields
+            })
+            .catch(error => {
+                alert('Error: ' + error.message);
+            });
+        }
+    </script>
 </body>
 </html>
