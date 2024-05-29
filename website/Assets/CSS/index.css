@@ -502,9 +502,10 @@ form {
 max-width: 500px;
 margin: 0 auto;
 background-color: #1a1a1a;
+background-image: url('https://img.freepik.com/premium-vector/abstract-aesthetic-lines-background-thin-black-line-white_760443-220.jpg');
 padding: 20px;
 border-radius: 8px;
-box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+box-shadow: 0 0 30px rgb(255, 255, 255);
 transition: box-shadow 0.5s ease, transform 0.5s ease;
 transform: rotate3d(1, 1, 0, 30deg);
 
