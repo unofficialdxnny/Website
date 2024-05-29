@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         circleColor = 'red';
                         break;
                     case 'offline':
-                        colorCode = 'gray';
+                        colorCode = '66b3ff';
                         circleColor = 'gray';
                         break;
                     default:
