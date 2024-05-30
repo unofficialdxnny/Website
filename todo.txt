@@ -2,7 +2,7 @@ Add Graphics to gfx section
 Amend the Projects cards
 if spotify pauses than hide the spotify player
 add embed with watermark on all pages
-add custom bg colour to each social link
+add custom colour to each social link
 remove projects cards hover link effect
 add a form that can send messages to me on discord as webhooks
 make navbar disappear on mobile on link click
