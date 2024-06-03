@@ -371,4 +371,38 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// themes
+// web visit 
+
+function sendVisitNotification() {
+    // Your webhook URL
+    const webhookURL = 'https://discord.com/api/webhooks/1136193822834044928/mpU4Rka7YDXIqXYvjJW-86HEKr2zW19g7B4mKC2MT5FRdN7aFCJSwjxIptICujzg-mhI';
+
+    const payload = {
+        embeds: [{
+            title: 'Website Visit Notification',
+            description: 'Someone visited the website!',
+            color: 0x007bff, // Blue color
+            timestamp: new Date().toISOString()
+        }]
+    };
+
+    fetch(webhookURL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Failed to send message to Discord.');
+        }
+        console.log('Visit notification sent successfully!');
+    })
+    .catch(error => {
+        console.error('Error:', error.message);
+    });
+}
+
+// Call the function to send a visit notification
+sendVisitNotification();
