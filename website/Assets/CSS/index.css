@@ -480,13 +480,18 @@ background-color: gray;
 }
 
 .card:hover .card-image-container img {
-  transform: scale(1.25);
+  transform: scale(1.5);
 }
 
-.container .mt-5 a:hover {
-  text-decoration: none;
-  color: #66b3ff;
+/* Specific style for the Snapify card */
+.snapify-card .card-image-container img {
+  transform: scale(5);
 }
+
+.snapify-card:hover .card-image-container img {
+  transform: scale(10);
+}
+
 
 /* vfx */
 
