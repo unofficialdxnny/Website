@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <!-- Meta Tags for embed -->
-    <meta name="description" content="https://unofficialdxnny.com">
-  
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://unofficialdxnny.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="unofficialdxnny | Home">
-    <meta property="og:description" content="Welcome to my portfolio. Find my projects, designs and video effects and even give me a thought!">
-    <meta property="og:image" content="https://i.imgur.com/RmT96Md.png">
-  
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="unofficialdxnny.com">
-    <meta property="twitter:url" content="https://unofficialdxnny.com">
-    <meta name="twitter:title" content="unofficialdxnny | Home">
-    <meta name="twitter:description" content="Welcome to my portfolio. Find my projects, designs and video effects and even give me a thought!">
-    <meta name="twitter:image" content="https://i.imgur.com/RmT96Md.png">
-  
+  <!-- Meta Tags for embed -->
+  <meta name="description" content="https://unofficialdxnny.com">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://unofficialdxnny.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="unofficialdxnny | Home">
+  <meta property="og:description"
+    content="Welcome to my portfolio. Find my projects, designs and video effects and even give me a thought!">
+  <meta property="og:image" content="https://i.imgur.com/RmT96Md.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="unofficialdxnny.com">
+  <meta property="twitter:url" content="https://unofficialdxnny.com">
+  <meta name="twitter:title" content="unofficialdxnny | Home">
+  <meta name="twitter:description"
+    content="Welcome to my portfolio. Find my projects, designs and video effects and even give me a thought!">
+  <meta name="twitter:image" content="https://i.imgur.com/RmT96Md.png">
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>unofficialdxnny | Home</title>
-    <link rel="stylesheet" href="./Assets/CSS/index.css">
-    <link rel="shortcut icon" href="https://unofficialdxnny.com/favicon.png" type="image/x-icon">
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unofficialdxnny | Home</title>
+  <link rel="stylesheet" href="./Assets/CSS/index.css">
+  <link rel="shortcut icon" href="https://unofficialdxnny.com/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
+
 <body>
 
   <canvas id="bgCanvas" style="display: none;"></canvas>
@@ -41,20 +43,25 @@
 
   <nav class="navbar navbar-expand-lg fixed-top glassmorphic-navbar flick-in">
     <div class="container">
-      <a class="navbar-brand drop-shadow-text-nav" onclick="nav_click_sound()" href="#" data-section="">unofficialdxnny</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand drop-shadow-text-nav" onclick="nav_click_sound()" href="#"
+        data-section="">unofficialdxnny</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#" data-section="about">About</a>
+            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#"
+              data-section="about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#" data-section="projects">Projects</a>
+            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#"
+              data-section="projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#" data-section="gamepads">GamePads</a>
+            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#"
+              data-section="gamepads">GamePads</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#" data-section="gfx">GFX</a>
@@ -63,204 +70,240 @@
             <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#" data-section="vfx">VFX</a>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#" data-section="contact">Contact</a>
+            <a class="nav-link drop-shadow-text-nav-link" onclick="nav_click_sound()" href="#"
+              data-section="contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-      <br><br><br><br><br>
 
-        <!-- Sections --> 
-          <section id="about" class="section-content">
-            <div class="background-about"></div>
-            <div class="container">
-              <h2 class="section-heading underline drop-shadow-text" id="name">DANIAL AHMED<span id="status-circle" class="status-circle"></span></h2>
-              <p>Hello! I'm an 18-year-old programming enthusiast based in the UK. Currently, I'm honing my skills in front-end development, where I enjoy bringing creative designs to life using HTML, CSS, and JavaScript.</p>
-              <p>In addition to my front-end work, I have a strong foundation in Python, which I use for automation and software development. Whether it's automating repetitive tasks or building innovative software solutions, I love leveraging Python's versatility to solve problems and improve efficiency.</p>
-              <p>I'm always eager to learn new technologies and take on challenging projects that push my skills to the next level.</p>
-              <br><br>
-              <div class="snp">
-                  <img id="Spotify-now-playing" src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false" alt="AD Playing">
-                  <!--  onerror="this.onerror=null; this.src='Spotify-Ad-Playing.png';" -->
-              </div>
-            </div>
-          </section>
-        
-          <section id="projects" class="section-content">
-            <div class="container">
-              <h2 class="section-heading drop-shadow-text">Projects<span id="status-circle" class="status-circle"></span></h2>
-              <p>Here are some of my popular and favourite projects!</p>
-          
-              <div class="container mt-5">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="https://github.com/unofficialdxnny/Snapify">
-                      <div class="card">
-                        <img src="https://repository-images.githubusercontent.com/540961388/908c0ce5-f9f9-45d4-be36-6e485ae33111" class="card-img-top" alt="Image 1">
-                        <div class="card-body">
-                          <h5 class="card-title">Snapify</h5>
-                          <p class="card-text">Snapify is a software application designed to boost a user's Snapchat score by automating interactions on the platform​</p>
-                          <img src="https://img.shields.io/badge/Maintained-Yes-blue" alt="">
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="https://zafirsphotography.netlify.app/">
-                      <div class="card">
-                        <img src="./Assets/Images/Projects/zp.png" class="card-img-top" alt="Image 1">
-                        <div class="card-body">
-                          <h5 class="card-title">Zafirs Photography</h5>
-                          <p class="card-text">In this project, I focused on enhancing my animation skills by utilizing the JavaScript IntersectionObserver function.</p>
-                          <img src="https://img.shields.io/badge/Maintained-Yes-blue" alt="">
+  <br><br><br><br><br>
 
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-          
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="https://github.com/unofficialdxnny/Tickets-discord-bot">
-                      <div class="card">
-                        <img src="./Assets/Images/Projects/tickets.png" class="card-img-top" alt="Image 1">
-                        <div class="card-body">
-                          <h5 class="card-title">Tickets Discord Bot</h5>
-                          <p class="card-text">This Discord bot allows users to create a private channel for their ticket and close tickets using buttons. prefix is /</p>
-                          <img src="https://img.shields.io/badge/Maintained-No-red" alt="">
+  <!-- Sections -->
+  <section id="about" class="section-content">
+    <div class="background-about"></div>
+    <div class="container">
+      <h2 class="section-heading underline drop-shadow-text" id="name">DANIAL AHMED<span id="status-circle"
+          class="status-circle"></span></h2>
+      <p>Hello! I'm an 18-year-old programming enthusiast based in the UK. Currently, I'm honing my skills in front-end
+        development, where I enjoy bringing creative designs to life using HTML, CSS, and JavaScript.</p>
+      <p>In addition to my front-end work, I have a strong foundation in Python, which I use for automation and software
+        development. Whether it's automating repetitive tasks or building innovative software solutions, I love
+        leveraging Python's versatility to solve problems and improve efficiency.</p>
+      <p>I'm always eager to learn new technologies and take on challenging projects that push my skills to the next
+        level.</p>
+      <br><br>
+      <div class="snp">
+        <img id="Spotify-now-playing"
+          src="https://spotify-github-profile.vercel.app/api/view?uid=ahmeddanial&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false"
+          alt="AD Playing">
+        <!--  onerror="this.onerror=null; this.src='Spotify-Ad-Playing.png';" -->
+      </div>
+    </div>
+  </section>
 
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-          
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <a href="https://github.com/unofficialdxnny/MonkeyTyper">
-                      <div class="card">
-                        <img src="./Assets/Images/Projects/MonkeyTyper.png" class="card-img-top" alt="Image 1">
-                        <div class="card-body">
-                          <h5 class="card-title">Tickets Discord Bot</h5>
-                          <p class="card-text">This Discord bot allows users to create a private channel for their ticket and close tickets using buttons. prefix is /</p>
-                          <img src="https://img.shields.io/badge/Maintained-No-red" alt="">
+  <section id="projects" class="section-content">
+    <div class="container">
+      <h2 class="section-heading drop-shadow-text">Projects<span id="status-circle" class="status-circle"></span></h2>
+      <p>Here are some of my popular and favourite projects!</p>
 
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="https://github.com/unofficialdxnny/Snapify">
+              <div class="card">
+                <img
+                  src="https://repository-images.githubusercontent.com/540961388/908c0ce5-f9f9-45d4-be36-6e485ae33111"
+                  class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                  <h5 class="card-title">Snapify</h5>
+                  <p class="card-text">Snapify is a software application designed to boost a user's Snapchat score by
+                    automating interactions on the platform​</p>
+                  <img src="https://img.shields.io/badge/Maintained-Yes-blue" alt="">
                 </div>
               </div>
-            </div>
-          </section>
-          
-        <section id="gamepads" class="section-content">
-          <div class="container">
-            <h2 class="section-heading drop-shadow-text">GamePads<span id="status-circle" class="status-circle"></span></h2>
-            <p>Well Here are my GPV skins <br>Anything you can click is FREE!</p>
-    
-            <div class="gallery" id="ps5">
-              <a href="https://unofficialdxnny.com/gamepad/898937224895270972/LebJames.html"><div class="gallery-item">
-                <img src="./gamepad/LebJames.png" alt="Lebron James Controller">
-              </div></a>
-              <a href="https://unofficialdxnny.com/gamepad/898937224895270972/CalmSkyPS5.html"><div class="gallery-item">
-                <img src="./gamepad/CalmSkyPS5.png" alt="CalmSnowPS5 Controller">
-              </div></a>
-              <a href="https://unofficialdxnny.com/gamepad/898937224895270972/MilesMorales.html"><div class="gallery-item">
-                <img src="./gamepad/MilesMorales.png" alt="Miles Morales Controller">
-              </div></a>
-              <a href="https://unofficialdxnny.com/gamepad/898937224895270972/himikotogo.html"><div class="gallery-item">
-                <img src="./gamepad/HimikoTogo.png" alt="Himiko Togo Controller">
-              </div></a>
-           
-             
-              
-            </div>
-            <div class="gallery" id="ps4">
-              <a href="https://unofficialdxnny.com/gamepad/898937224895270972/DS4White.html"><div class="gallery-item">
-                <img src="./gamepad/DS4White.png" alt="DS4 White Controller">
-              </div></a>
-              <a href="https://unofficialdxnny.com/gamepad/898937224895270972/NavyBlue.html"><div class="gallery-item">
-                <img src="./gamepad/NavyBlueDS4.png" alt="DS4 Navy Blue Controller">
-              </div></a>
-              <a href="https://unofficialdxnny.com/gamepad/898937224895270972/Penguin .html"><div class="gallery-item">
-                <img src="./gamepad/DS4P.png" alt="DS4 Penguin Controller">
-              </div></a>
-            </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="https://zafirsphotography.netlify.app/">
+              <div class="card">
+                <img src="./Assets/Images/Projects/zp.png" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                  <h5 class="card-title">Zafirs Photography</h5>
+                  <p class="card-text">In this project, I focused on enhancing my animation skills by utilizing the
+                    JavaScript IntersectionObserver function.</p>
+                  <img src="https://img.shields.io/badge/Maintained-Yes-blue" alt="">
 
-          
-        
-          </div>
-        </section>
-        
-        <section id="gfx" class="section-content">
-          <div class="container">
-            <h2 class="section-heading drop-shadow-text">GFX<span id="status-circle" class="status-circle"></span></h2>
-            <p>GFX content goes here.</p>
-        
-     
-          </div>
-        </section>
-        
-        <section id="vfx" class="section-content">
-          <div class="container">
-            <h2 class="section-heading drop-shadow-text">VFX<span id="status-circle" class="status-circle"></span></h2>
-            <p>VFX content goes here.</p>
-            
-            <div class="video-gallery">
-              <!-- Insert YouTube iframe here -->
-              <div class="video-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GSqnOg5c-KQ?si=OgNjuWmW6M4kcR5R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
               </div>
-         
-         
-            </div>
+            </a>
           </div>
-        </section>
-        
-        <section id="contact" class="section-content">
-          <div class="container">
-            <h2 class="section-heading drop-shadow-text">Get In Touch<span id="status-circle" class="status-circle"></span></h2>
-            <p>Anything you would like to say, ask or request...</p>
-        <br><br>
-            <form id="discordForm">
-                <label for="name">Name/Discord username:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Contact Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" placeholder="Can you please make me a controller overlay?" required></textarea><br><br>
-                <button type="submit">Send Message</button>
-            </form>
-        
-     
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="https://github.com/unofficialdxnny/Tickets-discord-bot">
+              <div class="card">
+                <img src="./Assets/Images/Projects/tickets.png" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                  <h5 class="card-title">Tickets Discord Bot</h5>
+                  <p class="card-text">This Discord bot allows users to create a private channel for their ticket and
+                    close tickets using buttons. prefix is /</p>
+                  <img src="https://img.shields.io/badge/Maintained-No-red" alt="">
+
+                </div>
+              </div>
+            </a>
           </div>
-        </section>
-      
-        
 
-<br><br><br>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="https://github.com/unofficialdxnny/MonkeyTyper">
+              <div class="card">
+                <img src="./Assets/Images/Projects/MonkeyTyper.png" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                  <h5 class="card-title">MonkeyTyper</h5>
+                  <p class="card-text">Automated type bot for popular site MonkeyType. Get the fastest registered typing
+                    time on the site</p>
+                  <img src="https://img.shields.io/badge/Maintained-No-red" alt="">
 
-<!-- Social Icons -->
-<div id="social" class="social-icons">
-  <a target="__blank" href="https://instagram.com/unofficialdxnny" class="instagram"><i class="fab fa-instagram"></i></a>
-  <a target="__blank" href="https://github.com/unofficialdxnny" class="github"><i class="fab fa-github"></i></a>
-  <a target="__blank" href="https://discord.gg/8WyFZF3kqn" class="discord"><i class="fab fa-discord"></i></a>
-  <a target="__blank" href="https://www.youtube.com/@unofficialdxnny" class="youtube"><i class="fab fa-youtube"></i></a>
-</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- 
+  <section id="gamepads" class="section-content">
+    <div class="container">
+      <h2 class="section-heading drop-shadow-text">GamePads<span id="status-circle" class="status-circle"></span></h2>
+      <p>Well Here are my GPV skins <br>Anything you can click is FREE!</p>
+
+      <div class="gallery" id="ps5">
+        <a href="https://unofficialdxnny.com/gamepad/898937224895270972/LebJames.html">
+          <div class="gallery-item">
+            <img src="./gamepad/LebJames.png" alt="Lebron James Controller">
+          </div>
+        </a>
+        <a href="https://unofficialdxnny.com/gamepad/898937224895270972/CalmSkyPS5.html">
+          <div class="gallery-item">
+            <img src="./gamepad/CalmSkyPS5.png" alt="CalmSnowPS5 Controller">
+          </div>
+        </a>
+        <a href="https://unofficialdxnny.com/gamepad/898937224895270972/MilesMorales.html">
+          <div class="gallery-item">
+            <img src="./gamepad/MilesMorales.png" alt="Miles Morales Controller">
+          </div>
+        </a>
+        <a href="https://unofficialdxnny.com/gamepad/898937224895270972/himikotogo.html">
+          <div class="gallery-item">
+            <img src="./gamepad/HimikoTogo.png" alt="Himiko Togo Controller">
+          </div>
+        </a>
+
+
+
+      </div>
+      <div class="gallery" id="ps4">
+        <a href="https://unofficialdxnny.com/gamepad/898937224895270972/DS4White.html">
+          <div class="gallery-item">
+            <img src="./gamepad/DS4White.png" alt="DS4 White Controller">
+          </div>
+        </a>
+        <a href="https://unofficialdxnny.com/gamepad/898937224895270972/NavyBlue.html">
+          <div class="gallery-item">
+            <img src="./gamepad/NavyBlueDS4.png" alt="DS4 Navy Blue Controller">
+          </div>
+        </a>
+        <a href="https://unofficialdxnny.com/gamepad/898937224895270972/Penguin .html">
+          <div class="gallery-item">
+            <img src="./gamepad/DS4P.png" alt="DS4 Penguin Controller">
+          </div>
+        </a>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section id="gfx" class="section-content">
+    <div class="container">
+      <h2 class="section-heading drop-shadow-text">GFX<span id="status-circle" class="status-circle"></span></h2>
+      <p>GFX content goes here.</p>
+
+
+    </div>
+  </section>
+
+  <section id="vfx" class="section-content">
+    <div class="container">
+      <h2 class="section-heading drop-shadow-text">VFX<span id="status-circle" class="status-circle"></span></h2>
+      <p>VFX content goes here.</p>
+
+      <div class="video-gallery">
+        <!-- Insert YouTube iframe here -->
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/GSqnOg5c-KQ?si=OgNjuWmW6M4kcR5R"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-content">
+    <div class="container">
+      <h2 class="section-heading drop-shadow-text">Get In Touch<span id="status-circle" class="status-circle"></span>
+      </h2>
+      <p>Anything you would like to say, ask or request...</p>
+      <br><br>
+      <form id="discordForm">
+        <label for="name">Name/Discord username:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Contact Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"
+          placeholder="Can you please make me a controller overlay?" required></textarea><br><br>
+        <button type="submit">Send Message</button>
+      </form>
+
+
+    </div>
+  </section>
+
+
+
+  <br><br><br>
+
+  <!-- Social Icons -->
+  <div id="social" class="social-icons">
+    <a target="__blank" href="https://instagram.com/unofficialdxnny" class="instagram"><i
+        class="fab fa-instagram"></i></a>
+    <a target="__blank" href="https://github.com/unofficialdxnny" class="github"><i class="fab fa-github"></i></a>
+    <a target="__blank" href="https://discord.gg/8WyFZF3kqn" class="discord"><i class="fab fa-discord"></i></a>
+    <a target="__blank" href="https://www.youtube.com/@unofficialdxnny" class="youtube"><i
+        class="fab fa-youtube"></i></a>
+  </div>
+
+  <!-- 
     <div id="theme-toggle" class="theme-toggle">
       <button id="toggle-button" onclick="toggleTheme()">Toggle Theme (T)</button>
   </div>
  -->
 
 
-<!-- Bootstrap JS, jQuery, and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS, jQuery, and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script src="./Assets/JS/index.js"></script>
 
 </body>
+
 </html>

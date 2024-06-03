@@ -1,6 +1,7 @@
-Add Graphics to gfx section
-add embed with watermark on all pages
-make navbar disappear on mobile on link click
-make a weather web app
-new social icons 
-hover = scale up
+Add Graphics to gfx section - 7
+add embed with watermark on all pages - 5
+make navbar disappear on mobile on link click - 6
+make a weather web app - 4
+new social icons - 3
+hover = scale up - done
+add image scale up on project cards on hover - 2
