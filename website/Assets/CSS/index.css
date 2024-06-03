@@ -448,17 +448,12 @@ background-color: gray;
 
 /* project cards */
 .card {
-  transition: transform 0.5s ease;
-  /* Slowed down the transition duration */
-
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .card:hover {
-  /* Changed scale to make the card slightly larger */
-  box-shadow: 0 0 30px rgb(255, 255, 255);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
   transform: rotate3d(1, 1, 0, 15deg);
-
-
 }
 
 .card .card-body .card-title {
@@ -469,10 +464,29 @@ background-color: gray;
   color: #333;
 }
 
-/* .card-img-top {
-width: 150px;
-height: 150px;
-} */
+.card-image-container {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  /* Adjust as necessary */
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  /* Ensures the image covers the container */
+}
+
+.card:hover .card-image-container img {
+  transform: scale(1.25);
+}
+
+.container .mt-5 a:hover {
+  text-decoration: none;
+  color: #66b3ff;
+}
 
 /* vfx */
 

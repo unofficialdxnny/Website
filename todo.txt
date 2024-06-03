@@ -5,3 +5,5 @@ make a weather web app - 4
 new social icons - 3
 hover = scale up - done
 add image scale up on project cards on hover - 2
+
+make it so each section has a section id so it updates the url
