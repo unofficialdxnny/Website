@@ -143,10 +143,27 @@ async function showMovieDetails(movieId) {
     }
 }
 
-const recommendationButton = document.getElementById('get-recommendations');
+// Function to check if the bottom of the page is reached
+function isBottom() {
+    return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+}
 
+// Function to handle infinite scrolling
+async function handleScroll() {
+    if (isBottom()) {
+        const movies = await getMoviesByGenres(selectedGenres);
+        renderRecommendations(movies);
+    }
+}
+
+// Event listener for scroll events
+window.addEventListener('scroll', handleScroll);
+
+// Event listener for button click
+const recommendationButton = document.getElementById('get-recommendations');
 document.addEventListener('keyup', function (event) {
     if (event.keyCode === 32) {
         recommendationButton.click();
     }
 });
+
