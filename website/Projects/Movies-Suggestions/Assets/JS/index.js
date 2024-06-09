@@ -10,10 +10,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 document.getElementById('get-recommendations').addEventListener('click', async () => {
     const selectedGenres = getSelectedGenres();
-    if (selectedGenres.length > 0) {
-        const movies = await getMoviesByGenres(selectedGenres);
-        renderRecommendations(movies);
-    }
+    const movies = await getMoviesByGenres(selectedGenres);
+    renderRecommendations(movies);
 });
 
 async function getGenres() {
@@ -62,18 +60,17 @@ async function getMoviesByGenres(genres) {
 
 function renderRecommendations(movies) {
     const recommendationsList = document.getElementById('recommendations');
-
-    if (movies.length === 0 && currentPage === 1) {
+    recommendationsList.innerHTML = ''; // Clear previous recommendations
+    if (movies.length === 0) {
         recommendationsList.innerHTML = '<li>No movies found for the selected genres.</li>';
         return;
     }
-
     // Shuffle the movies before rendering
     shuffleArray(movies);
-
     movies.forEach(movie => {
         const li = document.createElement('li');
         li.className = 'movie-item';
+        li.dataset.movieId = movie.id;
 
         const img = document.createElement('img');
         img.src = movie.poster_path ? `${TMDB_IMAGE_BASE_URL}${movie.poster_path}` : 'https://via.placeholder.com/150';
@@ -86,10 +83,8 @@ function renderRecommendations(movies) {
         li.appendChild(title);
         recommendationsList.appendChild(li);
 
-        // Trigger reflow to restart animation (optional, depending on browser behavior)
-        void li.offsetWidth;
-        li.style.opacity = '0';
-        li.style.animation = 'fadeIn 1s forwards';
+        // Add click event listener to each movie item
+        li.addEventListener('click', () => showMovieDetails(movie.id));
     });
 }
 
@@ -101,10 +96,43 @@ function shuffleArray(array) {
     }
 }
 
-const recommendation = document.getElementById('get-recommendations');
+async function showMovieDetails(movieId) {
+    try {
+        const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${TMDB_API_KEY}&append_to_response=credits`);
+        const movie = await response.json();
+        const modal = document.getElementById('movie-modal');
+        document.getElementById('movie-title').textContent = movie.title;
+        document.getElementById('movie-description').textContent = movie.overview;
+
+        const castList = document.getElementById('movie-cast');
+        castList.innerHTML = '';
+        movie.credits.cast.slice(0, 10).forEach(castMember => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${castMember.name}`;
+            castList.appendChild(listItem);
+        });
+
+        modal.style.display = 'block';
+
+        const closeButton = modal.querySelector('.close');
+        closeButton.onclick = () => {
+            modal.style.display = 'none';
+        };
+
+        window.onclick = (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+    } catch (error) {
+        console.error('Error fetching movie details:', error);
+    }
+}
+
+const recommendationButton = document.getElementById('get-recommendations');
 
 document.addEventListener('keyup', function (event) {
     if (event.keyCode === 32) {
-        recommendation.click();
+        recommendationButton.click();
     }
 });
