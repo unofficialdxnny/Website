@@ -2,6 +2,7 @@ const TMDB_API_KEY = 'de34df46a91c183f531ab74166ed9501';
 const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 const MOVIES_PER_PAGE = 20; // Number of movies to load per page
 let currentPage = 1;
+let selectedGenres = [];
 
 document.addEventListener('DOMContentLoaded', async () => {
     const genres = await getGenres();
@@ -9,9 +10,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 document.getElementById('get-recommendations').addEventListener('click', async () => {
-    const selectedGenres = getSelectedGenres();
+    selectedGenres = getSelectedGenres();
     const movies = await getMoviesByGenres(selectedGenres);
-    renderRecommendations(movies);
+    renderRecommendations(movies, false);
 });
 
 async function getGenres() {
@@ -58,13 +59,17 @@ async function getMoviesByGenres(genres) {
     }
 }
 
-function renderRecommendations(movies) {
+function renderRecommendations(movies, clearPrevious = false) {
     const recommendationsList = document.getElementById('recommendations');
-    recommendationsList.innerHTML = ''; // Clear previous recommendations
-    if (movies.length === 0) {
+    if (clearPrevious) {
+        recommendationsList.innerHTML = ''; // Clear previous recommendations
+    }
+
+    if (movies.length === 0 && clearPrevious) {
         recommendationsList.innerHTML = '<li>No movies found for the selected genres.</li>';
         return;
     }
+
     // Shuffle the movies before rendering
     shuffleArray(movies);
     movies.forEach(movie => {
@@ -111,6 +116,15 @@ async function showMovieDetails(movieId) {
             listItem.textContent = `${castMember.name}`;
             castList.appendChild(listItem);
         });
+
+        const backdrop = movie.backdrop_path ? `${TMDB_IMAGE_BASE_URL}${movie.backdrop_path}` : '';
+        if (backdrop) {
+            document.getElementById('movie-modal-content').style.backgroundImage = `url(${backdrop})`;
+            document.getElementById('movie-modal-content').style.backgroundSize = 'cover';
+            document.getElementById('movie-modal-content').style.backgroundRepeat = 'no-repeat';
+            document.getElementById('movie-modal-content').style.backgroundPosition = 'center';
+            document.getElementById('movie-modal-content').style.backdropFilter = 'blur(10px)';
+        }
 
         modal.style.display = 'block';
 
