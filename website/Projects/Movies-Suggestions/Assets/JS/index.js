@@ -10,8 +10,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 document.getElementById('get-recommendations').addEventListener('click', async () => {
     const selectedGenres = getSelectedGenres();
-    const movies = await getMoviesByGenres(selectedGenres);
-    renderRecommendations(movies);
+    if (selectedGenres.length > 0) {
+        const movies = await getMoviesByGenres(selectedGenres);
+        renderRecommendations(movies);
+    }
 });
 
 async function getGenres() {
@@ -60,12 +62,15 @@ async function getMoviesByGenres(genres) {
 
 function renderRecommendations(movies) {
     const recommendationsList = document.getElementById('recommendations');
-    if (movies.length === 0) {
+
+    if (movies.length === 0 && currentPage === 1) {
         recommendationsList.innerHTML = '<li>No movies found for the selected genres.</li>';
         return;
     }
+
     // Shuffle the movies before rendering
     shuffleArray(movies);
+
     movies.forEach(movie => {
         const li = document.createElement('li');
         li.className = 'movie-item';
@@ -80,6 +85,11 @@ function renderRecommendations(movies) {
         li.appendChild(img);
         li.appendChild(title);
         recommendationsList.appendChild(li);
+
+        // Trigger reflow to restart animation (optional, depending on browser behavior)
+        void li.offsetWidth;
+        li.style.opacity = '0';
+        li.style.animation = 'fadeIn 1s forwards';
     });
 }
 
@@ -91,9 +101,7 @@ function shuffleArray(array) {
     }
 }
 
-
-
-const recommendation = document.getElementById('get-recommendations')
+const recommendation = document.getElementById('get-recommendations');
 
 document.addEventListener('keyup', function (event) {
     if (event.keyCode === 32) {

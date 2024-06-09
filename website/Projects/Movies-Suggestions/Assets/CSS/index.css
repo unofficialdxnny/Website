@@ -60,6 +60,10 @@ h1 {
 #recommendations li {
     margin: 10px;
     list-style: none;
+    opacity: 0;
+    /* Initial state for fade-in */
+    animation: fadeIn 10s forwards;
+    /* Apply fade-in animation */
 }
 
 .movie-item {
@@ -74,5 +78,15 @@ h1 {
 
 .movie-item p {
     margin: 10px 0 0;
+}
 
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
