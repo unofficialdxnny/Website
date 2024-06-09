@@ -35,6 +35,14 @@ h1 {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    position: sticky;
+    /* Set button position to sticky */
+    bottom: 20px;
+    /* Adjust bottom position as needed */
+    right: 20px;
+    /* Adjust right position as needed */
+    z-index: 1;
+    /* Ensure button stays above other content */
 }
 
 #recommendations {

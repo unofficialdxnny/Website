@@ -1,5 +1,7 @@
 const TMDB_API_KEY = 'de34df46a91c183f531ab74166ed9501';
 const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
+const MOVIES_PER_PAGE = 20; // Number of movies to load per page
+let currentPage = 1;
 
 document.addEventListener('DOMContentLoaded', async () => {
     const genres = await getGenres();
@@ -46,8 +48,9 @@ async function getMoviesByGenres(genres) {
     if (genres.length === 0) return []; // No genres selected
 
     try {
-        const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&with_genres=${genres.join(',')}`);
+        const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&with_genres=${genres.join(',')}&page=${currentPage}`);
         const data = await response.json();
+        currentPage++; // Increment page number for next call
         return data.results;
     } catch (error) {
         console.error('Error fetching movies:', error);
@@ -57,11 +60,12 @@ async function getMoviesByGenres(genres) {
 
 function renderRecommendations(movies) {
     const recommendationsList = document.getElementById('recommendations');
-    recommendationsList.innerHTML = ''; // Clear previous recommendations
     if (movies.length === 0) {
         recommendationsList.innerHTML = '<li>No movies found for the selected genres.</li>';
         return;
     }
+    // Shuffle the movies before rendering
+    shuffleArray(movies);
     movies.forEach(movie => {
         const li = document.createElement('li');
         li.className = 'movie-item';
@@ -78,3 +82,21 @@ function renderRecommendations(movies) {
         recommendationsList.appendChild(li);
     });
 }
+
+// Function to shuffle array in place
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+
+
+const recommendation = document.getElementById('get-recommendations')
+
+document.addEventListener('keyup', function (event) {
+    if (event.keyCode === 32) {
+        recommendation.click();
+    }
+});
