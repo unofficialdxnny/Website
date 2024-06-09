@@ -35,18 +35,34 @@ h1 {
     margin: 0 10px;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
 #get-recommendations {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
-    position: sticky;
-    /* Set button position to sticky */
-    bottom: 20px;
-    /* Adjust bottom position as needed */
-    right: 20px;
-    /* Adjust right position as needed */
-    z-index: 1;
-    /* Ensure button stays above other content */
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#get-recommendations:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#get-recommendations:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #recommendations {
@@ -61,9 +77,7 @@ h1 {
     margin: 10px;
     list-style: none;
     opacity: 0;
-    /* Initial state for fade-in */
-    animation: fadeIn 10s forwards;
-    /* Apply fade-in animation */
+    animation: fadeIn 1s forwards;
 }
 
 .movie-item {
@@ -80,7 +94,6 @@ h1 {
     margin: 10px 0 0;
 }
 
-/* Fade-in animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
