@@ -130,21 +130,13 @@ async function showMovieDetails(movieId) {
         document.getElementById('movie-description').textContent = movie.overview;
 
         const castList = document.getElementById('movie-cast');
-        castList.innerHTML = '';
-        movie.credits.cast.slice(0, 10).forEach(castMember => {
-            const listItem = document.createElement('li');
-            listItem.textContent = `${castMember.name}`;
-            castList.appendChild(listItem);
+        castList.innerHTML = ''; // Clear previous cast list
+        movie.credits.cast.slice(0, 10).forEach((castMember, index) => {
+            if (index > 0) {
+                castList.textContent += ', '; // Add comma between cast members
+            }
+            castList.textContent += castMember.name; // Concatenate cast member name
         });
-
-        const backdrop = movie.backdrop_path ? `${TMDB_IMAGE_BASE_URL}${movie.backdrop_path}` : '';
-        if (backdrop) {
-            document.getElementById('movie-modal-content').style.backgroundImage = `url(${backdrop})`;
-            document.getElementById('movie-modal-content').style.backgroundSize = 'cover';
-            document.getElementById('movie-modal-content').style.backgroundRepeat = 'no-repeat';
-            document.getElementById('movie-modal-content').style.backgroundPosition = 'center';
-            document.getElementById('movie-modal-content').style.backdropFilter = 'blur(10px)';
-        }
 
         modal.style.display = 'block';
 
@@ -162,6 +154,7 @@ async function showMovieDetails(movieId) {
         console.error('Error fetching movie details:', error);
     }
 }
+
 
 // Function to check if the bottom of the page is reached
 function isBottom() {
