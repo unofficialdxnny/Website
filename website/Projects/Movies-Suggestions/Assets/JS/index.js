@@ -84,14 +84,25 @@ function renderRecommendations(movies, clearPrevious = false) {
         const title = document.createElement('p');
         title.textContent = movie.title;
 
+        const yearSpan = document.createElement('span');
+        yearSpan.textContent = `${getReleaseYear(movie.release_date)}`;
+        yearSpan.classList.add('movie-year');
+
         li.appendChild(img);
         li.appendChild(title);
+        li.appendChild(yearSpan); // Appending year after title
         recommendationsList.appendChild(li);
 
         // Add click event listener to each movie item
         li.addEventListener('click', () => showMovieDetails(movie.id));
     });
 }
+
+// Function to get release year from release date
+function getReleaseYear(releaseDate) {
+    return releaseDate ? new Date(releaseDate).getFullYear() : 'Unknown';
+}
+
 
 // Function to shuffle array in place
 function shuffleArray(array) {
