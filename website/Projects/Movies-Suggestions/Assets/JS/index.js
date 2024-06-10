@@ -31,14 +31,23 @@ function renderGenres(genres) {
     genreSelection.innerHTML = ''; // Clear previous genres if any
     genres.forEach(genre => {
         const label = document.createElement('label');
+        label.className = 'custom-checkbox';
+
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.value = genre.id;
+
+        const checkmark = document.createElement('span');
+        checkmark.className = 'checkmark';
+
         label.appendChild(checkbox);
+        label.appendChild(checkmark);
         label.appendChild(document.createTextNode(genre.name));
+
         genreSelection.appendChild(label);
     });
 }
+
 
 function getSelectedGenres() {
     const checkboxes = document.querySelectorAll('#genre-selection input:checked');
