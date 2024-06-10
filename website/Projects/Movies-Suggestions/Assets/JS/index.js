@@ -173,10 +173,10 @@ async function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 
 // Event listener for button click
-const recommendationButton = document.getElementById('get-recommendations');
-document.addEventListener('keyup', function (event) {
-    if (event.keyCode === 32) {
-        recommendationButton.click();
-    }
-});
+// const recommendationButton = document.getElementById('get-recommendations');
+// document.addEventListener('keyup', function (event) {
+//     if (event.keyCode === 32) {
+//         recommendationButton.click();
+//     }
+// });
 
