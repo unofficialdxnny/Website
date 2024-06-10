@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
 body {
     font-family: "Allan", serif;
     font-weight: 700;
@@ -11,15 +15,17 @@ body {
 
 h1 {
     margin-top: 20px;
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 700;
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
     font-style: normal;
 }
 
 #genre-selection {
     margin: 20px 0;
-    font-family: "Palanquin", sans-serif;
-    font-weight: 400;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -155,9 +161,9 @@ h1 {
 }
 
 .movie-year {
-    font-family: "Rasa", serif;
+    font-family: "Heebo", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -183,6 +189,7 @@ h1 {
     color: #fff;
     border-radius: 10px;
     text-align: left;
+
 }
 
 .close {
@@ -206,4 +213,19 @@ h1 {
 #movie-cast {
     list-style-type: none;
     padding-left: 0;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#movie-cast a {
+    color: inherit;
+}
+
+#movie-description {
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
