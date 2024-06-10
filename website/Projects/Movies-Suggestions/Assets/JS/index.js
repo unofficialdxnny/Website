@@ -133,9 +133,13 @@ async function showMovieDetails(movieId) {
         castList.innerHTML = ''; // Clear previous cast list
         movie.credits.cast.slice(0, 10).forEach((castMember, index) => {
             if (index > 0) {
-                castList.textContent += ', '; // Add comma between cast members
+                castList.innerHTML += ', '; // Add comma between cast members
             }
-            castList.textContent += castMember.name; // Concatenate cast member name
+            const castLink = document.createElement('a');
+            castLink.href = `https://www.themoviedb.org/person/${castMember.id}`;
+            castLink.target = '_blank';
+            castLink.textContent = castMember.name;
+            castList.appendChild(castLink);
         });
 
         modal.style.display = 'block';
@@ -154,6 +158,7 @@ async function showMovieDetails(movieId) {
         console.error('Error fetching movie details:', error);
     }
 }
+
 
 
 // Function to check if the bottom of the page is reached
