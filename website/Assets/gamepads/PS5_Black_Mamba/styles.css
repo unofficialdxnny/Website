@@ -1,8 +1,8 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
     background: url(connected\ state.png);
-    height: 700px;
-    width: 1200px;
+    height: 2000px;
+    width: 3000px;
     /*    margin-left: -403px;
         margin-top: -280px;*/
 }
@@ -13,42 +13,52 @@
 
 .ds4 .triggers {
     width: 598px;
-    height: 90px;
+    height: 205px;
     position: absolute;
-    left: 299px;
-    top: 38px;
+
 }
 
 .ds4 .trigger {
-    width: 99px;
-    height: 100%;
-    background: url(Trigger_Pressed.png);
+    width: 222px;
+    height: 205px;
     opacity: 0;
 }
 
 .ds4 .trigger.left {
     float: left;
+    background: url(left\ trtigger.png);
+    position: absolute;
+    left: 700px;
+    top: 155px;
+
 }
 
 .ds4 .trigger.right {
+    width: 310px;
+    height: 205px;
+    position: absolute;
+    background: url(https://imgur.com/SFFckwG.png);
     float: right;
     background-position-x: 99px;
+    background-repeat: no-repeat;
+
+    top: 155px;
+    left: 1750px;
 }
 
 .ds4 .bumper {
     width: 200px;
     height: 45px;
-    background: url(Bumper.png) no-repeat;
     opacity: 0;
 }
 
-.ds4 .bumpers {
+/* .ds4 .bumpers {
     position: absolute;
     width: 672px;
     height: 23px;
     left: 263px;
     top: 132px;
-}
+} */
 
 .ds4 .bumper.pressed {
     opacity: 0.8;
@@ -58,23 +68,38 @@
     /* -webkit-transform: rotateY(180deg); */
     /* transform: rotateY(180deg); */
     float: left;
+    background: url(l1.png) no-repeat;
+    width: 244px;
+    height: 84px;
+    position: absolute;
+    top: 300px;
+    left: 710px;
+
 }
 
 .ds4 .bumper.right {
     float: right;
     transform: rotateY(180deg);
+    background: url(l1.png) no-repeat;
+    width: 244px;
+    height: 84px;
+    position: absolute;
+    top: 300px;
+    left: 1830px;
+
+
 }
 
 .ds4 .touchpad {
-    width: 350px;
-    height: 300px;
+    width: 722px;
+    height: 389px;
     position: absolute;
-    left: 422px;
-    top: 74px;
+    left: 1140px;
+    top: 410px;
 }
 
 .ds4 .touchpad.pressed {
-    background: url(Touchpad.png) no-repeat center;
+    background: url(TP.png) no-repeat center;
 }
 
 .ds4 .meta {
@@ -195,51 +220,88 @@
     height: 105px;
     top: 348px;
     left: 422px;
+
 }
 
 .ds4 .stick {
-    position: absolute;
-    background: url(Sticks.png);
-    height: 94px;
-    width: 94px;
+    background: url(joystick.png);
+    height: 216px;
+    width: 218px;
+
 }
+
 
 .ds4 .stick.pressed.left {
     background-position-x: -96px;
+    background: url(joystick\ pressed.png);
+    background-repeat: no-repeat;
 }
 
 .ds4 .stick.pressed.right {
     background-position-x: -192px;
+    background: url(joystick\ pressed.png);
+    background-repeat: no-repeat;
 }
 
 .ds4 .stick.left {
-    top: 0;
-    left: 0;
+    top: 530px;
+    left: 680px;
 }
 
 .ds4 .stick.right {
-    top: calc(100% - 105px);
-    left: calc(100% - 105px);
+    top: 530px;
+    left: 1260px;
 }
 
 .ds4 .dpad {
     position: absolute;
-    width: 125px;
-    height: 126px;
-    top: 220px;
-    left: 286px;
+    width: 292px;
+    height: 293px;
+    top: 345px;
+    left: 223px;
 }
 
 .ds4 .face.up,
 .ds4 .face.down {
-    width: 36px;
-    height: 52px;
+    width: 95px;
+    height: 119px;
+    background: none;
 }
 
 .ds4 .face.left,
 .ds4 .face.right {
-    width: 52px;
-    height: 36px;
+    width: 119px;
+    height: 95px;
+    background: none;
+
+}
+
+.ds4 .face.left.pressed {
+    background: url(DL.png);
+    position: absolute;
+    top: 345px;
+    left: 568px;
+}
+
+.ds4 .face.right.pressed {
+    background: url(DR.png);
+    position: absolute;
+    top: 345px;
+    left: 743px;
+}
+
+.ds4 .face.up.pressed {
+    background: url(DU.png);
+    position: absolute;
+    top: 247px;
+    left: 667px;
+}
+
+.ds4 .face.down.pressed {
+    background: url(DD.png);
+    position: absolute;
+    top: 420px;
+    left: 667px;
 }
 
 .ds4 .face.up {
@@ -273,6 +335,31 @@
 
 .ds4.half {
     margin-top: -300px;
+}
+
+/* .abxy {
+    display: none;
+} */
+
+.abxy {
+    width: 400px;
+    height: 400px;
+
+}
+
+.a {
+    background: none;
+}
+
+.a.pressed {
+    position: absolute;
+    top: 680px;
+    left: 1873px;
+    background: url(X.png);
+    width: 117px;
+    height: 117px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*END PS4 Controller Styling*/
