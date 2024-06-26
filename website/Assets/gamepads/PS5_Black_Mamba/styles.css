@@ -344,7 +344,8 @@
 .abxy {
     width: 400px;
     height: 400px;
-
+    /* display: none; */
+    /* background: none; */
 }
 
 .a {
@@ -361,6 +362,41 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.b.pressed {
+    position: absolute;
+    top: 680px;
+    left: 1873px;
+    background: url(O.png);
+    width: 117px;
+    height: 117px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.x.pressed {
+    position: absolute;
+    top: 680px;
+    left: 1873px;
+    background: url(Sqr.png);
+    width: 117px;
+    height: 117px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.y.pressed {
+    position: absolute;
+    top: 680px;
+    left: 1873px;
+    background: url(TRI.png);
+    width: 117px;
+    height: 117px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 
 /*END PS4 Controller Styling*/
 
