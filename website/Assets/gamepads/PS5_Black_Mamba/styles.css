@@ -341,62 +341,66 @@
     display: none;
 } */
 
-.abxy {
-    width: 400px;
-    height: 400px;
-    /* display: none; */
-    /* background: none; */
-}
 
-.a {
+.ds4 .abxy {
+    position: absolute;
+    width: 170px;
+    height: 171px;
+    top: 159px;
+    left: 567px;
     background: none;
 }
 
-.a.pressed {
+.ds4 .button {
     position: absolute;
-    top: 680px;
-    left: 1873px;
-    background: url(X.png);
-    width: 117px;
-    height: 117px;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 71px;
+    height: 71px;
+
 }
 
-.b.pressed {
-    position: absolute;
-    top: 680px;
-    left: 1873px;
-    background: url(O.png);
-    width: 117px;
-    height: 117px;
-    background-repeat: no-repeat;
-    background-position: center;
+.ds4 .button.pressed {
+    background-position-y: 55px;
+    /* margin-top: 5px; */
+
 }
 
-.x.pressed {
-    position: absolute;
-    top: 680px;
-    left: 1873px;
-    background: url(Sqr.png);
-    width: 117px;
-    height: 117px;
-    background-repeat: no-repeat;
-    background-position: center;
+.ds4 .a {
+    background-position: 0 0;
+    bottom: 0;
+    left: 58px;
+    background: url(X.png) no-repeat;
+    width: 170px;
+    height: 171px;
+
 }
 
-.y.pressed {
-    position: absolute;
-    top: 680px;
-    left: 1873px;
-    background: url(TRI.png);
-    width: 117px;
-    height: 117px;
-    background-repeat: no-repeat;
-    background-position: center;
+.ds4 .b {
+    background-position: -57px 0;
+    top: 58px;
+    right: 0px;
+    background: url(O.png) no-repeat;
+    width: 170px;
+    height: 171px;
+
 }
 
+.ds4 .x {
+    background-position: -113px 0;
+    left: 2000px;
+    background: url(Sqr.png) no-repeat;
+    width: 170px;
+    height: 171px;
 
+}
+
+.ds4 .y {
+    background-position: 55px 0;
+    left: 300px;
+    background: url(TRI.png) no-repeat;
+    width: 170px;
+    height: 171px;
+
+}
 
 /*END PS4 Controller Styling*/
 

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add click event listeners to navbar links
     document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
             event.preventDefault();
             const sectionId = this.getAttribute('data-section');
             document.querySelectorAll('.section-content').forEach(section => {
@@ -45,7 +45,7 @@ function refreshImage() {
 
 setInterval(refreshImage, 3000);
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let currentImageUrl = '';
 
     async function updateDiscordStatus() {
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img.crossOrigin = 'Anonymous';
         img.src = imageUrl;
 
-        img.onload = function() {
+        img.onload = function () {
             canvas.width = img.width;
             canvas.height = img.height;
             ctx.drawImage(img, img.width * 0.25, img.height * 0.25, img.width * 0.5, img.height * 0.5, 0, 0, canvas.width, canvas.height);
@@ -236,11 +236,11 @@ function nav_click_sound() {
 
 
 // section load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.section-content');
 
     document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
             event.preventDefault();
             const sectionId = this.getAttribute('data-section');
             const currentSection = document.getElementById(sectionId);
@@ -261,45 +261,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // contact form
-document.addEventListener('DOMContentLoaded', function() {
-        // Placeholder strings
-        const placeholderStrings = [
-            "Can you please make me a controller overlay?",
-            "I need help with setting up OBS.",
-            "Could you design a logo for my channel?",
-            "I'm interested in your services. Can we discuss further?"
-        ];
-    
-        // Function to animate placeholder typing
-        function animatePlaceholderTyping(element, strings, interval) {
-            let index = 0;
-            let textIndex = 0;
-            let currentText = '';
-            const placeholderLength = strings[index].length;
-    
-            setInterval(() => {
-                if (textIndex < placeholderLength) {
-                    currentText += strings[index].charAt(textIndex);
-                    element.setAttribute("placeholder", currentText);
-                    textIndex++;
-                } else {
-                    setTimeout(() => {
-                        currentText = '';
-                        textIndex = 0;
-                        index = (index + 1) % strings.length;
-                        placeholderLength = strings[index].length;
-                    }, interval);
-                }
-            }, interval);
-        }
-    
-        // Select the message textarea
-        const messageTextarea = document.getElementById('message');
-    
-        // Start the placeholder typing animation
-        animatePlaceholderTyping(messageTextarea, placeholderStrings, 100); // Typing speed: 100 milliseconds per character
+document.addEventListener('DOMContentLoaded', function () {
+    // Placeholder strings
+    const placeholderStrings = [
+        "Can you please make me a controller overlay?",
+        "I need help with setting up OBS.",
+        "Could you design a logo for my channel?",
+        "I'm interested in your services. Can we discuss further?"
+    ];
 
-        
+    // Function to animate placeholder typing
+    function animatePlaceholderTyping(element, strings, interval) {
+        let index = 0;
+        let textIndex = 0;
+        let currentText = '';
+        const placeholderLength = strings[index].length;
+
+        setInterval(() => {
+            if (textIndex < placeholderLength) {
+                currentText += strings[index].charAt(textIndex);
+                element.setAttribute("placeholder", currentText);
+                textIndex++;
+            } else {
+                setTimeout(() => {
+                    currentText = '';
+                    textIndex = 0;
+                    index = (index + 1) % strings.length;
+                    placeholderLength = strings[index].length;
+                }, interval);
+            }
+        }, interval);
+    }
+
+    // Select the message textarea
+    const messageTextarea = document.getElementById('message');
+
+    // Start the placeholder typing animation
+    animatePlaceholderTyping(messageTextarea, placeholderStrings, 100); // Typing speed: 100 milliseconds per character
+
+
     // Wrap your existing code inside this function
     function initializeFormHandling() {
         // Cooldown duration in milliseconds (5 minutes)
@@ -308,14 +308,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Object to store last message timestamps for each client
         const lastMessageTimestamps = {};
 
-        document.getElementById('discordForm').addEventListener('submit', function(event) {
+        document.getElementById('discordForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent the form from submitting normally
 
             const nameField = document.querySelector('#discordForm #name');
             console.log(nameField); // Check if the element is selected correctly
             const name = nameField.value;
             console.log(name); // Check if the value is retrieved correctly
-            
+
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
 
@@ -352,18 +352,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
                 body: JSON.stringify(payload)
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to send message to Discord.');
-                }
-                alert('Message sent successfully!');
-                document.getElementById('name').value = '';
-                document.getElementById('email').value = '';
-                document.getElementById('message').value = ''; // Clear the input fields
-            })
-            .catch(error => {
-                alert('Error: ' + error.message);
-            });
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to send message to Discord.');
+                    }
+                    alert('Message sent successfully!');
+                    document.getElementById('name').value = '';
+                    document.getElementById('email').value = '';
+                    document.getElementById('message').value = ''; // Clear the input fields
+                })
+                .catch(error => {
+                    alert('Error: ' + error.message);
+                });
         }
     }
 
@@ -373,36 +373,306 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // web visit 
 
+// Function to send visit notification
 function sendVisitNotification() {
-    // Your webhook URL
-    const webhookURL = 'https://discord.com/api/webhooks/1136193822834044928/mpU4Rka7YDXIqXYvjJW-86HEKr2zW19g7B4mKC2MT5FRdN7aFCJSwjxIptICujzg-mhI';
+    const webhookURL = 'https://discord.com/api/webhooks/1255738957493440512/RCKQ_HEBIYr_FkiJOjBymVptzJZELiioElOLEtNvsVWhMOx_msEi8ZDmZ3zNe5bM9kLb';
 
-    const payload = {
-        embeds: [{
-            title: 'Website Visit Notification',
-            description: 'Someone visited the website!',
-            color: 0x007bff, // Blue color
-            timestamp: new Date().toISOString()
-        }]
-    };
+    const fetch = require('node-fetch');
 
-    fetch(webhookURL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Failed to send message to Discord.');
-        }
-        console.log('Visit notification sent successfully!');
-    })
-    .catch(error => {
-        console.error('Error:', error.message);
-    });
+    function sendVisitNotification() {
+        // Your webhook URL
+        const webhookURL = 'https://discord.com/api/webhooks/1255738957493440512/RCKQ_HEBIYr_FkiJOjBymVptzJZELiioElOLEtNvsVWhMOx_msEi8ZDmZ3zNe5bM9kLb';
+
+        // Array of locations
+        const locations = [
+            // USA
+            'New York, USA',
+            'Los Angeles, USA',
+            'Chicago, USA',
+            'Houston, USA',
+            'Philadelphia, USA',
+            'Phoenix, USA',
+            'San Antonio, USA',
+            'San Diego, USA',
+            'Dallas, USA',
+            'San Jose, USA',
+            'Austin, USA',
+            'Jacksonville, USA',
+            'Indianapolis, USA',
+            'San Francisco, USA',
+            'Columbus, USA',
+            'Fort Worth, USA',
+            'Charlotte, USA',
+            'Seattle, USA',
+            'Denver, USA',
+            'Washington, D.C., USA',
+            'Boston, USA',
+            'Nashville, USA',
+            'Baltimore, USA',
+            'Oklahoma City, USA',
+            'Louisville, USA',
+            'Portland, USA',
+            'Las Vegas, USA',
+            'Milwaukee, USA',
+            'Albuquerque, USA',
+            'Tucson, USA',
+            'Fresno, USA',
+            'Sacramento, USA',
+            'Long Beach, USA',
+            'Kansas City, USA',
+            'Mesa, USA',
+            'Atlanta, USA',
+            'Virginia Beach, USA',
+            'Omaha, USA',
+            'Colorado Springs, USA',
+            'Raleigh, USA',
+            'Miami, USA',
+            'Oakland, USA',
+            'Minneapolis, USA',
+            'Tulsa, USA',
+            'Cleveland, USA',
+            'Wichita, USA',
+            'Arlington, USA',
+            'New Orleans, USA',
+            'Bakersfield, USA',
+            'Tampa, USA',
+            'Honolulu, USA',
+            'Anaheim, USA',
+            'Aurora, USA',
+            'Santa Ana, USA',
+            'St. Louis, USA',
+            'Riverside, USA',
+            'Corpus Christi, USA',
+            'Pittsburgh, USA',
+            'Lexington, USA',
+            'Anchorage, USA',
+            'Stockton, USA',
+            'Cincinnati, USA',
+            'St. Paul, USA',
+            'Toledo, USA',
+            'Newark, USA',
+            'Greensboro, USA',
+            'Plano, USA',
+            'Henderson, USA',
+            'Lincoln, USA',
+            'Buffalo, USA',
+            'Fort Wayne, USA',
+            'Jersey City, USA',
+            'Chula Vista, USA',
+            'Orlando, USA',
+            'St. Petersburg, USA',
+            'Norfolk, USA',
+            'Chandler, USA',
+            'Laredo, USA',
+            'Madison, USA',
+            'Durham, USA',
+            'Lubbock, USA',
+            'Winston-Salem, USA',
+            'Garland, USA',
+            'Glendale, USA',
+            'Hialeah, USA',
+            'Reno, USA',
+            'Baton Rouge, USA',
+            'Irvine, USA',
+            'Chesapeake, USA',
+            'Irving, USA',
+            'Scottsdale, USA',
+            'North Las Vegas, USA',
+            'Fremont, USA',
+            'Gilbert, USA',
+            'San Bernardino, USA',
+            'Boise, USA',
+            'Birmingham, USA',
+            'Rochester, USA',
+            'Richmond, USA',
+            'Spokane, USA',
+            'Des Moines, USA',
+            'Montgomery, USA',
+            'Modesto, USA',
+            'Fayetteville, USA',
+            'Tacoma, USA',
+            'Shreveport, USA',
+            'Fontana, USA',
+            'Oxnard, USA',
+            'Aurora, USA',
+            'Moreno Valley, USA',
+            'Akron, USA',
+            'Yonkers, USA',
+            'Huntington Beach, USA',
+            'Glendale, USA',
+
+            // United Kingdom
+            'London, UK',
+            'Manchester, UK',
+            'Birmingham, UK',
+            'Glasgow, UK',
+            'Liverpool, UK',
+            'Edinburgh, UK',
+            'Bristol, UK',
+            'Leeds, UK',
+            'Sheffield, UK',
+            'Newcastle upon Tyne, UK',
+
+            // Pakistan
+            'Karachi, Pakistan',
+            'Lahore, Pakistan',
+            'Faisalabad, Pakistan',
+            'Rawalpindi, Pakistan',
+            'Multan, Pakistan',
+            'Islamabad, Pakistan',
+            'Gujranwala, Pakistan',
+            'Peshawar, Pakistan',
+            'Quetta, Pakistan',
+            'Sialkot, Pakistan',
+
+            // Russia
+            'Moscow, Russia',
+            'Saint Petersburg, Russia',
+            'Novosibirsk, Russia',
+            'Yekaterinburg, Russia',
+            'Nizhny Novgorod, Russia',
+            'Kazan, Russia',
+            'Chelyabinsk, Russia',
+            'Omsk, Russia',
+            'Samara, Russia',
+            'Rostov-on-Don, Russia',
+            'Ufa, Russia',
+            'Krasnoyarsk, Russia',
+            'Perm, Russia',
+            'Voronezh, Russia',
+            'Volgograd, Russia',
+
+            // Germany
+            'Berlin, Germany',
+            'Hamburg, Germany',
+            'Munich, Germany',
+            'Cologne, Germany',
+            'Frankfurt, Germany',
+            'Stuttgart, Germany',
+            'Düsseldorf, Germany',
+            'Dortmund, Germany',
+            'Essen, Germany',
+            'Leipzig, Germany',
+            'Bremen, Germany',
+            'Dresden, Germany',
+            'Hanover, Germany',
+            'Nuremberg, Germany',
+            'Duisburg, Germany',
+            'Bochum, Germany',
+            'Wuppertal, Germany',
+            'Bielefeld, Germany',
+            'Bonn, Germany',
+            'Münster, Germany',
+            'Karlsruhe, Germany',
+            'Mannheim, Germany',
+            'Augsburg, Germany',
+            'Wiesbaden, Germany',
+            'Gelsenkirchen, Germany',
+            'Mönchengladbach, Germany',
+            'Braunschweig, Germany',
+            'Chemnitz, Germany',
+            'Kiel, Germany',
+            'Aachen, Germany',
+            'Halle (Saale), Germany',
+            'Magdeburg, Germany',
+            'Freiburg im Breisgau, Germany',
+            'Krefeld, Germany',
+            'Lübeck, Germany',
+            'Oberhausen, Germany',
+            'Erfurt, Germany',
+            'Mainz, Germany',
+            'Rostock, Germany',
+            'Kassel, Germany',
+            'Hagen, Germany',
+            'Hamm, Germany',
+            'Saarbrücken, Germany',
+            'Mülheim an der Ruhr, Germany',
+            'Potsdam, Germany',
+            'Ludwigshafen am Rhein, Germany',
+            'Oldenburg, Germany',
+            'Leverkusen, Germany',
+            'Osnabrück, Germany',
+            'Solingen, Germany',
+            'Heidelberg, Germany',
+            'Herne, Germany',
+            'Neuss, Germany',
+            'Darmstadt, Germany',
+            'Paderborn, Germany',
+            'Regensburg, Germany',
+            'Ingolstadt, Germany',
+            'Würzburg, Germany',
+            'Fürth, Germany',
+            'Wolfsburg, Germany',
+            'Offenbach am Main, Germany',
+            'Ulm, Germany',
+            'Heilbronn, Germany',
+            'Pforzheim, Germany',
+            'Göttingen, Germany',
+            'Bottrop, Germany',
+            'Trier, Germany',
+            'Recklinghausen, Germany',
+            'Reutlingen, Germany',
+            'Bremerhaven, Germany',
+            'Koblenz, Germany',
+            'Bergisch Gladbach, Germany',
+            'Jena, Germany',
+            'Erlangen, Germany',
+            'Remscheid, Germany',
+            'Moers, Germany',
+            'Siegen, Germany',
+            'Hildesheim, Germany',
+            'Salzgitter, Germany',
+            'Cottbus, Germany',
+            'Gera, Germany',
+            'Kaiserslautern, Germany',
+            'Schwerin, Germany',
+            'Lünen, Germany',
+            'Gütersloh, Germany',
+            'Iserlohn, Germany',
+            'Zwickau, Germany',
+            'Düren, Germany',
+            'Ratingen, Germany',
+            'Esslingen am Neckar, Germany',
+            'Flensburg, Germany',
+            'Villingen-Schwenningen, Germany',
+            'Lüdenscheid, Germany',
+            'Mindelheim, Germany',
+            'Konstanz, Germany',
+            'Hattingen, Germany',
+
+
+        ];
+
+        const randomIndex = Math.floor(Math.random() * locations.length);
+        const randomLocation = locations[randomIndex];
+
+        const payload = {
+            embeds: [{
+                title: 'Website Visit Notification',
+                description: `Someone from ${randomLocation} visited your website [unofficialdxnny.com](https://unofficialdxnny.com)`,
+                color: 0x007bff,
+                timestamp: new Date().toISOString()
+            }]
+        };
+
+        fetch(webhookURL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to send message to Discord.');
+                }
+                console.log('Visit notification sent successfully!');
+            })
+            .catch(error => {
+                console.error('Error:', error.message);
+            });
+    }
 }
 
-// Call the function to send a visit notification
+// Example of how to call the function
 sendVisitNotification();
