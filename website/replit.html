@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Replit Alive</title>
+    <script>
+        // URL to ping
+        const replitUrl = 'https://51fe2288-e7db-4501-ab04-e85d18f155b4-00-opfh8f5nd1cw.worf.replit.dev/';
+
+        // Function to ping the Replit URL
+        function pingReplit() {
+            fetch(replitUrl)
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Replit pinged successfully');
+                    } else {
+                        console.log('Failed to ping Replit');
+                    }
+                })
+                .catch(error => {
+                    console.log('Error pinging Replit:', error);
+                });
+        }
+
+        // Ping the Replit URL every 5 minutes (300000 milliseconds)
+        setInterval(pingReplit, 120000);
+
+        // Initial ping when the script loads
+        pingReplit();
+    </script>
+</head>
+
+<body>
+    <h1>Keep Replit Alive</h1>
+</body>
+
+</html>
