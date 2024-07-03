@@ -42,19 +42,19 @@ async function fetchDiscordStatus() {
         // Display appropriate message based on discord status
         switch (discordStatus) {
             case 'online':
-                discordStatusElement.textContent = "Hey, I'm currently online.";
+                discordStatusElement.textContent = "Online.";
                 break;
             case 'dnd':
-                discordStatusElement.textContent = "Hey, I'm currently in 'Do Not Disturb' mode.";
+                discordStatusElement.textContent = "Do Not Disturb";
                 break;
             case 'idle':
-                discordStatusElement.textContent = "Hey, I'm currently idle.";
+                discordStatusElement.textContent = "Idle.";
                 break;
             case 'afk':
-                discordStatusElement.textContent = "Hey, I'm currently AFK.";
+                discordStatusElement.textContent = "AFK.";
                 break;
             default:
-                discordStatusElement.textContent = "Hey, I'm currently offline.";
+                discordStatusElement.textContent = "Offline.";
         }
     } catch (error) {
         // Log any errors to console
@@ -68,3 +68,4 @@ async function fetchDiscordStatus() {
 
 // Call the function to fetch Discord status when the page loads
 fetchDiscordStatus();
+setInterval(fetchDiscordStatus, 1000)
