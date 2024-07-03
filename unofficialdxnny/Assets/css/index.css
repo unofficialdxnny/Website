@@ -2,3 +2,44 @@
     padding: 0;
     margin: 0;
 }
+
+body.light {
+    background-color: #f1f0e9;
+}
+
+body.dark {
+    background-color: #0c0c0c;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.material-symbols-outlined.moon-icon {
+    /* Style for moon icon */
+    color: white;
+    /* Set moon icon color to white */
+    display: none;
+    /* Initially hide moon icon */
+}
+
+body.dark .sun-icon {
+    display: none;
+    /* Hide sun icon when body has 'dark' class */
+}
+
+body.light .moon-icon {
+    display: none;
+    /* Hide moon icon when body has 'light' class */
+}
