@@ -1,6 +1,6 @@
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
-    background: url(connected\ state.png);
+    background: url(connected.gif);
     height: 2000px;
     width: 3000px;
     /*    margin-left: -403px;
@@ -37,7 +37,7 @@
     width: 310px;
     height: 205px;
     position: absolute;
-    background: url(https://imgur.com/SFFckwG.png);
+    background: url(SFFckwG\ -\ Imgur.png);
     float: right;
     background-position-x: 99px;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@
 
 .ds4 .back,
 .ds4 .start {
-    background: url(Select.png);
+    background: url(Create.png);
     width: 26px;
     height: 43px;
     opacity: 0;
@@ -368,56 +368,56 @@
     background-position: 0 0;
     left: 1440px;
     top: 650px;
-    background: url(X.png) no-repeat;
+    background: url() no-repeat;
     width: 170px;
     height: 171px;
 
 }
 
 .ds4 .a.pressed {
-    display: none;
+    background: url(facepress.png) no-repeat;
 }
 
 .ds4 .b {
     background-position: -57px 0;
     top: 520px;
     left: 1571px;
-    background: url(O.png) no-repeat;
+    background: url() no-repeat;
     width: 170px;
     height: 171px;
 
 }
 
 .ds4 .b.pressed {
-    display: none;
+    background: url(facepress.png) no-repeat;
 }
 
 .ds4 .x {
     background-position: -113px 0;
     left: 1305px;
     top: 520px;
-    background: url(Sqr.png) no-repeat;
+    background: url() no-repeat;
     width: 170px;
     height: 171px;
 
 }
 
 .ds4 .x.pressed {
-    display: none;
+    background: url(facepress.png) no-repeat;
 }
 
 .ds4 .y {
     background-position: 55px 0;
     left: 1440px;
     top: 389px;
-    background: url(TRI.png) no-repeat;
+    background: url() no-repeat;
     width: 170px;
     height: 171px;
 
 }
 
 .ds4 .y.pressed {
-    display: none;
+    background: url(facepress.png) no-repeat;
 }
 
 
