@@ -366,8 +366,8 @@
 
 .ds4 .a {
     background-position: 0 0;
-    left: 1440px;
-    top: 650px;
+    left: 1438px;
+    top: 645px;
     background: url() no-repeat;
     width: 170px;
     height: 171px;
@@ -375,13 +375,13 @@
 }
 
 .ds4 .a.pressed {
-    background: url(facepress.png) no-repeat;
+    background: url(X.png) no-repeat;
 }
 
 .ds4 .b {
     background-position: -57px 0;
-    top: 520px;
-    left: 1571px;
+    top: 517px;
+    left: 1565px;
     background: url() no-repeat;
     width: 170px;
     height: 171px;
@@ -389,13 +389,13 @@
 }
 
 .ds4 .b.pressed {
-    background: url(facepress.png) no-repeat;
+    background: url(O.png) no-repeat;
 }
 
 .ds4 .x {
     background-position: -113px 0;
-    left: 1305px;
-    top: 520px;
+    left: 1302px;
+    top: 517px;
     background: url() no-repeat;
     width: 170px;
     height: 171px;
@@ -403,13 +403,13 @@
 }
 
 .ds4 .x.pressed {
-    background: url(facepress.png) no-repeat;
+    background: url(Sqr.png) no-repeat;
 }
 
 .ds4 .y {
     background-position: 55px 0;
-    left: 1440px;
-    top: 389px;
+    left: 1435px;
+    top: 380px;
     background: url() no-repeat;
     width: 170px;
     height: 171px;
@@ -417,7 +417,7 @@
 }
 
 .ds4 .y.pressed {
-    background: url(facepress.png) no-repeat;
+    background: url(TRI.png) no-repeat;
 }
 
 
