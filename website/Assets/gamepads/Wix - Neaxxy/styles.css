@@ -141,22 +141,25 @@
 
 .ds4 .back,
 .ds4 .start {
-    background: url(Create.png);
-    width: 26px;
-    height: 43px;
+    background: none;
+    width: 51px;
+    height: 83px;
     opacity: 0;
 }
 
 .ds4 .start {
+    background: url(Option.png);
+
     position: absolute;
-    left: 546px;
-    bottom: -30px;
+    left: 1670px;
+    top: 358px;
 }
 
 .ds4 .back {
+    background: url(Create.png);
     position: absolute;
-    left: 170px;
-    bottom: -30px;
+    left: 827px;
+    top: 358px;
 }
 
 
@@ -427,12 +430,5 @@
 
 /*END PS4 Controller Styling*/
 
-/*BEGIN PS4 White Controller Styling*/
-.ds4.white .back,
-.ds4 .start {
-    background-image: url(Create.png);
-    width: 30px;
-    height: 60px;
-}
 
 /*END PS4 White Controller Styling*/
