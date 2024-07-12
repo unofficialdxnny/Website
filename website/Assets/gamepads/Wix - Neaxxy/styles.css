@@ -99,7 +99,7 @@
 }
 
 .ds4 .touchpad.pressed {
-    background: url(TP.png) no-repeat center;
+    background: url(tpPressed.gif) no-repeat center;
 }
 
 .ds4 .meta {
@@ -263,9 +263,12 @@
 
 .ds4 .face.up,
 .ds4 .face.down {
-    width: 95px;
+    width: 100px;
     height: 119px;
     background: none;
+    background-repeat: no-repeat;
+
+
 }
 
 .ds4 .face.left,
@@ -273,6 +276,7 @@
     width: 119px;
     height: 95px;
     background: none;
+    background-repeat: no-repeat;
 
 }
 
@@ -301,7 +305,7 @@
     background: url(DD.png);
     position: absolute;
     top: 420px;
-    left: 667px;
+    left: 660px;
 }
 
 .ds4 .face.up {
@@ -426,9 +430,9 @@
 /*BEGIN PS4 White Controller Styling*/
 .ds4.white .back,
 .ds4 .start {
-    background-image: url(Start.png);
-    width: 26px;
-    height: 43px;
+    background-image: url(Create.png);
+    width: 30px;
+    height: 60px;
 }
 
 /*END PS4 White Controller Styling*/
