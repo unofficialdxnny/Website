@@ -1,0 +1,511 @@
+/*BEGIN PS4 Controller Styling*/
+.controller.ds4 {
+    background: url(https://imgur.com/bhOyeFb.png);
+    height: 500px;
+    /* 2000px * 0.25 */
+    width: 750px;
+    3000px * 0.25
+    /* margin-left: -100.75px; */
+    /* margin-top: -70px; */
+}
+
+.ds4.disconnected div {
+    background: url(Disconnected.png);
+}
+
+.ds4 .triggers {
+    width: 149.5px;
+    /* 598px * 0.25 */
+    height: 51.25px;
+    /* 205px * 0.25 */
+    position: absolute;
+}
+
+.ds4 .trigger {
+    width: 55.5px;
+    /* 222px * 0.25 */
+    height: 51.25px;
+    /* 205px * 0.25 */
+    opacity: 0;
+}
+
+.ds4 .trigger.left {
+    float: left;
+    background: url(left\ trtigger.png);
+    position: absolute;
+    left: 175px;
+    /* 700px * 0.25 */
+    top: 38.75px;
+    /* 155px * 0.25 */
+}
+
+.ds4 .trigger.right {
+    width: 77.5px;
+    /* 310px * 0.25 */
+    height: 51.25px;
+    /* 205px * 0.25 */
+    position: absolute;
+    background: url(SFFckwG\ -\ Imgur.png);
+    float: right;
+    background-position-x: 24.75px;
+    /* 99px * 0.25 */
+    background-repeat: no-repeat;
+    top: 38.75px;
+    /* 155px * 0.25 */
+    left: 437.5px;
+    /* 1750px * 0.25 */
+}
+
+.ds4 .bumper {
+    width: 50px;
+    /* 200px * 0.25 */
+    height: 11.25px;
+    /* 45px * 0.25 */
+    opacity: 0;
+}
+
+.ds4 .bumper.pressed {
+    opacity: 0.8;
+}
+
+.ds4 .bumper.left {
+    float: left;
+    background: url(l1.png) no-repeat;
+    width: 61px;
+    /* 244px * 0.25 */
+    height: 21px;
+    /* 84px * 0.25 */
+    position: absolute;
+    top: 75px;
+    /* 300px * 0.25 */
+    left: 177.5px;
+    /* 710px * 0.25 */
+}
+
+.ds4 .bumper.right {
+    float: right;
+    transform: rotateY(180deg);
+    background: url(l1.png) no-repeat;
+    width: 61px;
+    /* 244px * 0.25 */
+    height: 21px;
+    /* 84px * 0.25 */
+    position: absolute;
+    top: 75px;
+    /* 300px * 0.25 */
+    left: 457.5px;
+    /* 1830px * 0.25 */
+}
+
+.ds4 .touchpad {
+    width: 180.5px;
+    /* 722px * 0.25 */
+    height: 97.25px;
+    /* 389px * 0.25 */
+    position: absolute;
+    left: 285px;
+    /* 1140px * 0.25 */
+    top: 102.5px;
+    /* 410px * 0.25 */
+}
+
+.ds4 .touchpad.pressed {
+    background: url(tpPressed.gif) no-repeat center;
+}
+
+.ds4 .meta {
+    width: 25px;
+    /* 100px * 0.25 */
+    height: 25px;
+    /* 100px * 0.25 */
+    position: absolute;
+    left: 136.5px;
+    /* 546px * 0.25 */
+    bottom: 66px;
+    /* 264px * 0.25 */
+}
+
+.ds4 .meta.pressed {
+    background: url(Home.png) no-repeat center;
+}
+
+.ds4 .p0 {
+    background-position: 0 -1.5px;
+    /* 0 -6px * 0.25 */
+}
+
+.ds4 .p1 {
+    background-position: 0 -7px;
+    /* 0 -28px * 0.25 */
+}
+
+.ds4 .p2 {
+    background-position: 0 -12.25px;
+    /* 0 -49px * 0.25 */
+}
+
+.ds4 .p3 {
+    background-position: 0 -17.5px;
+    /* 0 -70px * 0.25 */
+}
+
+.ds4 .arrows {
+    position: absolute;
+    width: 88px;
+    /* 352px * 0.25 */
+    height: 11.5px;
+    /* 46px * 0.25 */
+    top: 35.5px;
+    /* 142px * 0.25 */
+    left: 56.75px;
+    /* 227px * 0.25 */
+}
+
+.ds4 .back,
+.ds4 .start {
+    background: none;
+    width: 12.75px;
+    /* 51px * 0.25 */
+    height: 20.75px;
+    /* 83px * 0.25 */
+    opacity: 0;
+}
+
+.ds4 .start {
+    background: url(Option.png);
+    position: absolute;
+    left: 417.5px;
+    /* 1670px * 0.25 */
+    top: 89.5px;
+    /* 358px * 0.25 */
+}
+
+.ds4 .back {
+    background: url(Create.png);
+    position: absolute;
+    left: 206.75px;
+    /* 827px * 0.25 */
+    top: 89.5px;
+    /* 358px * 0.25 */
+}
+
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+    opacity: 1;
+}
+
+.ds4 .back {
+    float: left;
+}
+
+.ds4 .start {
+    float: right;
+    background-position: 0px 0;
+}
+
+.ds4 .abxy {
+    position: absolute;
+    width: 42.5px;
+    /* 170px * 0.25 */
+    height: 42.75px;
+    /* 171px * 0.25 */
+    top: 50px;
+    /* 200px * 0.25 */
+    left: 190.5px;
+    /* 762px * 0.25 */
+}
+
+.ds4 .button.pressed {
+    background-position-y: 13.75px;
+    /* 55px * 0.25 */
+}
+
+.ds4 .a {
+    background-position: 0 0;
+    bottom: 0px;
+    left: 14.5px;
+    /* 58px * 0.25 */
+}
+
+.ds4 .b {
+    background-position: -14.25px 0;
+    /* -57px * 0.25 */
+    top: 14.25px;
+    /* 57px * 0.25 */
+    right: -0.75px;
+    /* -3px * 0.25 */
+}
+
+.ds4 .x {
+    background-position: -28.25px 0;
+    /* -113px * 0.25 */
+    top: 14.25px;
+    /* 57px * 0.25 */
+}
+
+.ds4 .y {
+    background-position: 13.75px 0;
+    /* 55px * 0.25 */
+    left: 14.5px;
+    /* 58px * 0.25 */
+    bottom: 29.75px;
+    /* 119px * 0.25 */
+}
+
+.ds4 .sticks {
+    position: absolute;
+    width: 91px;
+    /* 364px * 0.25 */
+    height: 26.25px;
+    /* 105px * 0.25 */
+    top: 87px;
+    /* 348px * 0.25 */
+    left: 105.5px;
+    /* 422px * 0.25 */
+}
+
+.ds4 .stick {
+    background: url(joystick.png);
+    height: 54px;
+    /* 216px * 0.25 */
+    width: 54.5px;
+    /* 218px * 0.25 */
+}
+
+.ds4 .stick.pressed.left {
+    background-position-x: -24px;
+    /* -96px * 0.25 */
+    background: url(joystick\ pressed.png);
+    background-repeat: no-repeat;
+}
+
+.ds4 .stick.pressed.right {
+    background-position-x: -48px;
+    /* -192px * 0.25 */
+    background: url(joystick\ pressed.png);
+    background-repeat: no-repeat;
+}
+
+.ds4 .stick.left {
+    top: 132.5px;
+    /* 530px * 0.25 */
+    left: 170px;
+    /* 680px * 0.25 */
+}
+
+.ds4 .stick.right {
+    top: 132.5px;
+    /* 530px * 0.25 */
+    left: 315px;
+    /* 1260px * 0.25 */
+}
+
+.ds4 .dpad {
+    position: absolute;
+    width: 73px;
+    /* 292px * 0.25 */
+    height: 73.25px;
+    /* 293px * 0.25 */
+    top: 86.25px;
+    /* 345px * 0.25 */
+    left: 55.75px;
+    /* 223px * 0.25 */
+}
+
+.ds4 .face.up,
+.ds4 .face.down {
+    width: 25px;
+    /* 100px * 0.25 */
+    height: 29.75px;
+    /* 119px * 0.25 */
+    background: none;
+    background-repeat: no-repeat;
+}
+
+.ds4 .face.left,
+.ds4 .face.right {
+    width: 29.75px;
+    /* 119px * 0.25 */
+    height: 23.75px;
+    /* 95px * 0.25 */
+    background: none;
+    background-repeat: no-repeat;
+}
+
+.ds4 .face.left.pressed {
+    background: url(DL.png);
+    position: absolute;
+    top: 86.25px;
+    /* 345px * 0.25 */
+    left: 142px;
+    /* 568px * 0.25 */
+}
+
+.ds4 .face.right.pressed {
+    background: url(DR.png);
+    position: absolute;
+    top: 86.25px;
+    /* 345px * 0.25 */
+    left: 185.75px;
+    /* 743px * 0.25 */
+}
+
+.ds4 .face.up.pressed {
+    background: url(DU.png);
+    position: absolute;
+    top: 61.75px;
+    /* 247px * 0.25 */
+    left: 166.75px;
+    /* 667px * 0.25 */
+}
+
+.ds4 .face.down.pressed {
+    background: url(DD.png);
+    position: absolute;
+    top: 105px;
+    /* 420px * 0.25 */
+    left: 165px;
+    /* 660px * 0.25 */
+}
+
+.ds4 .face.up {
+    left: 11px;
+    /* 44px * 0.25 */
+    top: 0;
+    background-position: -9.25px 0px;
+    /* -37px 0 * 0.25 */
+}
+
+.ds4 .face.down {
+    left: 11px;
+    /* 44px * 0.25 */
+    bottom: 0;
+    background-position: 0px 0;
+}
+
+.ds4 .face.left {
+    top: 11.25px;
+    /* 45px * 0.25 */
+    left: 0;
+    background-position: 26px 0;
+    /* 104px 0 * 0.25 */
+}
+
+.ds4 .face.right {
+    top: 11.25px;
+    /* 45px * 0.25 */
+    right: 0px;
+    background-position: 13px 0;
+    /* 52px 0 * 0.25 */
+}
+
+.ds4 .face.pressed {
+    background-position-y: 13px;
+    /* 52px * 0.25 */
+}
+
+.ds4.half {
+    margin-top: -75px;
+    /* -300px * 0.25 */
+}
+
+.ds4 .abxy {
+    position: absolute;
+    width: 42.5px;
+    /* 170px * 0.25 */
+    height: 42.75px;
+    /* 171px * 0.25 */
+    top: 39.75px;
+    /* 159px * 0.25 */
+    left: 141.75px;
+    /* 567px * 0.25 */
+    background: none;
+}
+
+.ds4 .button {
+    position: absolute;
+    width: 17.75px;
+    /* 71px * 0.25 */
+    height: 17.75px;
+    /* 71px * 0.25 */
+}
+
+.ds4 .button.pressed {
+    background-position-y: 13.75px;
+    /* 55px * 0.25 */
+}
+
+.ds4 .a {
+    background-position: 0 0;
+    left: 359.5px;
+    /* 1438px * 0.25 */
+    top: 161.25px;
+    /* 645px * 0.25 */
+    background: url() no-repeat;
+    width: 42.5px;
+    /* 170px * 0.25 */
+    height: 42.75px;
+    /* 171px * 0.25 */
+}
+
+.ds4 .a.pressed {
+    background: url(X.png) no-repeat;
+}
+
+.ds4 .b {
+    background-position: -14.25px 0;
+    /* -57px * 0.25 */
+    top: 129.25px;
+    /* 517px * 0.25 */
+    left: 391.25px;
+    /* 1565px * 0.25 */
+    background: url() no-repeat;
+    width: 42.5px;
+    /* 170px * 0.25 */
+    height: 42.75px;
+    /* 171px * 0.25 */
+}
+
+.ds4 .b.pressed {
+    background: url(O.png) no-repeat;
+}
+
+.ds4 .x {
+    background-position: -28.25px 0;
+    /* -113px * 0.25 */
+    left: 325.5px;
+    /* 1302px * 0.25 */
+    top: 129.25px;
+    /* 517px * 0.25 */
+    background: url() no-repeat;
+    width: 42.5px;
+    /* 170px * 0.25 */
+    height: 42.75px;
+    /* 171px * 0.25 */
+}
+
+.ds4 .x.pressed {
+    background: url(Sqr.png) no-repeat;
+}
+
+.ds4 .y {
+    background-position: 13.75px 0;
+    /* 55px * 0.25 */
+    left: 358.75px;
+    /* 1435px * 0.25 */
+    top: 95px;
+    /* 380px * 0.25 */
+    background: url() no-repeat;
+    width: 42.5px;
+    /* 170px * 0.25 */
+    height: 42.75px;
+    /* 171px * 0.25 */
+}
+
+.ds4 .y.pressed {
+    background: url(TRI.png) no-repeat;
+}
+
+/*END PS4 Controller Styling*/
+
+/*END PS4 White Controller Styling*/
