@@ -1,134 +1,41 @@
+:root {
+    --dark-mode: #15202b;
+    --dark-text-colour: white;
+    --light-mode: white;
+    --light-textcolour: #15202b;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body.light {
-    background-color: #f1f0e9;
-    color: #0c0c0c;
+body {
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
 }
 
-body.dark {
-    background-color: #0c0c0c;
-    color: #f1f0e9;
-}
-
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.toggle-button {
-    background-color: transparent;
-    border: none;
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    font-size: 48px;
     cursor: pointer;
-}
-
-.material-symbols-outlined.moon-icon {
-    /* Style for moon icon */
-    color: white;
-    /* Set moon icon color to white */
-    display: none;
-    /* Initially hide moon icon */
-}
-
-body.dark .sun-icon {
-    display: none;
-    /* Hide sun icon when body has 'dark' class */
-}
-
-body.light .moon-icon {
-    display: none;
-    /* Hide moon icon when body has 'light' class */
-}
-
-.centered-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    /* Adjust as needed */
 }
 
-.additional-text {
-    position: absolute;
-    top: 20px;
-    /* Adjust as needed */
-    left: 20px;
-    /* Adjust as needed */
-    /* Semi-transparent white background */
-    padding: 10px 20px;
-    border-radius: 5px;
+/* Light mode styles */
+body.light-mode {
+    background-color: var(--light-mode);
+    color: var(--light-textcolour);
 }
 
-.profile-section {
-    display: flex;
-    align-items: center;
-    max-width: 600px;
-    width: 100%;
-    padding: 20px;
-    /* background-color: #ffffff; */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(95, 95, 95, 0.1);
-    margin-bottom: 20px;
-}
-
-.profile-picture {
-    width: 100px;
-    /* Adjust size as needed */
-    height: 100px;
-    /* Adjust size as needed */
-    border-radius: 50%;
-    /* Create a circular shape */
-    overflow: hidden;
-    margin-right: 20px;
-}
-
-.pfp-placeholder {
-    width: 100%;
-    height: 100%;
-    background-color: #ccc;
-    /* Placeholder color */
-    /* Example background image for a rounded shape */
-    background-image: url('https://cdn.discordapp.com/avatars/898937224895270972/9b3bfa26c87d7612fc87386c8544b45a.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    /* Ensure it's a circle */
-}
-
-.profile-info {
-    flex: 1;
-}
-
-.profile-info h2 {
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-
-.profile-info p {
-    font-size: 16px;
-    color: #666;
-}
-
-.about-me-section {
-    max-width: 600px;
-    width: 100%;
-    padding: 20px;
-    text-align: left;
-}
-
-.about-me-section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.about-me-section p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
+/* Dark mode styles */
+body.dark-mode {
+    background-color: var(--dark-mode);
+    color: var(--dark-text-colour);
 }
