@@ -18,8 +18,44 @@
 
     <span class="material-symbols-outlined" id="mode-icon"></span>
 
+    <nav class="navbar">
+        <div class="navbar-title">unofficialdxnny</div>
+        <span class="navbar-toggle" onclick="toggleMenu()">☰</span>
+        <ul class="navbar-links">
+            <a href="">
+                <li>Home</li>
+            </a>
+            <a href="">
+                <li>About</li>
+            </a>
+            <a href="">
+                <li>Gamepads</li>
+            </a>
+            <a href="">
+                <li>Projects</li>
+            </a>
+            <a href="">
+                <li>Photography</li>
+            </a>
+            <a href="">
+                <li>GFX</li>
+            </a>
+        </ul>
+        <div class="navbar-flags">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" alt="Pakistan Flag"
+                class="flag">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="UK Flag"
+                class="flag">
+        </div>
+    </nav>
 
     <script src="./Assets/js/theme.js"></script>
+    <script>
+        function toggleMenu() {
+            const links = document.querySelector('.navbar-links');
+            links.classList.toggle('show');
+        }
+    </script>
 
 </body>
 

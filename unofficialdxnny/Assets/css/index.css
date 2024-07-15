@@ -1,8 +1,11 @@
+/* Existing styles */
 :root {
     --dark-mode: #15202b;
     --dark-text-colour: white;
     --light-mode: white;
     --light-textcolour: #15202b;
+    --hover-color-dark: rgba(187, 30, 30, 0.7);
+    --hover-color-light: rgba(187, 30, 30, 0.7);
 }
 
 * {
@@ -14,7 +17,6 @@
 body {
     transition: background-color 0.3s, color 0.3s;
     min-height: 100vh;
-
 }
 
 .material-symbols-outlined {
@@ -37,4 +39,109 @@ body.light-mode {
 body.dark-mode {
     background-color: var(--dark-mode);
     color: var(--dark-text-colour);
+}
+
+nav.light-mode {
+    background-color: var(--light-mode);
+    color: var(--light-textcolour);
+}
+
+nav.dark-mode {
+    background-color: var(--dark-mode);
+    color: var(--dark-text-colour);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode .navbar-links a:hover {
+    color: var(--hover-color-dark);
+}
+
+body.light-mode .navbar-links a:hover {
+    color: var(--hover-color-light);
+}
+
+.navbar-flags {
+    display: flex;
+    gap: 10px;
+}
+
+.flag {
+    width: 30px;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-title {
+        margin-bottom: 10px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-links a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-flags {
+        margin-top: 10px;
+    }
+
+    .navbar-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 769px) {
+    .navbar-toggle {
+        display: none;
+    }
 }
