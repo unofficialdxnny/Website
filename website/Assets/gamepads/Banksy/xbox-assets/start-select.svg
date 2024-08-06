@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="67.41" height="33.21" viewBox="0 0 67.41 33.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f5f5f5;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #929493;
+      }
+    </style>
+  </defs>
+  <g id="Menu_Pressed" data-name="Menu Pressed">
+    <path class="cls-1" d="M66.91,16.6A16.1,16.1,0,1,1,50.81.5,16.11,16.11,0,0,1,66.91,16.6Z"/>
+    <g>
+      <rect class="cls-2" x="43.61" y="11.98" width="14.36" height="1.55"/>
+      <rect class="cls-2" x="43.61" y="15.9" width="14.36" height="1.55"/>
+      <rect class="cls-2" x="43.61" y="19.71" width="14.36" height="1.53"/>
+    </g>
+  </g>
+  <g id="Switcher_PRessed" data-name="Switcher PRessed">
+    <path class="cls-1" d="M32.71,16.6A16.11,16.11,0,1,1,16.6.5,16.09,16.09,0,0,1,32.71,16.6Z"/>
+    <g>
+      <polygon class="cls-2" points="14.09 16.5 11.06 16.5 11.06 12.72 16.53 12.72 16.53 14.04 18.33 14.04 18.33 10.98 9.44 10.98 9.44 18.37 14.09 18.37 14.09 16.5"/>
+      <path class="cls-2" d="M14.84,14.66v7.59h9V14.66ZM22,20.45H16.53V16.5H22Z"/>
+    </g>
+  </g>
+</svg>

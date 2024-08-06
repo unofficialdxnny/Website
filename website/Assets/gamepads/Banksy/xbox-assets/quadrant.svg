@@ -1,0 +1,43 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38.03" height="38.29" viewBox="0 0 38.03 38.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+
+      .cls-2 {
+        fill: #dedede;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+        opacity: 0.8;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-1" x="10.2" y="29.26" width="8.54" height="8.53"/>
+      <path class="cls-2" d="M16.88,28.14v7.52H9.34V28.14h7.54m1-1H8.34v9.52h9.53V27.14Z" transform="translate(1.37 1.62)"/>
+    </g>
+    <g>
+      <image class="cls-3" width="29" height="29" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAACXBIWXMAAAsSAAALEgHS3X78AAACSUlEQVRIS72W247bMAxEj9vcG6TYLvr/X7godjdXJ6n7QE7EyLST9qEECCUSxdFQJOWm6zr+t0weGVTSjKw9ffox0AhQg8X/AtNcBE8PMgTaUJw0idbSJRrX7iQDjc6/JFoDC+R3otHmJjVoDfbVbaJqTSKAS6VX7sFvwBG0ZjgBZq5z16mrGIvh2fXk2rpeSEKdhVcMZ8ACWAHffFz4vBiLYQscgT2w8xFK6K8EycIbWa6ATdA1sPQ1gbbAAdgCH9iB8bUY4tHwCnSOMdwAr67ffW6OOb9i4dwB71jo8XmF/BJ8p+GtQcX0Ffjp4wZjK9ADxnDmPnS3Byzkuv+bCDTWpECn2B2uMYYCfsEOI9A9dkCwUG+BT9+vu4/+u7GSmWKnX1LC/AL8wEAnWOgWvveEMdadxyxPmUKfbUyoOeZs5bqmgIKFcel2Mbt7LOFx741NQhobBT7G9RqsJ2OgsbVdg6rjEH7H9V6J1BJBuzDG1tZSsnFPuUOFd+96oHSjC33wtE61EFubCn+HJYmy9Mh99v7y9Z3bt75foGnD77jvpRffdMRK4J1ShyfyOn1zu63vU2Posc2YCvSEsfigdJqWwjjrSG++vvf5GhTo32kNuqP00jPG4lHvVZhr0NE7jQmk10KMPnn+lYkJNfqIQymRNvw/Y2z+9j1VCd1JVjJQGOgtVFLFThNtZZ99OXQ8EV4qYzn8l2+kHiBAM/CxHR03idbSJQoJIAy3wWjY0QeqmUap9/ZkiOmQDDZxBgAyGWv4mTzteEz+AJlzJjollqy7AAAAAElFTkSuQmCC"/>
+      <g>
+        <rect class="cls-4" x="10.2" y="10.46" width="8.54" height="8.54"/>
+        <path class="cls-2" d="M16.88,9.34v7.53H9.34V9.34h7.54m1-1H8.34v9.53h9.53V8.34Z" transform="translate(1.37 1.62)"/>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-1" x="28.99" y="10.46" width="8.54" height="8.54"/>
+      <path class="cls-2" d="M35.66,9.34v7.53H28.13V9.34h7.53m1-1H27.13v9.53h9.53V8.34Z" transform="translate(1.37 1.62)"/>
+    </g>
+    <g>
+      <rect class="cls-1" x="28.99" y="29.26" width="8.54" height="8.53"/>
+      <path class="cls-2" d="M35.66,28.14v7.52H28.13V28.14h7.53m1-1H27.13v9.52h9.53V27.14Z" transform="translate(1.37 1.62)"/>
+    </g>
+  </g>
+</svg>
